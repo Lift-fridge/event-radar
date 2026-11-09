@@ -1,9 +1,91 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-11-09T12:17:26+00:00",
   "data_kind": "unverified_news_leads",
-  "message": "情報源の定期収集は設定中です。",
-  "successful_sources": 0,
+  "message": "記事の公開日はイベント開催日ではありません。掲載前に公式情報での確認が必要です。",
+  "successful_sources": 2,
   "source_count": 4,
-  "errors": [],
-  "items": []
+  "errors": [
+    {
+      "source": "音楽ナタリー",
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "映画ナタリー",
+      "error_type": "HTTPError"
+    }
+  ],
+  "items": [
+    {
+      "id": "54521c947a39bea549fc",
+      "source": "SPICE",
+      "title": "春茶、優里とのコラボ映像公開 自身最大規模となるZeppワンマンライブを東京・大阪で開催",
+      "url": "https://spice.eplus.jp/articles/350249",
+      "article_published_at": "2026-11-09T11:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "f5897db6841a70383a04",
+      "source": "SPICE",
+      "title": "柿原徹也、デビュー15周年を締めくくるライブファイナルのオフィシャルライブレポートが到着",
+      "url": "https://spice.eplus.jp/articles/350257",
+      "article_published_at": "2026-11-09T10:34:03+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "b88829a2deb6b1e0fdfe",
+      "source": "SPICE",
+      "title": "浅草九劇10周年、福原充則作・演出の『くじけまみれ』メインビジュアル＆公演詳細が公開　峯村リエらのコメントも",
+      "url": "https://spice.eplus.jp/articles/350243",
+      "article_published_at": "2026-11-09T04:29:14+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "231194ca3d8bfe54f906",
+      "source": "SPICE",
+      "title": "TVアニメ『みなみけ これから』ティザービジュアル、ティザーPV、放送時期、キャラクター画像、キャスト＆スタッフ一挙解禁",
+      "url": "https://spice.eplus.jp/articles/350241",
+      "article_published_at": "2026-11-09T03:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "39ed8b7f2a793c100212",
+      "source": "SPICE",
+      "title": "22年寝たきりだった母が突然甦る。大竹しのぶ・井上芳雄・伊藤沙莉ら出演『果てない〜甦る母篇〜』開幕【舞台写真あり】",
+      "url": "https://spice.eplus.jp/articles/350226",
+      "article_published_at": "2026-11-09T03:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "6e27e426b7c3d88659a0",
+      "source": "SPICE",
+      "title": "新国立劇場『巨匠とマルガリータ』が開幕　成河、花乃まりあ、上村聡史（演出／新国立劇場 演劇芸術監督）らのコメント＆舞台写真が公開",
+      "url": "https://spice.eplus.jp/articles/350238",
+      "article_published_at": "2026-11-09T02:10:53+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "cad1d9a445a03aa2da16",
+      "source": "SPICE",
+      "title": "TVアニメ『SPY×FAMILY』Season 4が2027年放送＆劇場版第2弾も2027年公開決定！Season 4ティザービジュアル公開",
+      "url": "https://spice.eplus.jp/articles/350239",
+      "article_published_at": "2026-11-09T02:09:38+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "a963f88430d8932914fd",
+      "source": "SPICE",
+      "title": "Luov、2027年3月の東名阪ワンマンツアー『LINK UP』開催が決定",
+      "url": "https://spice.eplus.jp/articles/350236",
+      "article_published_at": "2026-11-08T15:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    }
+  ]
 }
