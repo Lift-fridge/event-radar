@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T12:17:26+00:00",
+  "updated_at": "2026-11-10T07:16:29+00:00",
   "data_kind": "unverified_news_leads",
   "message": "記事の公開日はイベント開催日ではありません。掲載前に公式情報での確認が必要です。",
   "successful_sources": 2,
@@ -15,6 +15,33 @@
     }
   ],
   "items": [
+    {
+      "id": "78813f2df5045f67cb72",
+      "source": "SPICE",
+      "title": "『ゴジラ-1.0』から最新作『ゴジラ-0.0』へ――『ゴジラ博 マイナスの世界』東京・大阪で開催",
+      "url": "https://spice.eplus.jp/articles/350246",
+      "article_published_at": "2026-11-10T03:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "e2b153c9ef46191332dd",
+      "source": "SPICE",
+      "title": "INO hidefumi、LIQUIDROOMのライブシリーズ『Time Out Cafe Unplugged』に登場",
+      "url": "https://spice.eplus.jp/articles/350244",
+      "article_published_at": "2026-11-10T03:00:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
+    {
+      "id": "939e6fd7d644bbc97e8d",
+      "source": "SPICE",
+      "title": "のん、東京公演で中学生からの大ファン・元GO!GO!7188の二人と共演【オフィシャルレポート到着】",
+      "url": "https://spice.eplus.jp/articles/350264",
+      "article_published_at": "2026-11-10T01:30:00+00:00",
+      "event_date": null,
+      "status": "未確認"
+    },
     {
       "id": "54521c947a39bea549fc",
       "source": "SPICE",
@@ -57,33 +84,6 @@
       "title": "22年寝たきりだった母が突然甦る。大竹しのぶ・井上芳雄・伊藤沙莉ら出演『果てない〜甦る母篇〜』開幕【舞台写真あり】",
       "url": "https://spice.eplus.jp/articles/350226",
       "article_published_at": "2026-11-09T03:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "6e27e426b7c3d88659a0",
-      "source": "SPICE",
-      "title": "新国立劇場『巨匠とマルガリータ』が開幕　成河、花乃まりあ、上村聡史（演出／新国立劇場 演劇芸術監督）らのコメント＆舞台写真が公開",
-      "url": "https://spice.eplus.jp/articles/350238",
-      "article_published_at": "2026-11-09T02:10:53+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "cad1d9a445a03aa2da16",
-      "source": "SPICE",
-      "title": "TVアニメ『SPY×FAMILY』Season 4が2027年放送＆劇場版第2弾も2027年公開決定！Season 4ティザービジュアル公開",
-      "url": "https://spice.eplus.jp/articles/350239",
-      "article_published_at": "2026-11-09T02:09:38+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "a963f88430d8932914fd",
-      "source": "SPICE",
-      "title": "Luov、2027年3月の東名阪ワンマンツアー『LINK UP』開催が決定",
-      "url": "https://spice.eplus.jp/articles/350236",
-      "article_published_at": "2026-11-08T15:00:00+00:00",
       "event_date": null,
       "status": "未確認"
     }
