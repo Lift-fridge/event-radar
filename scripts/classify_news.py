@@ -5,6 +5,7 @@ import re
 RECOMMEND = "推薦候補"
 REVIEW = "要確認"
 EXCLUDE = "対象外"
+VISIBLE_STATUSES = (RECOMMEND, REVIEW)
 
 REPORT = re.compile(r"ライブレポート|オフィシャルライブレポート|開催後|振り返り|舞台写真.*公開|公演.*レポート")
 ANIME_ANNOUNCEMENT = re.compile(
@@ -18,6 +19,15 @@ MAJOR = re.compile(
     r"ワールドカップ|オリンピック|全国大会|決勝|再結成|復活|周年|記念公演"
 )
 EVENT = re.compile(r"開催|開幕|開演|公演|上映|映画祭|フェス|ライブ|コンサート|大会|出場|放送|配信|展覧会|企画展|予約|応募|チケット|来日|初放送|初公開")
+
+
+def visible_items(items: list[dict]) -> list[dict]:
+    """Return reviewable leads; legacy entries without status remain reviewable."""
+    return [item for item in items if item.get("status", REVIEW) in VISIBLE_STATUSES]
+
+
+def classification_counts(items: list[dict]) -> dict[str, int]:
+    return {status: sum(item.get("status", REVIEW) == status for item in items) for status in (*VISIBLE_STATUSES, EXCLUDE)}
 
 
 def classify_title(title: str) -> tuple[str, str]:
