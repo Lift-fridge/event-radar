@@ -10,7 +10,8 @@ import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 
-from classify_news import SCIENCE, SPORTS, TV, classification_counts, classify_title
+from classify_news import EXCLUDE, classification_counts, classify_title
+from event_pipeline import group_news_items
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "data" / "discovery.json"
@@ -19,11 +20,6 @@ SOURCES = (
     ("音楽ナタリー", "https://natalie.mu/music/feed/news"),
     ("映画ナタリー", "https://natalie.mu/eiga/feed/news"),
     ("マイナビニュース", "https://news.mynavi.jp/rss/index.rdf"),
-    ("AV Watch", "https://av.watch.impress.co.jp/data/rss/1.0/avw/feed.rdf"),
-    ("Yahoo!エンタメ", "https://news.yahoo.co.jp/rss/categories/entertainment.xml"),
-    ("Yahoo!スポーツ", "https://news.yahoo.co.jp/rss/categories/sports.xml"),
-    ("AstroArts", "https://www.astroarts.co.jp/article/feed.atom"),
-    ("NHK科学・文化", "https://www.nhk.or.jp/rss/news/cat3.xml"),
 )
 POSITIVE = "開催|開幕|開演|公演|上映|映画祭|フェス|ライブ|コンサート|大会|出場|放送|配信|ドラマ|展覧会|企画展|予約|応募|先行販売|チケット|来日|初回|初放送|初公開"
 NEGATIVE = "中止|延期|開催終了|閉幕|振り返り|レビュー|発売した|販売終了|決算|株価|企業買収|スマホ新製品"
@@ -74,7 +70,7 @@ def read_feed(source, url):
             continue
         published = node_text(node, ["pubDate", "{http://purl.org/dc/elements/1.1/}date", "{http://www.w3.org/2005/Atom}published", "{http://www.w3.org/2005/Atom}updated"])
         timestamp = iso_date(published)
-        if (not re.search(POSITIVE, title) and not any(p.search(title) for p in (SCIENCE, SPORTS, TV))) or re.search(NEGATIVE, title):
+        if not re.search(POSITIVE, title) or re.search(NEGATIVE, title):
             continue
         status, reason = classify_title(title)
         result.append({
@@ -110,18 +106,7 @@ def main():
     now = dt.datetime.now(dt.timezone.utc)
     seen = set()
     fresh = []
-    # Keep a cross-section of sources rather than allowing a busy entertainment feed
-    # to consume the entire 60-item limit.
-    pools = {}
     for item in sorted(collected, key=lambda x: x["article_published_at"] or "", reverse=True):
-        pools.setdefault(item["source"], []).append(item)
-    ordered = []
-    while any(pools.values()):
-        for name, _ in SOURCES:
-            pool = pools.get(name, [])
-            if pool:
-                ordered.append(pool.pop(0))
-    for item in ordered:
         if item["id"] in seen:
             continue
         seen.add(item["id"])
@@ -133,7 +118,8 @@ def main():
         fresh.append(item)
         if len(fresh) == 60:
             break
-    counts = classification_counts(fresh)
+    grouped = group_news_items(fresh)
+    counts = classification_counts(grouped)
     payload = {
         "updated_at": now.isoformat(timespec="seconds"),
         "data_kind": "classified_unverified_news_leads",
@@ -142,7 +128,7 @@ def main():
         "source_count": len(SOURCES),
         "errors": errors,
         "classification_counts": counts,
-        "items": fresh,
+        "items": grouped,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     temp = OUTPUT.with_suffix(".json.tmp")
