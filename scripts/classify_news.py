@@ -17,12 +17,13 @@ FAN_EVENT = re.compile(r"ファン(?:ミーティング|ミ|イベント)|お渡
 GAME = re.compile(r"eスポーツ|ｅスポーツ|ゲーム実況|ゲーム大会|ゲームショウ|ゲームショー|東京ゲームショウ|ゲームイベント|ゲーミング大会")
 YOUTH_STAGE = re.compile(r"2[.．]5次元|刀剣乱舞|あんさんぶるスターズ|舞台『(?:ヒプノシスマイク|ブルーロック)|ミュージカル『(?:テニスの王子様|刀剣乱舞)")
 MATSURI_MAP = re.compile(r"花火大会|地域のお祭り|町内会祭り")
-OUTSIDE_LOCATION = re.compile(r"大阪(?:府|市|の)|京都(?:府|市|の)|名古屋(?:市|の)|兵庫県|北海道|福岡(?:県|市|の)|沖縄県|札幌(?:市|の)|神戸(?:市|の)|広島(?:県|市|の)")
+OUTSIDE_LOCATION = re.compile(r"大阪(?:府|市|の)|京都(?:府|市|の)|名古屋(?:市|の)|京都展|大阪展|兵庫県|北海道|福岡(?:県|市|の)|沖縄県|札幌(?:市|の)|神戸(?:市|の)|広島(?:県|市|の)")
 TARGET_LOCATION = re.compile(r"東京|神奈川|横浜|川崎|千葉|埼玉|大宮|さいたま|幕張|浦和")
 REMOTE = re.compile(r"全国放送|地上波|ネット配信|ライブ配信|生配信|TVer|YouTube配信|NHK総合|BS以外")
 SCIENCE = re.compile(r"流星群|月食|日食|惑星|彗星|天体観測|天文現象|星空|接近|観望会|meteor shower|eclipse", re.IGNORECASE)
 SPORTS = re.compile(r"日本代表|なでしこジャパン|ワールドカップ|オリンピック|五輪|マスターズ|世界選手権|世界陸上|W杯|決勝戦")
 TV = re.compile(r"ドラマ.*(?:初回|放送開始|放送決定|配信開始)|(?:初回|放送開始|放送決定|配信開始).*ドラマ|特別番組|音楽特番|テレビ特番")
+ESTABLISHED_MUSIC = re.compile(r"サザンオールスターズ|サザン|松任谷由実|ユーミン|山下達郎|竹内まりや|B.z|スピッツ|Mr\\.Children|ミスチル|ポール・マッカートニー|スティング|U2|米津玄師|Official髭男dism|Mrs\\. GREEN APPLE|MISIA", re.IGNORECASE)
 ORDINARY_LIVE = re.compile(r"ワンマン|(?:ライブ|コンサート|ツアー).*(?:開催|決定)|(?:開催|決定).*(?:ライブ|コンサート|ツアー)")
 MAJOR = re.compile(
     r"映画祭|国際映画祭|フェスティバル|展覧会|企画展|博物館|科学館|皆既|"
@@ -59,6 +60,8 @@ def classify_title(title: str) -> tuple[str, str]:
         return EXCLUDE, "コアなファン向けのイベント告知のため"
     if ANIME_ANNOUNCEMENT.search(title):
         return EXCLUDE, "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため"
+    if ORDINARY_LIVE.search(title) and ESTABLISHED_MUSIC.search(title):
+        return REVIEW, "知名度が高いアーティスト。公演の特別性と関東開催を確認するため"
     if ORDINARY_LIVE.search(title) and not MAJOR.search(title):
         return EXCLUDE, "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため"
     if OUTSIDE_LOCATION.search(title) and not REMOTE.search(title) and not TARGET_LOCATION.search(title):
