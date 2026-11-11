@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-11T06:16:47+00:00",
-  "data_kind": "unverified_news_leads",
-  "message": "記事の公開日はイベント開催日ではありません。掲載前に公式情報での確認が必要です。",
+  "updated_at": "2026-11-11T11:29:59+00:00",
+  "data_kind": "classified_unverified_news_leads",
+  "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
   "successful_sources": 2,
   "source_count": 4,
   "errors": [
@@ -14,7 +14,122 @@
       "error_type": "HTTPError"
     }
   ],
+  "classification_counts": {
+    "推薦候補": 1,
+    "要確認": 9,
+    "対象外": 1
+  },
   "items": [
+    {
+      "id": "6ab9eb9da81d04c124dc",
+      "source": "SPICE",
+      "title": "画家・ジミー大西が全国を巡る『ホームタウン』京都展が開催決定　京都を描いた新作を初公開、限定グッズも登場",
+      "url": "https://spice.eplus.jp/articles/350207",
+      "article_published_at": "2026-11-11T10:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "91c4635ffcaf06d43834",
+      "source": "SPICE",
+      "title": "主演の鈴木昂秀（THE RAMPAGE）ら16名の出演者＆公演詳細発表　宮部みゆき原作の舞台『レベル7』",
+      "url": "https://spice.eplus.jp/articles/350303",
+      "article_published_at": "2026-11-11T09:54:37+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "694155cb698a9367cac3",
+      "source": "SPICE",
+      "title": "TVアニメ『暴食のベルセルク Season 2』2027年4月放送開始決定！ティザービジュアル解禁",
+      "url": "https://spice.eplus.jp/articles/350278",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
+      "confirmed": false
+    },
+    {
+      "id": "460d5515142f8dd8ba6a",
+      "source": "SPICE",
+      "title": "渡辺えり新作公演『消えた花をさがして』上演決定　池畑慎之介・藤⼭直美・⽵中直⼈らが集結",
+      "url": "https://spice.eplus.jp/articles/350298",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "2b142b4e5f50fd778f4a",
+      "source": "SPICE",
+      "title": "世界を笑わせ、泣かせた作品　２Shoulderpads『GALAXY TRAIN-銀河鉄道の夜-』が開幕",
+      "url": "https://spice.eplus.jp/articles/350297",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "3886a89eb9a2d680ce8e",
+      "source": "SPICE",
+      "title": "鬱先生もおすすめ！『ちょこっとヤバシティ展　ここは、まじめにヤバいやつが集まる街』開催",
+      "url": "https://spice.eplus.jp/articles/350218",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "d73b9af2395e6ea796c4",
+      "source": "SPICE",
+      "title": "秋風心地よい夜に煌めく圧巻の光『第38回 なにわ淀川花火大会』大迫力ショー&イープラスエリアをレポート",
+      "url": "https://spice.eplus.jp/articles/349970",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "推薦候補",
+      "classification_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "confirmed": false
+    },
+    {
+      "id": "6faaabf9081acb0669cc",
+      "source": "SPICE",
+      "title": "Silica Gel　実験性と大衆性を鮮やかに両立させる韓国の4人組、キャリア初のアジアツアーのファイナルを飾る東京公演を前にその活動の軌跡を振り返る",
+      "url": "https://spice.eplus.jp/articles/349489",
+      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "a848ab6eb9fec5c4beb1",
+      "source": "SPICE",
+      "title": "中山優馬、直田姫奈ら出演『音楽詩「火垂るの墓」シンフォニー朗読劇』が開催",
+      "url": "https://spice.eplus.jp/articles/350299",
+      "article_published_at": "2026-11-11T08:46:26+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "d056aedbb485018e1ab4",
+      "source": "SPICE",
+      "title": "SUMMIT主催『AVALANCHE’15』3年ぶりに開催、TAXMEN、G PLANTS、27AM、かせきさいだぁ、原島\"ど真ん中\"宙芳が出演",
+      "url": "https://spice.eplus.jp/articles/350291",
+      "article_published_at": "2026-11-11T06:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
     {
       "id": "d935dc285c7f31d18c28",
       "source": "SPICE",
@@ -22,88 +137,9 @@
       "url": "https://spice.eplus.jp/articles/350267",
       "article_published_at": "2026-11-11T04:30:00+00:00",
       "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "4065e4529e6440df0671",
-      "source": "SPICE",
-      "title": "「えっ、僕でいいんですか!?」　11/12開幕『ラグザス アジアプロ野球チャンピオンシップ2026』であの「VIVANT」強烈悪役、乃木坂46瀬戸口心月らが始球式",
-      "url": "https://spice.eplus.jp/articles/350268",
-      "article_published_at": "2026-11-11T04:25:49+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "ed53ee185b13ec344c4f",
-      "source": "SPICE",
-      "title": "LIQUIDROOMの恒例カウントダウンイベント『NEW YEAR PARTY 2027』開催が決定 石野卓球、group_inouら第1弾ラインナップ4組を発表",
-      "url": "https://spice.eplus.jp/articles/350276",
-      "article_published_at": "2026-11-11T03:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "f7bcaa931b6309b2fd05",
-      "source": "SPICE",
-      "title": "音楽人5,000人が選ぶ国際音楽賞『MUSIC AWARDS JAPAN 2027』開催決定",
-      "url": "https://spice.eplus.jp/articles/350285",
-      "article_published_at": "2026-11-10T14:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "41d925533fe61c58d28b",
-      "source": "SPICE",
-      "title": "GUMMY、『GIVE ME PINEAPPLE』ツアー開催決定で初の京都・静岡へ、3rd EPリリースも",
-      "url": "https://spice.eplus.jp/articles/350283",
-      "article_published_at": "2026-11-10T13:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "2dfa29a3c8a556071051",
-      "source": "SPICE",
-      "title": "十周年記念特別公演 舞台『刀剣乱舞』陽伝 月と太陽と星々よ が開幕　刀剣男士13振りのキャストコメントが公開",
-      "url": "https://spice.eplus.jp/articles/350277",
-      "article_published_at": "2026-11-10T11:30:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "6710750a2ccb5dff3c85",
-      "source": "SPICE",
-      "title": "PUNPEEとOMSBによるユニット・TAXMEN、新曲「PLACEBO」を11月11日に配信リリース",
-      "url": "https://spice.eplus.jp/articles/350273",
-      "article_published_at": "2026-11-10T11:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "9875f5dc50d3782adfed",
-      "source": "SPICE",
-      "title": "『魔法使いの夜』入場者特典第1弾は「TYPE-MOON描き下ろしミニ色紙」に決定！IMAX上映限定入場者特典は「IMAXビジュアル イラストボード」",
-      "url": "https://spice.eplus.jp/articles/350281",
-      "article_published_at": "2026-11-10T10:34:24+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "a80b3e54985ac51a41da",
-      "source": "SPICE",
-      "title": "東西をつなぐ優美なうつわが一堂に集結、没後30年『ルーシー・リー展』大阪で12月開幕",
-      "url": "https://spice.eplus.jp/articles/350250",
-      "article_published_at": "2026-11-10T09:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
-    },
-    {
-      "id": "ecf5ef497f9a76cdece3",
-      "source": "SPICE",
-      "title": "太鼓芸能集団「鼓童」が圧巻のパフォーマンスを披露　ビルボードライブ・ツアーを開催",
-      "url": "https://spice.eplus.jp/articles/350274",
-      "article_published_at": "2026-11-10T09:00:00+00:00",
-      "event_date": null,
-      "status": "未確認"
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
     }
   ]
 }
