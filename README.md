@@ -30,3 +30,14 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - Titles mentioning astronomy, major sports and television premieres can now become review leads even without the usual event verbs. News article publication timestamp must **never** be treated as the event date.
 - Round-robin source selection reduces a single fast-moving news outlet monopolizing the 60-candidate cap. This is a diversity heuristic, not comprehensive event coverage.
 - This phase does **not** verify official event schedules, Japanese streaming rights or location and does not auto-publish event cards.
+
+## Official-calendar pilot (PR #5)
+
+**Purpose:** separate future official *event schedules* from broad RSS news headlines. This is intentionally a small, manually checked proof of concept and **not yet an automated official-site scraper**.
+
+- Curated official seed: `data/official_schedule_sources.json` (two Japan football national-team fixtures with JFA broadcast page; two meteor showers with NAOJ monthly sky calendars).
+- Builder: `scripts/build_official_schedule.py`. Strict date format, full metadata, approved state, Japan viewing/observing scope, unique IDs and HTTPS official URL are required. A record is shown only if its end date is today or later, its start date is within 60 days, and the last official check is no more than 90 days old. Date is interpreted in Japan local calendar days. The workflow refreshes `data/official_schedule.json` daily; it does *not* re-validate dates against sites automatically.
+- New **公式予定（試作）** tab reads the confirmed-feed JSON without changing the older demo `見つける` cards, RSS `新着候補`, or existing favorites storage.
+- TV category is supported in the schema, but **no standalone TV show is included until a concrete official date/time and terrestrial or eligible stream can be verified**. A football game carried on TV is still categorized as sports.
+- The contents and data sources remain subject to official schedule changes and manual reconfirmation; this trial does not yet provide an automated sports-calendar / TV-guide feed. No guarantee of coverage beyond its four reviewed examples.
+- After merging, run **Refresh EVENT RADAR news leads** once to produce the verified feed, and assess on an iPhone. More official calendar connectors/parsers and editorial approval tools can be added after validating this presentation and data policy.
