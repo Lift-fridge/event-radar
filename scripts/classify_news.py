@@ -54,14 +54,14 @@ def classify_title(title: str) -> tuple[str, str]:
         return EXCLUDE, "コアファン向けの2.5次元・若者向け舞台のため"
     if MATSURI_MAP.search(title) and not SCIENCE.search(title):
         return EXCLUDE, "地域の花火・祭りの網羅は別アプリで扱うため"
-    if OUTSIDE_LOCATION.search(title) and not REMOTE.search(title):
-        return REVIEW, "対象地域外の地名があり、関東開催・全国視聴の有無を確認するため"
     if FAN_EVENT.search(title):
         return EXCLUDE, "コアなファン向けのイベント告知のため"
     if ANIME_ANNOUNCEMENT.search(title):
         return EXCLUDE, "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため"
     if ORDINARY_LIVE.search(title) and not MAJOR.search(title):
         return EXCLUDE, "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため"
+    if OUTSIDE_LOCATION.search(title) and not REMOTE.search(title):
+        return REVIEW, "対象地域外の地名があり、関東開催・全国視聴の有無を確認するため"
     if SCIENCE.search(title):
         return REVIEW, "天文・科学の注目候補。日本での観測条件と日時を確認するため"
     if SPORTS.search(title):
