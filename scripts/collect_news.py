@@ -11,6 +11,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 from classify_news import SCIENCE, SPORTS, TV, classification_counts, classify_title
+from event_pipeline import group_news_items
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "data" / "discovery.json"
@@ -133,7 +134,8 @@ def main():
         fresh.append(item)
         if len(fresh) == 60:
             break
-    counts = classification_counts(fresh)
+    grouped = group_news_items(fresh)
+    counts = classification_counts(grouped)
     payload = {
         "updated_at": now.isoformat(timespec="seconds"),
         "data_kind": "classified_unverified_news_leads",
@@ -142,7 +144,7 @@ def main():
         "source_count": len(SOURCES),
         "errors": errors,
         "classification_counts": counts,
-        "items": fresh,
+        "items": grouped,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     temp = OUTPUT.with_suffix(".json.tmp")

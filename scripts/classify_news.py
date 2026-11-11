@@ -15,6 +15,7 @@ ANIME_ANNOUNCEMENT = re.compile(
 )
 FAN_EVENT = re.compile(r"ファン(?:ミーティング|ミ|イベント)|お渡し会|リリースイベント|声優.*(?:イベント|ライブ)")
 GAME = re.compile(r"eスポーツ|ｅスポーツ|ゲーム実況|ゲーム大会|ゲームショウ|ゲームショー|東京ゲームショウ|ゲームイベント|ゲーミング大会")
+RESULT_OR_GENERAL = re.compile(r"試合結果|結果速報|勝敗|勝利|敗戦|政治|事件|事故")
 YOUTH_STAGE = re.compile(r"2[.．]5次元|刀剣乱舞|あんさんぶるスターズ|舞台『(?:ヒプノシスマイク|ブルーロック)|ミュージカル『(?:テニスの王子様|刀剣乱舞)")
 MATSURI_MAP = re.compile(r"花火大会|地域のお祭り|町内会祭り")
 OUTSIDE_LOCATION = re.compile(r"大阪(?:府|市|の)|京都(?:府|市|の)|名古屋(?:市|の)|京都展|大阪展|兵庫県|北海道|福岡(?:県|市|の)|沖縄県|札幌(?:市|の)|神戸(?:市|の)|広島(?:県|市|の)")
@@ -50,6 +51,8 @@ def classify_title(title: str) -> tuple[str, str]:
     title = title.strip()
     if REPORT.search(title):
         return EXCLUDE, "開催後のレポート・振り返り記事のため"
+    if RESULT_OR_GENERAL.search(title):
+        return EXCLUDE, "試合結果・一般ニュースのため"
     if GAME.search(title):
         return EXCLUDE, "ゲーム・eスポーツ関連で、推薦対象外のため"
     if YOUTH_STAGE.search(title):
