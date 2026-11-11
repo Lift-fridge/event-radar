@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch public RSS metadata only. This does NOT validate event dates or approve publication."""
+"""Fetch public RSS metadata and classify leads; this does not approve events."""
 import datetime as dt
 import email.utils
 import hashlib
@@ -10,6 +10,8 @@ import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 
+from classify_news import EXCLUDE, classify_title
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "data" / "discovery.json"
 SOURCES = (
@@ -18,10 +20,11 @@ SOURCES = (
     ("映画ナタリー", "https://natalie.mu/eiga/feed/news"),
     ("マイナビニュース", "https://news.mynavi.jp/rss/index.rdf"),
 )
-POSITIVE = re.compile(r"開催|開幕|開演|公演|上映|映画祭|フェス|ライブ|コンサート|大会|出場|放送|配信|ドラマ|展覧会|企画展|予約|応募|先行販売|チケット|来日|初回|初放送|初公開")
-NEGATIVE = re.compile(r"中止|延期|開催終了|閉幕|振り返り|レビュー|発売した|販売終了|決算|株価|企業買収|スマホ新製品")
+POSITIVE = "開催|開幕|開演|公演|上映|映画祭|フェス|ライブ|コンサート|大会|出場|放送|配信|ドラマ|展覧会|企画展|予約|応募|先行販売|チケット|来日|初回|初放送|初公開"
+NEGATIVE = "中止|延期|開催終了|閉幕|振り返り|レビュー|発売した|販売終了|決算|株価|企業買収|スマホ新製品"
 UA = "EventRadar-Research/0.1 (RSS metadata; no republishing of article bodies)"
 NS = {"atom": "http://www.w3.org/2005/Atom"}
+
 
 def node_text(node, names):
     for name in names:
@@ -29,6 +32,7 @@ def node_text(node, names):
         if value:
             return value.strip()
     return ""
+
 
 def iso_date(value):
     if not value:
@@ -42,6 +46,7 @@ def iso_date(value):
         return dt.datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(dt.timezone.utc).isoformat()
     except ValueError:
         return None
+
 
 def read_feed(source, url):
     request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
@@ -64,10 +69,22 @@ def read_feed(source, url):
             continue
         published = node_text(node, ["pubDate", "{http://purl.org/dc/elements/1.1/}date", "{http://www.w3.org/2005/Atom}published", "{http://www.w3.org/2005/Atom}updated"])
         timestamp = iso_date(published)
-        if not POSITIVE.search(title) or NEGATIVE.search(title):
+        if not re.search(POSITIVE, title) or re.search(NEGATIVE, title):
             continue
-        result.append({"id": hashlib.sha256(link.encode()).hexdigest()[:20], "source": source, "title": title[:180], "url": link, "article_published_at": timestamp, "event_date": None, "status": "未確認"})
+        status, reason = classify_title(title)
+        result.append({
+            "id": hashlib.sha256(link.encode()).hexdigest()[:20],
+            "source": source,
+            "title": title[:180],
+            "url": link,
+            "article_published_at": timestamp,
+            "event_date": None,
+            "status": status,
+            "classification_reason": reason,
+            "confirmed": False,
+        })
     return result
+
 
 def main():
     collected = []
@@ -100,13 +117,24 @@ def main():
         fresh.append(item)
         if len(fresh) == 60:
             break
-    payload = {"updated_at": now.isoformat(timespec="seconds"), "data_kind": "unverified_news_leads", "message": "記事の公開日はイベント開催日ではありません。掲載前に公式情報での確認が必要です。", "successful_sources": successes, "source_count": len(SOURCES), "errors": errors, "items": fresh}
+    counts = {status: sum(item["status"] == status for item in fresh) for status in ("推薦候補", "要確認", EXCLUDE)}
+    payload = {
+        "updated_at": now.isoformat(timespec="seconds"),
+        "data_kind": "classified_unverified_news_leads",
+        "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
+        "successful_sources": successes,
+        "source_count": len(SOURCES),
+        "errors": errors,
+        "classification_counts": counts,
+        "items": fresh,
+    }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     temp = OUTPUT.with_suffix(".json.tmp")
     temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(OUTPUT)
-    print(f"Saved {len(fresh)} news leads.")
+    print(f"Saved {len(fresh)} classified news leads.")
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
