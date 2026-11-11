@@ -18,6 +18,7 @@ GAME = re.compile(r"eスポーツ|ｅスポーツ|ゲーム実況|ゲーム大�
 YOUTH_STAGE = re.compile(r"2[.．]5次元|刀剣乱舞|あんさんぶるスターズ|舞台『(?:ヒプノシスマイク|ブルーロック)|ミュージカル『(?:テニスの王子様|刀剣乱舞)")
 MATSURI_MAP = re.compile(r"花火大会|地域のお祭り|町内会祭り")
 OUTSIDE_LOCATION = re.compile(r"大阪(?:府|市|の)|京都(?:府|市|の)|名古屋(?:市|の)|兵庫県|北海道|福岡(?:県|市|の)|沖縄県|札幌(?:市|の)|神戸(?:市|の)|広島(?:県|市|の)")
+TARGET_LOCATION = re.compile(r"東京|神奈川|横浜|川崎|千葉|埼玉|大宮|さいたま|幕張|浦和")
 REMOTE = re.compile(r"全国放送|地上波|ネット配信|ライブ配信|生配信|TVer|YouTube配信|NHK総合|BS以外")
 SCIENCE = re.compile(r"流星群|月食|日食|惑星|彗星|天体観測|天文現象|星空|接近|観望会|meteor shower|eclipse", re.IGNORECASE)
 SPORTS = re.compile(r"日本代表|なでしこジャパン|ワールドカップ|オリンピック|五輪|マスターズ|世界選手権|世界陸上|W杯|決勝戦")
@@ -60,8 +61,8 @@ def classify_title(title: str) -> tuple[str, str]:
         return EXCLUDE, "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため"
     if ORDINARY_LIVE.search(title) and not MAJOR.search(title):
         return EXCLUDE, "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため"
-    if OUTSIDE_LOCATION.search(title) and not REMOTE.search(title):
-        return REVIEW, "対象地域外の地名があり、関東開催・全国視聴の有無を確認するため"
+    if OUTSIDE_LOCATION.search(title) and not REMOTE.search(title) and not TARGET_LOCATION.search(title):
+        return EXCLUDE, "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため"
     if SCIENCE.search(title):
         return REVIEW, "天文・科学の注目候補。日本での観測条件と日時を確認するため"
     if SPORTS.search(title):
