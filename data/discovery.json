@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T12:39:21+00:00",
+  "updated_at": "2026-11-11T13:59:42+00:00",
   "data_kind": "classified_unverified_news_leads",
   "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
   "successful_sources": 7,
@@ -16,8 +16,8 @@
   ],
   "classification_counts": {
     "推薦候補": 0,
-    "要確認": 26,
-    "対象外": 10
+    "要確認": 27,
+    "対象外": 8
   },
   "items": [
     {
@@ -29,29 +29,77 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "876251378a2e2d3d",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350258"
+      ],
+      "article_count": 1
     },
     {
-      "id": "8d46d8cd32062d5a66b8",
+      "id": "7fd1fea350662aa8b2f6",
       "source": "Yahoo!エンタメ",
-      "title": "BEYOOOOONDS、11人体制になって初の武道館公演を開催　新曲「勝利のセンタク」も初披露(中日スポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/2d7cbf917833bea1d4daede28c0151455f1dd8f6?source=rss",
-      "article_published_at": "2026-11-11T12:30:53+00:00",
+      "title": "「銀河鉄道の夜」もとにした2Shoulderpads「GALAXY TRAIN-銀河鉄道の夜-」東京で開幕(ステージナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/f0decaea597e46ee334b115834758ec8c4c28b9c?source=rss",
+      "article_published_at": "2026-11-11T13:54:22+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "4c76ee5ce5057486",
+      "priority": "一般",
+      "participation_scope": "関東現地候補",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/f0decaea597e46ee334b115834758ec8c4c28b9c?source=rss"
+      ],
+      "article_count": 1
     },
     {
-      "id": "0a06324571f7174e5c4c",
+      "id": "f9ea9b42c46ca8d9bae5",
       "source": "Yahoo!スポーツ",
-      "title": "【ルヴァン杯】神戸　15年大会以来の4強進出黄信号…GK前川黛也はたった一つのミスに大粒の涙(スポニチアネックス)",
-      "url": "https://news.yahoo.co.jp/articles/33872d0d6bbf9e7cfeeaba35a7edc72d5555b0a6?source=rss",
-      "article_published_at": "2026-11-11T12:32:51+00:00",
+      "title": "DeNA、中継ぎ右腕のルイーズが帰国「皆さんの歌声を聞きながらプレーする時間は本当に楽しかった」来日1年目は45試合登板(中日スポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/f2fb664f74accd7b5ff640cf0a2790f95a098b09?source=rss",
+      "article_published_at": "2026-11-11T13:58:53+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "a7932bd26281f97c",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/f2fb664f74accd7b5ff640cf0a2790f95a098b09?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "3f3826751bfe1ee83362",
@@ -62,7 +110,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "53846e1c560af4a9",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14763_hera"
+      ],
+      "article_count": 1
     },
     {
       "id": "860622be5d4a6d0c7ced",
@@ -73,7 +137,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "c05127733b91c6c7",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.web.nhk/newsweb/na/nd-20261105de71178"
+      ],
+      "article_count": 1
     },
     {
       "id": "2f21508d3c3d98f49042",
@@ -84,29 +164,77 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "4cf39359aad5ec1f",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350294"
+      ],
+      "article_count": 1
     },
     {
-      "id": "603d497578f127964e73",
+      "id": "d05918eb0a32f74cc5e1",
       "source": "Yahoo!エンタメ",
-      "title": "ＢＥＹＯＯＯＯＯＮＤＳ　１１人体制で初武道館公演　大坪茉乃「ビヨーンズに入って良かったなって思います！」(東スポWEB)",
-      "url": "https://news.yahoo.co.jp/articles/e7d93ed88a02108fc7946bd04482b762fc0e1096?source=rss",
-      "article_published_at": "2026-11-11T12:30:33+00:00",
+      "title": "野木亜紀子脚本のドラマ「ポリティカルパン」橋本じゅん、岩井ジョニ男、大塚ヒロタが出演(映画ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/87e0ad8aeb35c492cf19a6330a3f17a382df88c9?source=rss",
+      "article_published_at": "2026-11-11T13:54:10+00:00",
       "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "status": "対象外",
+      "classification_reason": "イベント開催を示す情報が不足しているため",
+      "confirmed": false,
+      "event_group_key": "71115ab0c0b90669",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/87e0ad8aeb35c492cf19a6330a3f17a382df88c9?source=rss"
+      ],
+      "article_count": 1
     },
     {
-      "id": "29c52f2719938ae96c31",
+      "id": "c478fe22a08d5f0fe51f",
       "source": "Yahoo!スポーツ",
-      "title": "大谷翔平、2027年の起用「ロースター見えた段階で話し合う」　開幕から二刀流が〝焦点〟…新運用模索「健康維持できる仕組み」(サンケイスポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/6f52064c7e5d7d06e70b200a63b2cf9ae6eed818?source=rss",
-      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "title": "DeNA・ルイーズが帰国　来日1年目の今季は45試合登板で15ホールド(サンケイスポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/f32a516091fcd73c99dddcc16e41f467a1f7442e?source=rss",
+      "article_published_at": "2026-11-11T13:50:41+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "136cbb3012e4977c",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/f32a516091fcd73c99dddcc16e41f467a1f7442e?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "61b56fa950cc1054b283",
@@ -117,7 +245,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "544702a21b6df2ca",
+      "priority": "天文現象",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14745_ph261118"
+      ],
+      "article_count": 1
     },
     {
       "id": "0a0889a0911d3dcc8cbc",
@@ -128,7 +272,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "c2efe7612ecda49c",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.web.nhk/newsweb/na/nd-20261105de70911"
+      ],
+      "article_count": 1
     },
     {
       "id": "fbd1134a4e583a454c85",
@@ -139,29 +299,77 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "イベント開催を示す情報が不足しているため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "9238f9562d74b3fe",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350296"
+      ],
+      "article_count": 1
     },
     {
-      "id": "5b89a96d21c6088de1f6",
+      "id": "a6f2054f54814001ece6",
       "source": "Yahoo!エンタメ",
-      "title": "【ライブレポート】BEYOOOOONDS“眼鏡の女の子”に大歓声！新体制初武道館で小島はな、大坪茉乃、杉山結菜も躍動(音楽ナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/61cea43f16db1db91d91d7398c51eeb98f972071?source=rss",
-      "article_published_at": "2026-11-11T12:30:11+00:00",
-      "event_date": null,
-      "status": "対象外",
-      "classification_reason": "開催後のレポート・振り返り記事のため",
-      "confirmed": false
-    },
-    {
-      "id": "b1099dc933bd1b4464ac",
-      "source": "Yahoo!スポーツ",
-      "title": "浦和、植木颯のプロ初ゴールでルヴァン杯4強に近づく！　途中出場の小森飛絢も得点でC大阪に2発先勝(サッカーキング)",
-      "url": "https://news.yahoo.co.jp/articles/57ec807ce865271a60ede2980aed5aea64f44408?source=rss",
-      "article_published_at": "2026-11-11T12:28:51+00:00",
+      "title": "デュア・リパ、来年は大型音楽フェスに出演!?(Numero TOKYO)",
+      "url": "https://news.yahoo.co.jp/articles/3c06c5d33a04b4e775799cf2d88968fd71f41f64?source=rss",
+      "article_published_at": "2026-11-11T13:30:02+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "2a040ae4ebe14149",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/3c06c5d33a04b4e775799cf2d88968fd71f41f64?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "ab7b5454f6d75e15b948",
+      "source": "Yahoo!スポーツ",
+      "title": "【バドミントン】宮崎友花は2回戦進出！　「意外とスマッシュも走っていたし、自分の球が打てている」＜熊本マスターズ2026／選手コメント＞(バド×スピ！／バドミントン・マガジン)",
+      "url": "https://news.yahoo.co.jp/articles/885167871e302784b569ef1903976b6a93826dd7?source=rss",
+      "article_published_at": "2026-11-11T13:48:56+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false,
+      "event_group_key": "438e386a54129d20",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/885167871e302784b569ef1903976b6a93826dd7?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "b0df92e01c3587911ff3",
@@ -172,7 +380,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "9f1d25668188b0a0",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14762_tio"
+      ],
+      "article_count": 1
     },
     {
       "id": "7f15d69d43bbd5627680",
@@ -183,29 +407,77 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "開催後のレポート・振り返り記事のため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "328ec44a860e4247",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350302"
+      ],
+      "article_count": 1
     },
     {
-      "id": "30c838af4f9eb48e58cb",
+      "id": "36fe5628061c4dca4932",
       "source": "Yahoo!エンタメ",
-      "title": "BEYOOOOONDS「幸せをかみしめてぶっちぎっていくぞー！」11人体制初の武道館公演(日刊スポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/26afdb7955527004e1db8496148818f85de053ef?source=rss",
-      "article_published_at": "2026-11-11T12:30:03+00:00",
+      "title": "【ライブレポート】ヤバイTシャツ屋さん「しんどいときこそライブハウスやな」、Zepp羽田5日目の“渋いセトリ”に顧客熱狂(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/b9421a3158569370f4b2a55d2036703da88dd423?source=rss",
+      "article_published_at": "2026-11-11T13:01:10+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "開催後のレポート・振り返り記事のため",
+      "confirmed": false,
+      "event_group_key": "352b32bb61da43a1",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/b9421a3158569370f4b2a55d2036703da88dd423?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "f49bcf2bc937799cb0c2",
+      "source": "Yahoo!スポーツ",
+      "title": "12日開幕のアジアプロ野球チャンピオンシップ　侍ジャパンと対する台湾代表先発は24歳左腕・林シイ(スポニチアネックス)",
+      "url": "https://news.yahoo.co.jp/articles/ddde9f55f4b389d4698470225ccffdb8193c60ea?source=rss",
+      "article_published_at": "2026-11-11T13:43:02+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
-    },
-    {
-      "id": "c13e2dc4c840a8b439f1",
-      "source": "Yahoo!スポーツ",
-      "title": "Bプレミア所属5選手がフィリピン代表メンバー入り…北海道のラモスやA千葉のソットら、中立地開催のW杯予選へ(バスケットボールキング)",
-      "url": "https://news.yahoo.co.jp/articles/6e7b9d2734610390f32c5da769addcc735503e21?source=rss",
-      "article_published_at": "2026-11-11T12:27:02+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "11bca49458f5177a",
+      "priority": "一般",
+      "participation_scope": "海外開催・日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/ddde9f55f4b389d4698470225ccffdb8193c60ea?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "9d8248533cc83768df2c",
@@ -216,7 +488,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "69fc107092ab1857",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14267_ph261110"
+      ],
+      "article_count": 1
     },
     {
       "id": "6ab9eb9da81d04c124dc",
@@ -227,29 +515,77 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "afff0dd6f295aec1",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350207"
+      ],
+      "article_count": 1
     },
     {
-      "id": "384aebc7a66274e5c4ef",
+      "id": "02abc0cfa20f16cef19a",
       "source": "Yahoo!エンタメ",
-      "title": "BEYOOOOONDS、11人体制初武道館公演で新メンバー小島はな「幸せをかみしめながらぶっちゃけていきます」(サンケイスポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/4938c186102f0fd16e28cb86894bb653cad22819?source=rss",
-      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "title": "ジ・エンプティ、松田聖子「赤いスイートピー」のカバーMV公開　全国ツアーも開幕(ぴあ)",
+      "url": "https://news.yahoo.co.jp/articles/bdfaf422c3f84438d51a6490ab24720a1e34f730?source=rss",
+      "article_published_at": "2026-11-11T13:01:01+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "4dcedfec7ada4540",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/bdfaf422c3f84438d51a6490ab24720a1e34f730?source=rss"
+      ],
+      "article_count": 1
     },
     {
-      "id": "423899c3fbba720f0537",
+      "id": "0c575f67f4c50b2ca8c5",
       "source": "Yahoo!スポーツ",
-      "title": "【侍ジャパン】井口監督　金丸夢斗を開幕戦に抜てきした理由「まずは初戦を勝ちゲームに」(東スポWEB)",
-      "url": "https://news.yahoo.co.jp/articles/04a2a339314aed925f257cd02ce07062ef321e6c?source=rss",
-      "article_published_at": "2026-11-11T12:15:31+00:00",
+      "title": "日本代表FW福田師王、初代表入りで「めちゃくちゃわくわく」Jリーグ経由せず海外挑戦の22歳ストライカー(サンケイスポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/080854be27c22c7d12d2c1690cf6ed1e1b13efd9?source=rss",
+      "article_published_at": "2026-11-11T13:36:11+00:00",
       "event_date": null,
       "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false,
+      "event_group_key": "0559300aa13bf547",
+      "priority": "一般",
+      "participation_scope": "海外開催・日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/080854be27c22c7d12d2c1690cf6ed1e1b13efd9?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "b217b2efff6372bb84b1",
@@ -260,7 +596,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "6a0407e6e8ac84cb",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14268_ph261116"
+      ],
+      "article_count": 1
     },
     {
       "id": "91c4635ffcaf06d43834",
@@ -271,29 +623,77 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "208f1271936ca8ec",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350303"
+      ],
+      "article_count": 1
     },
     {
-      "id": "cdb695ff0902d0dd61b3",
+      "id": "5df960cc460a413e0058",
       "source": "Yahoo!エンタメ",
-      "title": "BEYOOOOONDS　新体制で日本武道館公演　小島「本当に本当にうれしい」前田「絶対帰ってきます」(スポニチアネックス)",
-      "url": "https://news.yahoo.co.jp/articles/d1b8ef36ed8ebeaa258936875fe7e4d08e3a4261?source=rss",
-      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "title": "UNISON SQUARE GARDENの\"ライブレア曲\"が聴ける、「Charisma & Princess」トレイラー映像で(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/612e89ddef33b18a0e1a5db08a188f573c968791?source=rss",
+      "article_published_at": "2026-11-11T13:00:11+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "a6e530ce581f8cf2",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/612e89ddef33b18a0e1a5db08a188f573c968791?source=rss"
+      ],
+      "article_count": 1
     },
     {
-      "id": "ceeebf9c6f3918dbad60",
+      "id": "dfabbac584a96a7d160b",
       "source": "Yahoo!スポーツ",
-      "title": "「可愛くてしょうがない」人気女優の妻が出産、日本代表DFが第一子誕生に喜び「子どもが大きくなるまでプロでできるように頑張りたい」(SOCCER DIGEST Web)",
-      "url": "https://news.yahoo.co.jp/articles/6c1b83117ea320e6c74a4e22aee41ee4e828661e?source=rss",
-      "article_published_at": "2026-11-11T12:09:00+00:00",
+      "title": "「クラブカラーに染めると縁起がいい」“赤髪”の後藤啓介が自信を携え日本代表に合流！「結果・爪痕を残せるように頑張りたい」(サッカーキング)",
+      "url": "https://news.yahoo.co.jp/articles/1e85b83800e02b9765e513dd6dd87b89765069b4?source=rss",
+      "article_published_at": "2026-11-11T13:24:05+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "659f6d03bd9aa44d",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/1e85b83800e02b9765e513dd6dd87b89765069b4?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "e3ec6d28822afac17080",
@@ -304,7 +704,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "3688346f7f6fa748",
+      "priority": "天文現象",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14728_ph261113"
+      ],
+      "article_count": 1
     },
     {
       "id": "2b142b4e5f50fd778f4a",
@@ -315,18 +731,77 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "03891ef6245ca599",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350297"
+      ],
+      "article_count": 1
     },
     {
-      "id": "44d8331838dc6b004d87",
+      "id": "e078d27157b6bbe0e1dc",
       "source": "Yahoo!エンタメ",
-      "title": "【ライブレポート】Devil ANTHEM.勝負のツアーが豊洲PITで開幕！幕張ワンマンに向けスタートダッシュ(音楽ナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/6629e67b614b60d171e4db34adbd16ca8b646e04?source=rss",
-      "article_published_at": "2026-11-11T12:25:10+00:00",
+      "title": "自分だけのゲーム部屋が作れる。Steamライブラリにあるゲームを飾って、手に取って、起動できる部屋作りシムが正式リリース―採れたて！本日のSteam注目ゲーム11選【2026年11月11日】(Game Spark)",
+      "url": "https://news.yahoo.co.jp/articles/301c0444267957ac583b89b1cc2e154e1bbe90a5?source=rss",
+      "article_published_at": "2026-11-11T13:00:03+00:00",
       "event_date": null,
-      "status": "対象外",
-      "classification_reason": "開催後のレポート・振り返り記事のため",
-      "confirmed": false
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "ab3ca044d8fd15b2",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/301c0444267957ac583b89b1cc2e154e1bbe90a5?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "ba6ba5d51001fb324fa0",
+      "source": "Yahoo!スポーツ",
+      "title": "【日本代表】町田浩樹、W杯ブラジル戦は「自分がいれば何とか…」今回は「違いを作らなければ」(日刊スポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/a57213ff91cd3783f070aecb9a8cf84c87ae1d42?source=rss",
+      "article_published_at": "2026-11-11T13:08:44+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false,
+      "event_group_key": "3130a8cdb90e0b80",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/a57213ff91cd3783f070aecb9a8cf84c87ae1d42?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "460d5515142f8dd8ba6a",
@@ -337,18 +812,50 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "1bdfee40f4b3e431",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350298"
+      ],
+      "article_count": 1
     },
     {
-      "id": "70ee85841f8eb91b529e",
-      "source": "Yahoo!エンタメ",
-      "title": "原因は自分にある。全国11都市を巡る最大規模ツアー「深溟」開催(音楽ナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/ee0e9eca6d787d6d373e7626b705268aad55244d?source=rss",
-      "article_published_at": "2026-11-11T12:14:22+00:00",
+      "id": "2138b76029f567bc9d22",
+      "source": "Yahoo!スポーツ",
+      "title": "【日本代表】南野拓実、最後の森保ジャパン遠征「絶対にいい形で感謝の気持ちを伝えたい」(日刊スポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/39e9e861835389a4a5aac77d18ac5663940753b0?source=rss",
+      "article_published_at": "2026-11-11T13:07:21+00:00",
       "event_date": null,
-      "status": "対象外",
-      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
-      "confirmed": false
+      "status": "要確認",
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false,
+      "event_group_key": "e54926bbabcefd80",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/39e9e861835389a4a5aac77d18ac5663940753b0?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "694155cb698a9367cac3",
@@ -359,18 +866,50 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "925991138f3d011e",
+      "priority": "テレビ番組初回放送",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350278"
+      ],
+      "article_count": 1
     },
     {
-      "id": "5e40556f690cb0d596a9",
-      "source": "Yahoo!エンタメ",
-      "title": "『マッシュル』第3期は来年1月9日放送開始　PV解禁で追加キャストに斉藤壮馬、鈴木崚汰(オリコン)",
-      "url": "https://news.yahoo.co.jp/articles/7517e80a347229d11363a75e7cb19da929015e4c?source=rss",
-      "article_published_at": "2026-11-11T12:11:43+00:00",
+      "id": "dd150feb59f7f92fbbfd",
+      "source": "Yahoo!スポーツ",
+      "title": "長期離脱を経て約1年5カ月ぶり復帰の町田浩樹、W杯を逃した悔しさを胸に「率先して引っ張っていきたい」(サッカーキング)",
+      "url": "https://news.yahoo.co.jp/articles/64f9f3cdaa922f060ee3069ccc60726e5924ee0b?source=rss",
+      "article_published_at": "2026-11-11T13:03:09+00:00",
       "event_date": null,
       "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false,
+      "event_group_key": "77f073bca668e0bb",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/64f9f3cdaa922f060ee3069ccc60726e5924ee0b?source=rss"
+      ],
+      "article_count": 1
     },
     {
       "id": "3886a89eb9a2d680ce8e",
@@ -381,18 +920,23 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
-    },
-    {
-      "id": "2a40619efe83511a9c13",
-      "source": "Yahoo!エンタメ",
-      "title": "Mrs. GREEN APPLE藤澤涼架「ライブ終わりに夜な夜な…」上京当時から通った“思い出の味”を再現！ ガストのコラボメニュー開発秘話を明かす(TOKYO FM＋)",
-      "url": "https://news.yahoo.co.jp/articles/d65d646d6a2ebcf8d3680ebedac117812eceb526?source=rss",
-      "article_published_at": "2026-11-11T12:11:32+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "3bb5e26fca4a1180",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350218"
+      ],
+      "article_count": 1
     },
     {
       "id": "d73b9af2395e6ea796c4",
@@ -403,18 +947,23 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "開催後のレポート・振り返り記事のため",
-      "confirmed": false
-    },
-    {
-      "id": "3b4872feff3be13b83cb",
-      "source": "Yahoo!エンタメ",
-      "title": "福澤侑がZeppツアーを開催「AFTER THE SPELL」ゲストに高瀬統也・YUKI・spi(ステージナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/a7d776baf0dac0fca918bcd9827926fa44faa9ba?source=rss",
-      "article_published_at": "2026-11-11T12:09:10+00:00",
-      "event_date": null,
-      "status": "対象外",
-      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
-      "confirmed": false
+      "confirmed": false,
+      "event_group_key": "442283f519812e6d",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/349970"
+      ],
+      "article_count": 1
     }
   ]
 }
