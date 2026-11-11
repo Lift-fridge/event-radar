@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-11T12:14:03+00:00",
+  "updated_at": "2026-11-11T12:39:21+00:00",
   "data_kind": "classified_unverified_news_leads",
   "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
-  "successful_sources": 2,
-  "source_count": 4,
+  "successful_sources": 7,
+  "source_count": 9,
   "errors": [
     {
       "source": "音楽ナタリー",
@@ -15,9 +15,9 @@
     }
   ],
   "classification_counts": {
-    "推薦候補": 1,
-    "要確認": 7,
-    "対象外": 3
+    "推薦候補": 0,
+    "要確認": 26,
+    "対象外": 10
   },
   "items": [
     {
@@ -26,6 +26,50 @@
       "title": "大阪のLIVE SQUARE 2nd LINE、新たに始める新年イベント『CRANK UP!!』開催決定、総勢60組が出演",
       "url": "https://spice.eplus.jp/articles/350258",
       "article_published_at": "2026-11-11T12:00:00+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため",
+      "confirmed": false
+    },
+    {
+      "id": "8d46d8cd32062d5a66b8",
+      "source": "Yahoo!エンタメ",
+      "title": "BEYOOOOONDS、11人体制になって初の武道館公演を開催　新曲「勝利のセンタク」も初披露(中日スポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/2d7cbf917833bea1d4daede28c0151455f1dd8f6?source=rss",
+      "article_published_at": "2026-11-11T12:30:53+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "0a06324571f7174e5c4c",
+      "source": "Yahoo!スポーツ",
+      "title": "【ルヴァン杯】神戸　15年大会以来の4強進出黄信号…GK前川黛也はたった一つのミスに大粒の涙(スポニチアネックス)",
+      "url": "https://news.yahoo.co.jp/articles/33872d0d6bbf9e7cfeeaba35a7edc72d5555b0a6?source=rss",
+      "article_published_at": "2026-11-11T12:32:51+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "3f3826751bfe1ee83362",
+      "source": "AstroArts",
+      "title": "探査機「ヘラ」、史上初となる二重小惑星のランデブー探査を開始",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14763_hera",
+      "article_published_at": "2026-11-11T10:57:01+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false
+    },
+    {
+      "id": "860622be5d4a6d0c7ced",
+      "source": "NHK科学・文化",
+      "title": "「ほっともっと」メルマガ配信の会員情報 最大約700万件が流出",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261105de71178",
+      "article_published_at": "2026-11-05T09:45:00+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
@@ -43,6 +87,50 @@
       "confirmed": false
     },
     {
+      "id": "603d497578f127964e73",
+      "source": "Yahoo!エンタメ",
+      "title": "ＢＥＹＯＯＯＯＯＮＤＳ　１１人体制で初武道館公演　大坪茉乃「ビヨーンズに入って良かったなって思います！」(東スポWEB)",
+      "url": "https://news.yahoo.co.jp/articles/e7d93ed88a02108fc7946bd04482b762fc0e1096?source=rss",
+      "article_published_at": "2026-11-11T12:30:33+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "29c52f2719938ae96c31",
+      "source": "Yahoo!スポーツ",
+      "title": "大谷翔平、2027年の起用「ロースター見えた段階で話し合う」　開幕から二刀流が〝焦点〟…新運用模索「健康維持できる仕組み」(サンケイスポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/6f52064c7e5d7d06e70b200a63b2cf9ae6eed818?source=rss",
+      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "61b56fa950cc1054b283",
+      "source": "AstroArts",
+      "title": "2026年11月18日 しし座流星群が極大",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14745_ph261118",
+      "article_published_at": "2026-11-11T09:10:35+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false
+    },
+    {
+      "id": "0a0889a0911d3dcc8cbc",
+      "source": "NHK科学・文化",
+      "title": "ボートレースのメルマガなど 配信先のアドレス68万件余が流出",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261105de70911",
+      "article_published_at": "2026-11-05T06:32:56+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
       "id": "fbd1134a4e583a454c85",
       "source": "SPICE",
       "title": "陽高真白、3rdシングル「コノユビトマレ」リリース決定！初回生産限定盤には1st LIVE「and future」映像も収録",
@@ -51,6 +139,39 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "イベント開催を示す情報が不足しているため",
+      "confirmed": false
+    },
+    {
+      "id": "5b89a96d21c6088de1f6",
+      "source": "Yahoo!エンタメ",
+      "title": "【ライブレポート】BEYOOOOONDS“眼鏡の女の子”に大歓声！新体制初武道館で小島はな、大坪茉乃、杉山結菜も躍動(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/61cea43f16db1db91d91d7398c51eeb98f972071?source=rss",
+      "article_published_at": "2026-11-11T12:30:11+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "開催後のレポート・振り返り記事のため",
+      "confirmed": false
+    },
+    {
+      "id": "b1099dc933bd1b4464ac",
+      "source": "Yahoo!スポーツ",
+      "title": "浦和、植木颯のプロ初ゴールでルヴァン杯4強に近づく！　途中出場の小森飛絢も得点でC大阪に2発先勝(サッカーキング)",
+      "url": "https://news.yahoo.co.jp/articles/57ec807ce865271a60ede2980aed5aea64f44408?source=rss",
+      "article_published_at": "2026-11-11T12:28:51+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "b0df92e01c3587911ff3",
+      "source": "AstroArts",
+      "title": "岩石惑星の材料となる鉱物が原始星近傍で蒸発している証拠",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14762_tio",
+      "article_published_at": "2026-11-10T10:35:57+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
       "confirmed": false
     },
     {
@@ -65,14 +186,80 @@
       "confirmed": false
     },
     {
+      "id": "30c838af4f9eb48e58cb",
+      "source": "Yahoo!エンタメ",
+      "title": "BEYOOOOONDS「幸せをかみしめてぶっちぎっていくぞー！」11人体制初の武道館公演(日刊スポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/26afdb7955527004e1db8496148818f85de053ef?source=rss",
+      "article_published_at": "2026-11-11T12:30:03+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "c13e2dc4c840a8b439f1",
+      "source": "Yahoo!スポーツ",
+      "title": "Bプレミア所属5選手がフィリピン代表メンバー入り…北海道のラモスやA千葉のソットら、中立地開催のW杯予選へ(バスケットボールキング)",
+      "url": "https://news.yahoo.co.jp/articles/6e7b9d2734610390f32c5da769addcc735503e21?source=rss",
+      "article_published_at": "2026-11-11T12:27:02+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false
+    },
+    {
+      "id": "9d8248533cc83768df2c",
+      "source": "AstroArts",
+      "title": "2026年11月10日ごろ 金星とスピカが大接近",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14267_ph261110",
+      "article_published_at": "2026-11-09T16:40:17+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false
+    },
+    {
       "id": "6ab9eb9da81d04c124dc",
       "source": "SPICE",
       "title": "画家・ジミー大西が全国を巡る『ホームタウン』京都展が開催決定　京都を描いた新作を初公開、限定グッズも登場",
       "url": "https://spice.eplus.jp/articles/350207",
       "article_published_at": "2026-11-11T10:00:00+00:00",
       "event_date": null,
+      "status": "対象外",
+      "classification_reason": "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため",
+      "confirmed": false
+    },
+    {
+      "id": "384aebc7a66274e5c4ef",
+      "source": "Yahoo!エンタメ",
+      "title": "BEYOOOOONDS、11人体制初武道館公演で新メンバー小島はな「幸せをかみしめながらぶっちゃけていきます」(サンケイスポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/4938c186102f0fd16e28cb86894bb653cad22819?source=rss",
+      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "423899c3fbba720f0537",
+      "source": "Yahoo!スポーツ",
+      "title": "【侍ジャパン】井口監督　金丸夢斗を開幕戦に抜てきした理由「まずは初戦を勝ちゲームに」(東スポWEB)",
+      "url": "https://news.yahoo.co.jp/articles/04a2a339314aed925f257cd02ce07062ef321e6c?source=rss",
+      "article_published_at": "2026-11-11T12:15:31+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "b217b2efff6372bb84b1",
+      "source": "AstroArts",
+      "title": "2026年11月16日ごろ 火星と木星が大接近",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14268_ph261116",
+      "article_published_at": "2026-11-09T09:15:47+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
       "confirmed": false
     },
     {
@@ -87,6 +274,39 @@
       "confirmed": false
     },
     {
+      "id": "cdb695ff0902d0dd61b3",
+      "source": "Yahoo!エンタメ",
+      "title": "BEYOOOOONDS　新体制で日本武道館公演　小島「本当に本当にうれしい」前田「絶対帰ってきます」(スポニチアネックス)",
+      "url": "https://news.yahoo.co.jp/articles/d1b8ef36ed8ebeaa258936875fe7e4d08e3a4261?source=rss",
+      "article_published_at": "2026-11-11T12:30:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "ceeebf9c6f3918dbad60",
+      "source": "Yahoo!スポーツ",
+      "title": "「可愛くてしょうがない」人気女優の妻が出産、日本代表DFが第一子誕生に喜び「子どもが大きくなるまでプロでできるように頑張りたい」(SOCCER DIGEST Web)",
+      "url": "https://news.yahoo.co.jp/articles/6c1b83117ea320e6c74a4e22aee41ee4e828661e?source=rss",
+      "article_published_at": "2026-11-11T12:09:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "confirmed": false
+    },
+    {
+      "id": "e3ec6d28822afac17080",
+      "source": "AstroArts",
+      "title": "2026年11月13日 おうし座北流星群が極大",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14728_ph261113",
+      "article_published_at": "2026-11-06T09:18:53+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false
+    },
+    {
       "id": "2b142b4e5f50fd778f4a",
       "source": "SPICE",
       "title": "世界を笑わせ、泣かせた作品　２Shoulderpads『GALAXY TRAIN-銀河鉄道の夜-』が開幕",
@@ -95,6 +315,17 @@
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "44d8331838dc6b004d87",
+      "source": "Yahoo!エンタメ",
+      "title": "【ライブレポート】Devil ANTHEM.勝負のツアーが豊洲PITで開幕！幕張ワンマンに向けスタートダッシュ(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/6629e67b614b60d171e4db34adbd16ca8b646e04?source=rss",
+      "article_published_at": "2026-11-11T12:25:10+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "開催後のレポート・振り返り記事のため",
       "confirmed": false
     },
     {
@@ -109,6 +340,17 @@
       "confirmed": false
     },
     {
+      "id": "70ee85841f8eb91b529e",
+      "source": "Yahoo!エンタメ",
+      "title": "原因は自分にある。全国11都市を巡る最大規模ツアー「深溟」開催(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/ee0e9eca6d787d6d373e7626b705268aad55244d?source=rss",
+      "article_published_at": "2026-11-11T12:14:22+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
+      "confirmed": false
+    },
+    {
       "id": "694155cb698a9367cac3",
       "source": "SPICE",
       "title": "TVアニメ『暴食のベルセルク Season 2』2027年4月放送開始決定！ティザービジュアル解禁",
@@ -117,6 +359,17 @@
       "event_date": null,
       "status": "対象外",
       "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
+      "confirmed": false
+    },
+    {
+      "id": "5e40556f690cb0d596a9",
+      "source": "Yahoo!エンタメ",
+      "title": "『マッシュル』第3期は来年1月9日放送開始　PV解禁で追加キャストに斉藤壮馬、鈴木崚汰(オリコン)",
+      "url": "https://news.yahoo.co.jp/articles/7517e80a347229d11363a75e7cb19da929015e4c?source=rss",
+      "article_published_at": "2026-11-11T12:11:43+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false
     },
     {
@@ -131,14 +384,36 @@
       "confirmed": false
     },
     {
+      "id": "2a40619efe83511a9c13",
+      "source": "Yahoo!エンタメ",
+      "title": "Mrs. GREEN APPLE藤澤涼架「ライブ終わりに夜な夜な…」上京当時から通った“思い出の味”を再現！ ガストのコラボメニュー開発秘話を明かす(TOKYO FM＋)",
+      "url": "https://news.yahoo.co.jp/articles/d65d646d6a2ebcf8d3680ebedac117812eceb526?source=rss",
+      "article_published_at": "2026-11-11T12:11:32+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
       "id": "d73b9af2395e6ea796c4",
       "source": "SPICE",
       "title": "秋風心地よい夜に煌めく圧巻の光『第38回 なにわ淀川花火大会』大迫力ショー&イープラスエリアをレポート",
       "url": "https://spice.eplus.jp/articles/349970",
       "article_published_at": "2026-11-11T09:00:00+00:00",
       "event_date": null,
-      "status": "推薦候補",
-      "classification_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "status": "対象外",
+      "classification_reason": "開催後のレポート・振り返り記事のため",
+      "confirmed": false
+    },
+    {
+      "id": "3b4872feff3be13b83cb",
+      "source": "Yahoo!エンタメ",
+      "title": "福澤侑がZeppツアーを開催「AFTER THE SPELL」ゲストに高瀬統也・YUKI・spi(ステージナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/a7d776baf0dac0fca918bcd9827926fa44faa9ba?source=rss",
+      "article_published_at": "2026-11-11T12:09:10+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
       "confirmed": false
     }
   ]
