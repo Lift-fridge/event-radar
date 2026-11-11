@@ -10,7 +10,7 @@ import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 
-from classify_news import EXCLUDE, classify_title
+from classify_news import EXCLUDE, classification_counts, classify_title
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "data" / "discovery.json"
@@ -117,7 +117,7 @@ def main():
         fresh.append(item)
         if len(fresh) == 60:
             break
-    counts = {status: sum(item["status"] == status for item in fresh) for status in ("推薦候補", "要確認", EXCLUDE)}
+    counts = classification_counts(fresh)
     payload = {
         "updated_at": now.isoformat(timespec="seconds"),
         "data_kind": "classified_unverified_news_leads",
