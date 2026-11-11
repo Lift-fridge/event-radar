@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 
-from classify_news import EXCLUDE, RECOMMEND, REVIEW
+from classify_news import EXCLUDE, RECOMMEND, REVIEW, classify_title
 from event_pipeline import event_group_key, group_news_items, priority_for, classify_scope
 
 
@@ -23,9 +23,10 @@ class EventPipelineTests(unittest.TestCase):
         self.assertNotEqual(event_group_key("東京フィルメックス2026の開催概要"), event_group_key("東京フィルメックス2027の開催概要"))
 
     def test_results_games_and_youth_stage_are_excluded(self):
+        for title in ("試合結果速報", "ゲーム大会の結果", "若手俳優出演の2.5次元舞台"):
+            with self.subTest(title=title):
+                self.assertEqual(classify_title(title)[0], EXCLUDE)
         self.assertEqual(priority_for("試合結果速報"), "一般")
-        item = {"title": "若手俳優出演の2.5次元舞台", "url": "https://a.example", "status": EXCLUDE}
-        self.assertEqual(group_news_items([item])[0]["status"], EXCLUDE)
 
     def test_priority_categories_are_detected(self):
         self.assertEqual(priority_for("プロ野球の試合日程を発表"), "スポーツ試合予定")
