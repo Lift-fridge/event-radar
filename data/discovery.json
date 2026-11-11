@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T11:29:59+00:00",
+  "updated_at": "2026-11-11T12:14:03+00:00",
   "data_kind": "classified_unverified_news_leads",
   "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
   "successful_sources": 2,
@@ -16,10 +16,54 @@
   ],
   "classification_counts": {
     "推薦候補": 1,
-    "要確認": 9,
-    "対象外": 1
+    "要確認": 7,
+    "対象外": 3
   },
   "items": [
+    {
+      "id": "072c2f32a72c7ff2b606",
+      "source": "SPICE",
+      "title": "大阪のLIVE SQUARE 2nd LINE、新たに始める新年イベント『CRANK UP!!』開催決定、総勢60組が出演",
+      "url": "https://spice.eplus.jp/articles/350258",
+      "article_published_at": "2026-11-11T12:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "2f21508d3c3d98f49042",
+      "source": "SPICE",
+      "title": "SAKANAMON主催フェス『UOOO!!2027』最速先行受付スタート、名阪番外編も開催決定&アルカラ、LEGO BIG MORLが出演",
+      "url": "https://spice.eplus.jp/articles/350294",
+      "article_published_at": "2026-11-11T12:00:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false
+    },
+    {
+      "id": "fbd1134a4e583a454c85",
+      "source": "SPICE",
+      "title": "陽高真白、3rdシングル「コノユビトマレ」リリース決定！初回生産限定盤には1st LIVE「and future」映像も収録",
+      "url": "https://spice.eplus.jp/articles/350296",
+      "article_published_at": "2026-11-11T12:00:00+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "イベント開催を示す情報が不足しているため",
+      "confirmed": false
+    },
+    {
+      "id": "7f15d69d43bbd5627680",
+      "source": "SPICE",
+      "title": "尾上松也、北山宏光らのコメント＆初出しの舞台写真が公開　舞台『桶狭間の義経』のライブ配信・アーカイブ配信が決定",
+      "url": "https://spice.eplus.jp/articles/350302",
+      "article_published_at": "2026-11-11T11:30:00+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "開催後のレポート・振り返り記事のため",
+      "confirmed": false
+    },
     {
       "id": "6ab9eb9da81d04c124dc",
       "source": "SPICE",
@@ -43,14 +87,14 @@
       "confirmed": false
     },
     {
-      "id": "694155cb698a9367cac3",
+      "id": "2b142b4e5f50fd778f4a",
       "source": "SPICE",
-      "title": "TVアニメ『暴食のベルセルク Season 2』2027年4月放送開始決定！ティザービジュアル解禁",
-      "url": "https://spice.eplus.jp/articles/350278",
+      "title": "世界を笑わせ、泣かせた作品　２Shoulderpads『GALAXY TRAIN-銀河鉄道の夜-』が開幕",
+      "url": "https://spice.eplus.jp/articles/350297",
       "article_published_at": "2026-11-11T09:00:00+00:00",
       "event_date": null,
-      "status": "対象外",
-      "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false
     },
     {
@@ -65,14 +109,14 @@
       "confirmed": false
     },
     {
-      "id": "2b142b4e5f50fd778f4a",
+      "id": "694155cb698a9367cac3",
       "source": "SPICE",
-      "title": "世界を笑わせ、泣かせた作品　２Shoulderpads『GALAXY TRAIN-銀河鉄道の夜-』が開幕",
-      "url": "https://spice.eplus.jp/articles/350297",
+      "title": "TVアニメ『暴食のベルセルク Season 2』2027年4月放送開始決定！ティザービジュアル解禁",
+      "url": "https://spice.eplus.jp/articles/350278",
       "article_published_at": "2026-11-11T09:00:00+00:00",
       "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "status": "対象外",
+      "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
       "confirmed": false
     },
     {
@@ -95,50 +139,6 @@
       "event_date": null,
       "status": "推薦候補",
       "classification_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
-      "confirmed": false
-    },
-    {
-      "id": "6faaabf9081acb0669cc",
-      "source": "SPICE",
-      "title": "Silica Gel　実験性と大衆性を鮮やかに両立させる韓国の4人組、キャリア初のアジアツアーのファイナルを飾る東京公演を前にその活動の軌跡を振り返る",
-      "url": "https://spice.eplus.jp/articles/349489",
-      "article_published_at": "2026-11-11T09:00:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
-    },
-    {
-      "id": "a848ab6eb9fec5c4beb1",
-      "source": "SPICE",
-      "title": "中山優馬、直田姫奈ら出演『音楽詩「火垂るの墓」シンフォニー朗読劇』が開催",
-      "url": "https://spice.eplus.jp/articles/350299",
-      "article_published_at": "2026-11-11T08:46:26+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
-    },
-    {
-      "id": "d056aedbb485018e1ab4",
-      "source": "SPICE",
-      "title": "SUMMIT主催『AVALANCHE’15』3年ぶりに開催、TAXMEN、G PLANTS、27AM、かせきさいだぁ、原島\"ど真ん中\"宙芳が出演",
-      "url": "https://spice.eplus.jp/articles/350291",
-      "article_published_at": "2026-11-11T06:00:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false
-    },
-    {
-      "id": "d935dc285c7f31d18c28",
-      "source": "SPICE",
-      "title": "万博を沸かせた島根の伝統芸能が大阪へ、日本遺産『石見神楽特別公演』が豊中市で開催決定",
-      "url": "https://spice.eplus.jp/articles/350267",
-      "article_published_at": "2026-11-11T04:30:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false
     }
   ]
