@@ -9,3 +9,14 @@
 - GitHub Pages may **not redeploy from a GITHUB_TOKEN push** when using a branch deployment. Verify Pages rebuild after the scheduled run; if it does not, change Pages Source to GitHub Actions and use an explicit deployment workflow. Until then new JSON may be in the repository but not visible in the deployed app.
 - Scheduled GitHub Actions can be delayed or disabled after repository inactivity; usage and free-plan limits are subject to GitHub terms.
 - Run locally: `python3 scripts/collect_news.py`. For the first run, open Actions > Refresh EVENT RADAR news leads > Run workflow. Check workflow logs and Pages URL.
+
+## Event verification queue (proposed v0.3)
+
+On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.json` using the news-lead metadata. Every row is **unverified and not publishable**. It records classification, preliminary location hint, article URL, and mandatory verification checks. It does **not** scrape full articles or infer an event date from the article timestamp.
+
+- For in-person events, prioritize Tokyo, Kanagawa, Chiba, and Saitama. Other locations may qualify only when the event can be meaningfully watched remotely in Japan or has exceptional national importance (requires editorial verification).
+- Do not infer an event's venue from a location appearing in an article headline. A city name might refer to a tour stop, publisher, or unrelated context.
+- Verify event start/end date, time, venue, participation/viewing availability, whether TV is exclusively BS, official page, ticket deadlines, and reasons to feature. Store evidence before publishing anything.
+- Routine local fireworks and neighborhood festivals are not the focus of EVENT RADAR; map-based coverage is planned for a separate future app. Exceptional flagship festivals may still be considered.
+- The workflow runs the focused unit-test suite before updating data. If collection or tests fail, it will not publish the new generated JSON.
+- This stage does **not** add automatic official-site verification, approval UI, or automatic publication. It is a review preparation layer only. 
