@@ -43,6 +43,54 @@ class ClassifyNewsTests(unittest.TestCase):
         self.assertEqual([item["title"] for item in visible_items(items)], ["legacy"])
         self.assertEqual(classification_counts(items), {RECOMMEND: 0, REVIEW: 1, EXCLUDE: 1})
 
+    def test_after_event_fireworks_report_not_recommended(self):
+        status, _ = classify_title("第38回 なにわ淀川花火大会 大迫力ショーをレポート")
+        self.assertEqual(status, EXCLUDE)
+
+    def test_core_fan_youth_stage_excluded(self):
+        status, _ = classify_title("舞台『刀剣乱舞』十周年記念公演が開幕")
+        self.assertEqual(status, EXCLUDE)
+
+    def test_gaming_event_excluded(self):
+        status, _ = classify_title("eスポーツ世界大会の開催決定")
+        self.assertEqual(status, EXCLUDE)
+
+    def test_outside_kanto_exhibition_excluded(self):
+        status, reason = classify_title("画家の京都展が開催決定")
+        self.assertEqual(status, EXCLUDE)
+        self.assertIn("地域外", reason)
+
+    def test_kanto_and_outside_in_one_title_is_reviewed(self):
+        status, _ = classify_title("東京・大阪で特別展を開催")
+        self.assertNotEqual(status, EXCLUDE)
+
+    def test_remote_tv_overseas_is_reviewed(self):
+        status, _ = classify_title("大阪で開催の全国放送音楽特番が決定")
+        self.assertNotEqual(status, EXCLUDE)
+
+    def test_sky_event_stays_in_review(self):
+        status, reason = classify_title("2026年11月16日 火星と木星が大接近")
+        self.assertEqual(status, REVIEW)
+        self.assertIn("天文", reason)
+
+    def test_sports_and_tv_stay_reviewable(self):
+        for title in ("サッカー日本代表のブラジル戦 11月14日キックオフ", "人気ドラマの初回放送日が発表"):
+            with self.subTest(title=title):
+                self.assertNotEqual(classify_title(title)[0], EXCLUDE)
+
+    def test_established_artist_live_is_considered_not_automatically_featured(self):
+        status, reason = classify_title("スティングが東京でコンサート開催決定")
+        self.assertEqual(status, REVIEW)
+        self.assertIn("知名度", reason)
+
+    def test_small_new_artist_regular_live_stays_excluded(self):
+        status, _ = classify_title("新人バンドが東京でワンマンライブを開催")
+        self.assertEqual(status, EXCLUDE)
+
+    def test_unrelated_item_stays_excluded(self):
+        status, _ = classify_title("スマートフォンの新製品を発表")
+        self.assertEqual(status, EXCLUDE)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -20,3 +20,13 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - Routine local fireworks and neighborhood festivals are not the focus of EVENT RADAR; map-based coverage is planned for a separate future app. Exceptional flagship festivals may still be considered.
 - The workflow runs the focused unit-test suite before updating data. If collection or tests fail, it will not publish the new generated JSON.
 - This stage does **not** add automatic official-site verification, approval UI, or automatic publication. It is a review preparation layer only. 
+
+## STEP 1: candidate-quality improvements (proposed)
+
+- Candidate selection now treats gaming/e-sports and narrow 2.5-dimensional youth-stage events as outside EVENT RADAR's focus, and removes after-event reports and ordinary local fireworks/matsuri updates. The latter can be handled by a separate future map app.
+- For physical attendance, Tokyo, Kanagawa, Chiba and Saitama are preferred. Obvious titles referring only to out-of-area events are excluded at the **headline candidate** stage unless remote viewing or a Kanto stop is mentioned. Unknown venue must still be verified, and headline rules may miss or incorrectly exclude cross-region tours.
+- For music, special attention is given to established or widely mainstream performers; a name match only produces **要確認**, not a confirmed event or automatic publication. Generic smaller live announcements are suppressed.
+- Added provisional RSS feeds: AstroArts (astronomical events), Yahoo! Sports (sports), Yahoo! Entertainment and AV Watch (TV/film), NHK Science/Culture. Existing sources remain. RSS URL support, reliability and redistribution conditions must be monitored; failures are visible in `data/discovery.json.errors` and do not stop successful feeds.
+- Titles mentioning astronomy, major sports and television premieres can now become review leads even without the usual event verbs. News article publication timestamp must **never** be treated as the event date.
+- Round-robin source selection reduces a single fast-moving news outlet monopolizing the 60-candidate cap. This is a diversity heuristic, not comprehensive event coverage.
+- This phase does **not** verify official event schedules, Japanese streaming rights or location and does not auto-publish event cards.
