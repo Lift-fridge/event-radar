@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 
-from classify_news import EXCLUDE, RECOMMEND, REVIEW, classify_title
+from classify_news import EXCLUDE, RECOMMEND, REVIEW, classification_counts, classify_title, visible_items
 
 
 class ClassifyNewsTests(unittest.TestCase):
@@ -29,6 +29,19 @@ class ClassifyNewsTests(unittest.TestCase):
     def test_event_without_major_signal_needs_review(self):
         status, _ = classify_title("地域文化フェアの開催が決定")
         self.assertIn(status, (RECOMMEND, REVIEW))
+
+    def test_counts_include_each_classification(self):
+        items = [{"status": RECOMMEND}, {"status": REVIEW}, {"status": EXCLUDE}, {"status": EXCLUDE}]
+        self.assertEqual(classification_counts(items), {RECOMMEND: 1, REVIEW: 1, EXCLUDE: 2})
+
+    def test_review_queue_hides_excluded_items(self):
+        items = [{"title": "keep", "status": RECOMMEND}, {"title": "check", "status": REVIEW}, {"title": "hide", "status": EXCLUDE}]
+        self.assertEqual([item["title"] for item in visible_items(items)], ["keep", "check"])
+
+    def test_legacy_item_without_status_stays_visible_as_review(self):
+        items = [{"title": "legacy"}, {"title": "hide", "status": EXCLUDE}]
+        self.assertEqual([item["title"] for item in visible_items(items)], ["legacy"])
+        self.assertEqual(classification_counts(items), {RECOMMEND: 0, REVIEW: 1, EXCLUDE: 1})
 
 
 if __name__ == "__main__":
