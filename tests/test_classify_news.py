@@ -78,6 +78,15 @@ class ClassifyNewsTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertNotEqual(classify_title(title)[0], EXCLUDE)
 
+    def test_established_artist_live_is_considered_not_automatically_featured(self):
+        status, reason = classify_title("スティングが東京でコンサート開催決定")
+        self.assertEqual(status, REVIEW)
+        self.assertIn("知名度", reason)
+
+    def test_small_new_artist_regular_live_stays_excluded(self):
+        status, _ = classify_title("新人バンドが東京でワンマンライブを開催")
+        self.assertEqual(status, EXCLUDE)
+
     def test_unrelated_item_stays_excluded(self):
         status, _ = classify_title("スマートフォンの新製品を発表")
         self.assertEqual(status, EXCLUDE)
