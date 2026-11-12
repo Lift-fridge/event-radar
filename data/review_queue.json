@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-11T13:59:42+00:00",
+  "generated_at": "2026-11-12T07:08:43+00:00",
   "data_kind": "manual_verification_queue",
   "policy": "現地参加は東京・神奈川・千葉・埼玉。全国・海外は日本で視聴可能な場合のみ。花火・地域祭りの網羅は別アプリで扱う。",
   "warning": "地名は見出し上のヒントにすぎません。公式情報の確認なしに掲載しません。",
   "items": [
     {
-      "id": "7fd1fea350662aa8b2f6",
-      "title": "「銀河鉄道の夜」もとにした2Shoulderpads「GALAXY TRAIN-銀河鉄道の夜-」東京で開幕(ステージナタリー)",
-      "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/f0decaea597e46ee334b115834758ec8c4c28b9c?source=rss",
-      "article_published_at": "2026-11-11T13:54:22+00:00",
+      "id": "24669ac5548b9e0e3696",
+      "title": "女子野球選手と一緒にカラダを動かそう！ 11/21『女子野球Gタウン杯』でKARADAKARA DAY開催",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350295",
+      "article_published_at": "2026-11-12T06:37:27+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "4c76ee5ce5057486",
+      "event_group_key": "b303106516c420bc",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/f0decaea597e46ee334b115834758ec8c4c28b9c?source=rss"
+        "https://spice.eplus.jp/articles/350295"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "関東現地候補",
+      "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -47,17 +47,185 @@
       "publishable": false
     },
     {
-      "id": "f9ea9b42c46ca8d9bae5",
-      "title": "DeNA、中継ぎ右腕のルイーズが帰国「皆さんの歌声を聞きながらプレーする時間は本当に楽しかった」来日1年目は45試合登板(中日スポーツ)",
+      "id": "f543710711fcbf342e64",
+      "title": "Suchmos、新曲「hi-liter」がサッカー日本代表ドキュメンタリー映画OP曲に決定(Billboard JAPAN)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/e257a89dc325f9afc85d83cb440e1765b4ef186e?source=rss",
+      "article_published_at": "2026-11-12T07:05:04+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "d54a92f3259c8d3f",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/e257a89dc325f9afc85d83cb440e1765b4ef186e?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "f0b23948cbc50896e1d9",
+      "title": "【バドミントン】志田千陽、平本梨々菜組がベスト８入り　女子シングルスの２０歳の宮崎友花、山口茜らも準々決勝へ…熊本マスターズジャパン(スポーツ報知)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/f2fb664f74accd7b5ff640cf0a2790f95a098b09?source=rss",
-      "article_published_at": "2026-11-11T13:58:53+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/61f09c90979e6b8014e075bb211b968f99efe473?source=rss",
+      "article_published_at": "2026-11-12T07:05:18+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "1559a3f56486c6c3",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/61f09c90979e6b8014e075bb211b968f99efe473?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "d42764c66a151c918b8b",
+      "title": "日食ソフト「エクリプスナビゲータ」用日食要素を公開　2027年2月6日金環日食の月縁補正に対応",
+      "source": "AstroArts",
+      "article_url": "https://www.astroarts.co.jp/article/hl/a/14764_eclnav5",
+      "article_published_at": "2026-11-12T01:21:46+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "014b5202b12b6bb8",
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14764_eclnav5"
+      ],
+      "article_count": 1,
+      "priority": "天文現象",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "dc00f5a4fc10eb4cc133",
+      "title": "沖縄・瀬⻑島で『Orion Island Waves 2027』開催決定、⾳楽とビールを軸に⼈・⾷・カルチャーがひとつの島でつながるフェスティバル",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350313",
+      "article_published_at": "2026-11-12T03:00:00+00:00",
+      "candidate_status": "推薦候補",
+      "candidate_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "48dadb6f1c0103fa",
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350313"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "f35f0109d3914227d7a1",
+      "title": "蔦哲⼀朗監督作「黒の牛」、MoMA Presentsに選出　日本映画の単独上映は「ハッピーアワー」以来10年ぶり(映画.com)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/e3a4289fb05d254a2d3c40482887cbecbd59c8ba?source=rss",
+      "article_published_at": "2026-11-12T07:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "a7932bd26281f97c",
+      "event_group_key": "b69df1041fc08c0e",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/f2fb664f74accd7b5ff640cf0a2790f95a098b09?source=rss"
+        "https://news.yahoo.co.jp/articles/e3a4289fb05d254a2d3c40482887cbecbd59c8ba?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -131,17 +299,17 @@
       "publishable": false
     },
     {
-      "id": "860622be5d4a6d0c7ced",
-      "title": "「ほっともっと」メルマガ配信の会員情報 最大約700万件が流出",
-      "source": "NHK科学・文化",
-      "article_url": "https://news.web.nhk/newsweb/na/nd-20261105de71178",
-      "article_published_at": "2026-11-05T09:45:00+00:00",
+      "id": "6c36e51398952b7c6783",
+      "title": "唯一無二の美と愛、その生涯を作品と言葉でたどる　特集『追悼:美輪明宏～美と愛に生きた稀代の表現者～』の放送・配信が決定",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350293",
+      "article_published_at": "2026-11-12T03:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "c05127733b91c6c7",
+      "event_group_key": "cb6f4cf4d6211b1a",
       "related_article_urls": [
-        "https://news.web.nhk/newsweb/na/nd-20261105de71178"
+        "https://spice.eplus.jp/articles/350293"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -173,17 +341,17 @@
       "publishable": false
     },
     {
-      "id": "2f21508d3c3d98f49042",
-      "title": "SAKANAMON主催フェス『UOOO!!2027』最速先行受付スタート、名阪番外編も開催決定&アルカラ、LEGO BIG MORLが出演",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350294",
-      "article_published_at": "2026-11-11T12:00:00+00:00",
+      "id": "4ba3d0ffb9b474c0ecae",
+      "title": "藤井風の楽曲をピアノで弾いてみよう、11月と12月開催の公演で楽譜買える(音楽ナタリー)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/970076b3d12fd7003aedf2848db01e8e42041322?source=rss",
+      "article_published_at": "2026-11-12T06:55:11+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "4cf39359aad5ec1f",
+      "event_group_key": "4f17b8f65c2bb45b",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350294"
+        "https://news.yahoo.co.jp/articles/970076b3d12fd7003aedf2848db01e8e42041322?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -215,17 +383,17 @@
       "publishable": false
     },
     {
-      "id": "c478fe22a08d5f0fe51f",
-      "title": "DeNA・ルイーズが帰国　来日1年目の今季は45試合登板で15ホールド(サンケイスポーツ)",
+      "id": "e99c24d109c34e71e7f3",
+      "title": "リベンジなるか…。日本代表、ブラジル戦の記憶（5）またか…。よみがえるアディショナルタイムの悪夢(フットボールチャンネル)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/f32a516091fcd73c99dddcc16e41f467a1f7442e?source=rss",
-      "article_published_at": "2026-11-11T13:50:41+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/2e02718bcb44eb7dc7f3f21e6bca11fc8633e81f?source=rss",
+      "article_published_at": "2026-11-12T07:01:04+00:00",
       "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "136cbb3012e4977c",
+      "event_group_key": "e55472370b9a0337",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/f32a516091fcd73c99dddcc16e41f467a1f7442e?source=rss"
+        "https://news.yahoo.co.jp/articles/2e02718bcb44eb7dc7f3f21e6bca11fc8633e81f?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -299,59 +467,17 @@
       "publishable": false
     },
     {
-      "id": "0a0889a0911d3dcc8cbc",
-      "title": "ボートレースのメルマガなど 配信先のアドレス68万件余が流出",
-      "source": "NHK科学・文化",
-      "article_url": "https://news.web.nhk/newsweb/na/nd-20261105de70911",
-      "article_published_at": "2026-11-05T06:32:56+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "c2efe7612ecda49c",
-      "related_article_urls": [
-        "https://news.web.nhk/newsweb/na/nd-20261105de70911"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "a6f2054f54814001ece6",
-      "title": "デュア・リパ、来年は大型音楽フェスに出演!?(Numero TOKYO)",
+      "id": "015ddd28896699ef660b",
+      "title": "路上ライブなのに「喋るんだったら出てって」…「許可エリア内だから」と主張も批判が殺到したミュージシャンの“浅ましさ”(SPA!)",
       "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/3c06c5d33a04b4e775799cf2d88968fd71f41f64?source=rss",
-      "article_published_at": "2026-11-11T13:30:02+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/3c74f73c083f56974c84184ca70dbf0d19e760c3?source=rss",
+      "article_published_at": "2026-11-12T06:54:11+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "2a040ae4ebe14149",
+      "event_group_key": "6e189c7a2f08f4f4",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/3c06c5d33a04b4e775799cf2d88968fd71f41f64?source=rss"
+        "https://news.yahoo.co.jp/articles/3c74f73c083f56974c84184ca70dbf0d19e760c3?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -383,17 +509,17 @@
       "publishable": false
     },
     {
-      "id": "ab7b5454f6d75e15b948",
-      "title": "【バドミントン】宮崎友花は2回戦進出！　「意外とスマッシュも走っていたし、自分の球が打てている」＜熊本マスターズ2026／選手コメント＞(バド×スピ！／バドミントン・マガジン)",
+      "id": "68fbd18c43db0baa6271",
+      "title": "【広島】平川蓮が１００万ダウンで更改「まさかこんなにけがするとは」「来年はちゃんと野球がしたい」球団史上初の新人開幕１番→３度の離脱　オフは単身自主トレ(スポーツ報知)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/885167871e302784b569ef1903976b6a93826dd7?source=rss",
-      "article_published_at": "2026-11-11T13:48:56+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/3fa3b3f3d5369feb103473fbb5b601b306cdc8b1?source=rss",
+      "article_published_at": "2026-11-12T07:00:44+00:00",
       "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "438e386a54129d20",
+      "event_group_key": "77ede97606d0bf57",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/885167871e302784b569ef1903976b6a93826dd7?source=rss"
+        "https://news.yahoo.co.jp/articles/3fa3b3f3d5369feb103473fbb5b601b306cdc8b1?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -467,21 +593,105 @@
       "publishable": false
     },
     {
-      "id": "f49bcf2bc937799cb0c2",
-      "title": "12日開幕のアジアプロ野球チャンピオンシップ　侍ジャパンと対する台湾代表先発は24歳左腕・林シイ(スポニチアネックス)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/ddde9f55f4b389d4698470225ccffdb8193c60ea?source=rss",
-      "article_published_at": "2026-11-11T13:43:02+00:00",
+      "id": "db0ad88291c323402b3f",
+      "title": "大阪でドラァグクイーンたちが三度目の集結　『ナジャ・グランディーバ with お洒落な仲間たち ディナーショー』2027年もシェラトン都ホテル大阪で開催",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350310",
+      "article_published_at": "2026-11-12T03:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "11bca49458f5177a",
+      "event_group_key": "5e6e439a478b5ed3",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/ddde9f55f4b389d4698470225ccffdb8193c60ea?source=rss"
+        "https://spice.eplus.jp/articles/350310"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "海外開催・日本からの視聴方法を要確認",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "18510df3fa6ad4b51769",
+      "title": "シュワちゃん29歳息子、ボディビルのプロ大会初出場でトップ５快挙　早くも父譲りの才能証明(日刊スポーツ)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/1c32c4a4191b20702b6270c2691148b8a05e3e91?source=rss",
+      "article_published_at": "2026-11-12T06:53:52+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "547a8a4c9d8d6dc3",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/1c32c4a4191b20702b6270c2691148b8a05e3e91?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "4ddb62afc6f0d11d563a",
+      "title": "「１年前はこうなるとは思ってなかった」日本代表初招集の22歳FWが“本音”。共闘したかった選手は？ 年下の後藤＆塩貝のW杯出場には…(SOCCER DIGEST Web)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/a8d0b689c4ac1ce15c73348cf2de288b278edcca?source=rss",
+      "article_published_at": "2026-11-12T06:54:00+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "f3895f482b9b24fe",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/a8d0b689c4ac1ce15c73348cf2de288b278edcca?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -551,17 +761,17 @@
       "publishable": false
     },
     {
-      "id": "02abc0cfa20f16cef19a",
-      "title": "ジ・エンプティ、松田聖子「赤いスイートピー」のカバーMV公開　全国ツアーも開幕(ぴあ)",
-      "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/bdfaf422c3f84438d51a6490ab24720a1e34f730?source=rss",
-      "article_published_at": "2026-11-11T13:01:01+00:00",
+      "id": "5e8e61b189270bd9d327",
+      "title": "新しいダンス・プロジェクト「WINN（ウィン）」による日本初公演が27年2月に開催　実力派ダンサーが集結",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350312",
+      "article_published_at": "2026-11-12T02:39:50+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "4dcedfec7ada4540",
+      "event_group_key": "5b9089d0949919b8",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/bdfaf422c3f84438d51a6490ab24720a1e34f730?source=rss"
+        "https://spice.eplus.jp/articles/350312"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -593,21 +803,63 @@
       "publishable": false
     },
     {
-      "id": "0c575f67f4c50b2ca8c5",
-      "title": "日本代表FW福田師王、初代表入りで「めちゃくちゃわくわく」Jリーグ経由せず海外挑戦の22歳ストライカー(サンケイスポーツ)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/080854be27c22c7d12d2c1690cf6ed1e1b13efd9?source=rss",
-      "article_published_at": "2026-11-11T13:36:11+00:00",
+      "id": "55592527fb42620b72a7",
+      "title": "KIINA.こと氷川きよし、「ほど酔い酒」ギターVer.配信　演奏は斉藤功(音楽ナタリー)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/5d315018f6c13214419a8dbb29ef582c17e2bffc?source=rss",
+      "article_published_at": "2026-11-12T06:48:11+00:00",
       "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "0559300aa13bf547",
+      "event_group_key": "cc4a21beaa1cdd13",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/080854be27c22c7d12d2c1690cf6ed1e1b13efd9?source=rss"
+        "https://news.yahoo.co.jp/articles/5d315018f6c13214419a8dbb29ef582c17e2bffc?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "海外開催・日本からの視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "6f740ef9601762f66253",
+      "title": "52歳で急逝した上田諭尉さんを追悼　出場予定だった日本プロシニア選手権で選手が喪章(日刊スポーツ)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/5885ddb77b600bec58635727d18e0be2934f8261?source=rss",
+      "article_published_at": "2026-11-12T06:53:32+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "81ae35429222f19a",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/5885ddb77b600bec58635727d18e0be2934f8261?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -677,59 +929,17 @@
       "publishable": false
     },
     {
-      "id": "91c4635ffcaf06d43834",
-      "title": "主演の鈴木昂秀（THE RAMPAGE）ら16名の出演者＆公演詳細発表　宮部みゆき原作の舞台『レベル7』",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350303",
-      "article_published_at": "2026-11-11T09:54:37+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "208f1271936ca8ec",
-      "related_article_urls": [
-        "https://spice.eplus.jp/articles/350303"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "5df960cc460a413e0058",
-      "title": "UNISON SQUARE GARDENの\"ライブレア曲\"が聴ける、「Charisma & Princess」トレイラー映像で(音楽ナタリー)",
+      "id": "524b12180416867e48bd",
+      "title": "モナキ・ケンケン、プライベートで人気女性アイドルの「早稲田祭」ライブへ「当然気づかれなかった」(モデルプレス)",
       "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/612e89ddef33b18a0e1a5db08a188f573c968791?source=rss",
-      "article_published_at": "2026-11-11T13:00:11+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/9faab16c697e212f3c4715e8341fdba3e8da5b0b?source=rss",
+      "article_published_at": "2026-11-12T06:36:43+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "a6e530ce581f8cf2",
+      "event_group_key": "a3676eeaf1fbd371",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/612e89ddef33b18a0e1a5db08a188f573c968791?source=rss"
+        "https://news.yahoo.co.jp/articles/9faab16c697e212f3c4715e8341fdba3e8da5b0b?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -761,17 +971,17 @@
       "publishable": false
     },
     {
-      "id": "dfabbac584a96a7d160b",
-      "title": "「クラブカラーに染めると縁起がいい」“赤髪”の後藤啓介が自信を携え日本代表に合流！「結果・爪痕を残せるように頑張りたい」(サッカーキング)",
+      "id": "4b1701edd6696734174f",
+      "title": "「居心地が悪そう」「自信なさげに見えた」８試合ぶりの出場で先制点に関与も、20歳日本人に地元メディアは辛口。冷遇が続く現状に言及「ローテーションから外れたままになる見方が強い」(SOCCER DIGEST Web)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/1e85b83800e02b9765e513dd6dd87b89765069b4?source=rss",
-      "article_published_at": "2026-11-11T13:24:05+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/e822c30631d50d32002a703f7043a8b1432b5ab7?source=rss",
+      "article_published_at": "2026-11-12T06:51:00+00:00",
       "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "659f6d03bd9aa44d",
+      "event_group_key": "b31705c4ea6c6a17",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/1e85b83800e02b9765e513dd6dd87b89765069b4?source=rss"
+        "https://news.yahoo.co.jp/articles/e822c30631d50d32002a703f7043a8b1432b5ab7?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -845,17 +1055,17 @@
       "publishable": false
     },
     {
-      "id": "2b142b4e5f50fd778f4a",
-      "title": "世界を笑わせ、泣かせた作品　２Shoulderpads『GALAXY TRAIN-銀河鉄道の夜-』が開幕",
+      "id": "2f21508d3c3d98f49042",
+      "title": "SAKANAMON主催フェス『UOOO!!2027』最速先行受付スタート、名阪番外編も開催決定&アルカラ、LEGO BIG MORLが出演",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350297",
-      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350294",
+      "article_published_at": "2026-11-11T12:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "03891ef6245ca599",
+      "event_group_key": "4cf39359aad5ec1f",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350297"
+        "https://spice.eplus.jp/articles/350294"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -887,59 +1097,17 @@
       "publishable": false
     },
     {
-      "id": "e078d27157b6bbe0e1dc",
-      "title": "自分だけのゲーム部屋が作れる。Steamライブラリにあるゲームを飾って、手に取って、起動できる部屋作りシムが正式リリース―採れたて！本日のSteam注目ゲーム11選【2026年11月11日】(Game Spark)",
-      "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/301c0444267957ac583b89b1cc2e154e1bbe90a5?source=rss",
-      "article_published_at": "2026-11-11T13:00:03+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "ab3ca044d8fd15b2",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/301c0444267957ac583b89b1cc2e154e1bbe90a5?source=rss"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "ba6ba5d51001fb324fa0",
-      "title": "【日本代表】町田浩樹、W杯ブラジル戦は「自分がいれば何とか…」今回は「違いを作らなければ」(日刊スポーツ)",
+      "id": "82d24cc9f601a045b9f8",
+      "title": "【女子テニス】国別対抗戦ＢＪＫ杯日本代表監督に奈良くるみ氏就任　２０２７年から４年契約　杉山愛監督は今年で退任(スポーツ報知)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/a57213ff91cd3783f070aecb9a8cf84c87ae1d42?source=rss",
-      "article_published_at": "2026-11-11T13:08:44+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/6e4d96286ed837b70cdc9160e2d324b081c3321e?source=rss",
+      "article_published_at": "2026-11-12T06:39:25+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "3130a8cdb90e0b80",
+      "event_group_key": "457b569cb48b0e12",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/a57213ff91cd3783f070aecb9a8cf84c87ae1d42?source=rss"
+        "https://news.yahoo.co.jp/articles/6e4d96286ed837b70cdc9160e2d324b081c3321e?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -971,21 +1139,63 @@
       "publishable": false
     },
     {
-      "id": "460d5515142f8dd8ba6a",
-      "title": "渡辺えり新作公演『消えた花をさがして』上演決定　池畑慎之介・藤⼭直美・⽵中直⼈らが集結",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350298",
-      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "id": "9f537c95a090b56250c1",
+      "title": "【陸上】2027年度の主要大会競技日程案が発表！ ゴールデンGPは5月16日に東京都内で開催 ゴールデンゲームズinのべおかは4月24日(月刊陸上競技)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/ef5122e3d242b1a75cdc9598626c8d1ce5cf4435?source=rss",
+      "article_published_at": "2026-11-12T06:37:40+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "1都3県の地名あり・要確認",
+      "event_group_key": "bc877d0bf308f95d",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/ef5122e3d242b1a75cdc9598626c8d1ce5cf4435?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "関東現地候補",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "b102ea296688fef31c70",
+      "title": "韓国が豪州に1点差惜敗、波乱の開幕　同点9回に痛恨2失点…精鋭チア応援もスタンド沈黙【アジアプロ野球チャンピオンシップ】(THE ANSWER)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/30ae73e759c2ed1d209de0cc1b059b1f687e4ccb?source=rss",
+      "article_published_at": "2026-11-12T06:37:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "1bdfee40f4b3e431",
+      "event_group_key": "65554251909ad316",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350298"
+        "https://news.yahoo.co.jp/articles/30ae73e759c2ed1d209de0cc1b059b1f687e4ccb?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "海外開催・日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -1013,101 +1223,17 @@
       "publishable": false
     },
     {
-      "id": "2138b76029f567bc9d22",
-      "title": "【日本代表】南野拓実、最後の森保ジャパン遠征「絶対にいい形で感謝の気持ちを伝えたい」(日刊スポーツ)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/39e9e861835389a4a5aac77d18ac5663940753b0?source=rss",
-      "article_published_at": "2026-11-11T13:07:21+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "e54926bbabcefd80",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/39e9e861835389a4a5aac77d18ac5663940753b0?source=rss"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "dd150feb59f7f92fbbfd",
-      "title": "長期離脱を経て約1年5カ月ぶり復帰の町田浩樹、W杯を逃した悔しさを胸に「率先して引っ張っていきたい」(サッカーキング)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/64f9f3cdaa922f060ee3069ccc60726e5924ee0b?source=rss",
-      "article_published_at": "2026-11-11T13:03:09+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "77f073bca668e0bb",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/64f9f3cdaa922f060ee3069ccc60726e5924ee0b?source=rss"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "3886a89eb9a2d680ce8e",
-      "title": "鬱先生もおすすめ！『ちょこっとヤバシティ展　ここは、まじめにヤバいやつが集まる街』開催",
+      "id": "91c4635ffcaf06d43834",
+      "title": "主演の鈴木昂秀（THE RAMPAGE）ら16名の出演者＆公演詳細発表　宮部みゆき原作の舞台『レベル7』",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350218",
-      "article_published_at": "2026-11-11T09:00:00+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350303",
+      "article_published_at": "2026-11-11T09:54:37+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "3bb5e26fca4a1180",
+      "event_group_key": "208f1271936ca8ec",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350218"
+        "https://spice.eplus.jp/articles/350303"
       ],
       "article_count": 1,
       "priority": "一般",
