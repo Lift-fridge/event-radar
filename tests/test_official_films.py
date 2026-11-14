@@ -10,10 +10,14 @@ TODAY = dt.date(2026, 11, 14)
 TOHO_URL = SOURCES[0][1]
 WARNER_URL = SOURCES[1][1]
 TOHO = """
-<html><section><a href="/movie/1">VIVANT 2026年12月4日（金）公開</a>
-<a href="/movie/2">映画「SUKIYAKI 上を向いて歩こう」 2026年12月25日（金）公開</a>
-<a href="/movie/3">公開中作品 公開中</a>
-<a href="/movie/4">公開日調整中 公開日調整中</a></section></html>
+<html><section><div class="works-link-001__content"><h3 class="works-link-001__title">VIVANT</h3>
+<p class="works-link-001__subtext">2026年12月4日（金）公開</p></div>
+<div class="works-link-001__content"><h3 class="works-link-001__title">映画「SUKIYAKI 上を向いて歩こう」</h3>
+<p class="works-link-001__subtext">2026年12月25日（金）公開</p></div>
+<div class="works-link-001__content"><h3 class="works-link-001__title">公開中作品</h3>
+<p class="works-link-001__subtext">公開中</p></div>
+<div class="works-link-001__content"><h3 class="works-link-001__title">公開日調整中</h3>
+<p class="works-link-001__subtext">公開日調整中</p></div></section></html>
 """
 WARNER = """
 <html><h2>劇場公開作品</h2>
@@ -40,7 +44,7 @@ class OfficialFilmsTests(unittest.TestCase):
         self.assertTrue(all(m["publishable"] is False for m in movies))
 
     def test_historical_and_undated_movies_not_added(self):
-        movies, _ = parse_toho("<a href=\"/movie/old\">古い映画 2025年1月1日（水）公開</a>", TOHO_URL)
+        movies, _ = parse_toho('<h3 class="works-link-001__title">古い映画</h3><p class="works-link-001__subtext">2025年1月1日（水）公開</p>', TOHO_URL)
         self.assertEqual(filter_events(movies, TODAY, {}), [])
 
     def test_duplicate_existing_manually_verified_film(self):
@@ -71,13 +75,13 @@ class OfficialFilmsTests(unittest.TestCase):
 
     def test_release_page_with_no_film_dates_is_empty(self):
         data = collect(TODAY, fetcher=lambda u:
-            "<a href=\"/movie/undated\">近日公開の作品 公開日未定</a>" if "toho" in u
+            '<h3 class="works-link-001__title">近日公開の作品</h3><p class="works-link-001__subtext">公開日未定</p>' if "toho" in u
             else "<a href=\"/movie/undated\">映画『作品』近日公開</a>")
         self.assertEqual([r["status"] for r in data["source_reports"]],
                          ["empty", "empty"])
 
     def test_at_most_90_days_and_no_outdated_screenings(self):
-        html = "<a href=\"/movie/a\">作品A 2027年4月1日（木）公開</a>"
+        html = '<h3 class="works-link-001__title">作品A</h3><p class="works-link-001__subtext">2027年4月1日（木）公開</p>'
         movies, _ = parse_toho(html, TOHO_URL)
         self.assertEqual(filter_events(movies, TODAY, {}), [])
 
