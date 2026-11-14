@@ -1,4 +1,5 @@
 import datetime as dt
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -55,9 +56,12 @@ class OfficialFilmSelectionTests(unittest.TestCase):
             "editorial_importance": {"decision": "major", "basis": ["official_franchise"],
             "evidence_url": "https://www.toho.co.jp/movie/lineup/",
             "evidence_checked_on": "2026-11-14", "review_status": "approved"}}]}
-        result = select(discovery([item()]), {"events": []}, TODAY, evidence=evidence)
+        source = discovery([item()])
+        before = json.loads(json.dumps(source, ensure_ascii=False))
+        result = select(source, {"events": []}, TODAY, evidence=evidence)
         self.assertTrue(result["items"][0]["selection"]["publishable"])
-        self.assertIsNone(item()["verification"]["editorial_importance"])
+        self.assertEqual(source, before)
+        self.assertIsNone(source["items"][0]["verification"]["editorial_importance"])
 
     def test_duplicate_is_held(self):
         evidence = {
