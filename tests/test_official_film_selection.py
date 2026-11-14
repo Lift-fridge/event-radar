@@ -93,6 +93,16 @@ class OfficialFilmSelectionTests(unittest.TestCase):
         result = select(data, {"events": []}, TODAY)
         self.assertIn("取得が成功", " ".join(result["items"][0]["selection"]["reasons"]))
 
+    def test_duplicate_normalization_ignores_whitespace(self):
+        evidence = {
+            "decision": "major", "basis": ["official_franchise"],
+            "evidence_url": "https://www.toho.co.jp/movie/lineup/",
+            "evidence_checked_on": "2026-11-14", "review_status": "approved",
+        }
+        schedule = {"events": [{"name": "劇場版 VIVANT 公開", "date": "2026-12-04"}]}
+        result = select(discovery([item(importance=evidence)]), schedule, TODAY)
+        self.assertFalse(result["items"][0]["selection"]["publishable"])
+        self.assertIn("重複", " ".join(result["items"][0]["selection"]["reasons"]))
 
 if __name__ == "__main__":
     unittest.main()
