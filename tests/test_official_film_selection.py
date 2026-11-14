@@ -43,12 +43,21 @@ class OfficialFilmSelectionTests(unittest.TestCase):
     def test_explicit_major_evidence_can_be_selected(self):
         evidence = {
             "decision": "major", "basis": ["official_franchise"],
-            "evidence_url": "https://example.jp/film",
+            "evidence_url": "https://www.toho.co.jp/movie/lineup/",
             "evidence_checked_on": "2026-11-14", "review_status": "approved",
         }
         result = select(discovery([item(importance=evidence)]), {"events": []}, TODAY)
         self.assertEqual(result["items"][0]["selection"]["status"], "主要作品")
         self.assertTrue(result["items"][0]["selection"]["publishable"])
+
+    def test_editorial_registry_is_applied_without_mutating_discovery(self):
+        evidence = {"items": [{"name": "VIVANT", "date": "2026-12-04",
+            "editorial_importance": {"decision": "major", "basis": ["official_franchise"],
+            "evidence_url": "https://www.toho.co.jp/movie/lineup/",
+            "evidence_checked_on": "2026-11-14", "review_status": "approved"}}]}
+        result = select(discovery([item()]), {"events": []}, TODAY, evidence=evidence)
+        self.assertTrue(result["items"][0]["selection"]["publishable"])
+        self.assertIsNone(item()["verification"]["editorial_importance"])
 
     def test_duplicate_is_held(self):
         evidence = {
