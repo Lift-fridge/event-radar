@@ -7,9 +7,12 @@ import datetime as dt
 import json
 from pathlib import Path
 
+from approve_calendar_dates import approved_meteor_events
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "data" / "official_schedule_sources.json"
 OUTPUT = ROOT / "data" / "official_schedule.json"
+DISCOVERY = ROOT / "data" / "official_discovery.json"
 REQUIRED = ("id", "name", "category", "date", "end", "time", "place",
             "access", "why", "trivia", "url", "source_type", "access_scope",
             "source_checked_on", "editorial_status")
@@ -18,7 +21,7 @@ ALLOWED_SCOPE = {"国内視聴可", "日本で観測可能", "関東現地参加
 MAX_HORIZON = 60
 
 
-def build_schedule(source: dict, today: dt.date | None = None) -> dict:
+def build_schedule(source: dict, today: dt.date | None = None, discovery: dict | None = None) -> dict:
     today = today or dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date()
     if not isinstance(source.get("events"), list):
         raise ValueError("events array missing")
@@ -46,19 +49,22 @@ def build_schedule(source: dict, today: dt.date | None = None) -> dict:
         if end < today or start > today + dt.timedelta(days=MAX_HORIZON):
             continue
         out.append({k: event[k] for k in REQUIRED})
+    if discovery is not None:
+        out.extend(approved_meteor_events(discovery, today, out))
     out.sort(key=lambda x: (x["date"], x["id"]))
     return {
-        "data_kind": "manually_verified_official_calendar_pilot",
+        "data_kind": "official_calendar_curated_and_autoverified_dates",
         "as_of_jst": today.isoformat(),
         "horizon_days": MAX_HORIZON,
-        "note": "記事公開日ではなく公式予定日。出典確認済みの手動シード。テレビ一般番組は検証できるまで未掲載。掲載前に最新の公式情報を再確認してください。",
+        "note": "手動確認済み予定に加え、国立天文台から極大日だけを機械確認した流星群を表示。観測の見頃・天候は未確認で、公式情報の再確認が必要です。日本での視聴が未確認のスポーツは非掲載。",
         "events": out,
     }
 
 
 def main():
     source = json.loads(SOURCE.read_text(encoding="utf-8"))
-    schedule = build_schedule(source)
+    discovery = json.loads(DISCOVERY.read_text(encoding="utf-8")) if DISCOVERY.exists() else None
+    schedule = build_schedule(source, discovery=discovery)
     OUTPUT.write_text(json.dumps(schedule, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Official calendar pilot: {len(schedule['events'])} upcoming records")
 

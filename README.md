@@ -42,3 +42,12 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - TV category is supported in the schema, but **no standalone TV show is included until a concrete official date/time and terrestrial or eligible stream can be verified**. A football game carried on TV is still categorized as sports.
 - The contents and data sources remain subject to official schedule changes and manual reconfirmation; this trial does not yet provide an automated sports-calendar / TV-guide feed. No guarantee of coverage beyond its four reviewed examples.
 - After merging, run **Refresh EVENT RADAR news leads** once to produce the verified feed, and assess on an iPhone. More official calendar connectors/parsers and editorial approval tools can be added after validating this presentation and data policy.
+
+## Guarded calendar auto-publication experiment (PR #7)
+
+- Official RSS headline discovery remains unverified and separate.
+- The `build_official_schedule.py` builder optionally reads `data/official_discovery.json` after `collect_official_schedules.py` refreshes it in the same daily GitHub Actions job.
+- Only national observatory (NAOJ) calendar rows naming a **meteor shower peak** (「〇〇流星群が極大」) can pass the automatic calendar-date approval gate. The collector's source report must show `ok`, the generation timestamp must be no more than two JST calendar days old, the official URL must be the matching NAOJ monthly page over HTTPS, the date must match the month and be within 60 days, and duplicates of manually verified dates must be suppressed.
+- Planetary station (留), elongation, generic science news, unknown sources, football matches with unverified broadcasts, parse errors, stale discovery and past dates stay **off** the public schedule.
+- Automatic verification establishes **the calendar date only**. It does *not* establish a precise Japanese observing peak hour, visibility, weather, or exact best viewing window. The app labels auto-checked dates distinctly and sends users to the official monthly calendar for observing guidance.
+- The previously manually verified entries, favorites and news metadata remain intact. Review source terms before any redistribution or production monetization. If source check fails the app will show no newly auto-approved date rather than guess.
