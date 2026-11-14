@@ -9,6 +9,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parent.parent
 DISCOVERY = ROOT / "data" / "official_film_discovery.json"
 SCHEDULE = ROOT / "data" / "official_schedule.json"
+EVIDENCE = ROOT / "data" / "official_film_editorial_evidence.json"
 OUTPUT = ROOT / "data" / "official_film_selection.json"
 JST = dt.timezone(dt.timedelta(hours=9))
 HORIZON = 90
@@ -93,14 +94,20 @@ def evaluate(item, reports, manual, today):
     return ("主要作品" if decision == "major" else "意外な発見"), True, []
 
 
-def select(discovery, schedule, today=None):
+def select(discovery, schedule, today=None, evidence=None):
     today = today or dt.datetime.now(JST).date()
     reports = discovery.get("source_reports", [])
     manual = manual_keys(schedule)
+    evidence = evidence or {}
+    evidence_by_key = {(normalize_title(x.get("name")), x.get("date")): x.get("editorial_importance")
+                       for x in evidence.get("items", []) if isinstance(x, dict)}
     generated_at = discovery.get("generated_at")
     selected = []
     for raw in discovery.get("items", []):
         item = dict(raw)
+        key = (normalize_title(item.get("name")), item.get("date"))
+        if key in evidence_by_key:
+            item.setdefault("verification", {})["editorial_importance"] = evidence_by_key[key]
         item["_generated_at"] = generated_at
         label, eligible, reasons = evaluate(item, reports, manual, today)
         item.pop("_generated_at", None)
@@ -123,7 +130,8 @@ def select(discovery, schedule, today=None):
 def main():
     discovery = json.loads(DISCOVERY.read_text(encoding="utf-8"))
     schedule = json.loads(SCHEDULE.read_text(encoding="utf-8")) if SCHEDULE.exists() else {}
-    result = select(discovery, schedule)
+    evidence = json.loads(EVIDENCE.read_text(encoding="utf-8")) if EVIDENCE.exists() else {}
+    result = select(discovery, schedule, evidence=evidence)
     OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     publishable = sum(x["selection"]["publishable"] for x in result["items"])
     print(f"Film selection: {publishable}/{len(result['items'])} publishable")
