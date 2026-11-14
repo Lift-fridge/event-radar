@@ -18,5 +18,18 @@ jobs:
           python-version: '3.12'
       - name: Unit tests
         run: python3 -m unittest discover -s tests -v
+      - name: Live film source extraction diagnostics (non-publishing)
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, "scripts")
+          from collect_official_films import collect
+          result = collect()
+          for source in result["source_reports"]:
+              print("FILM_SOURCE", source)
+          for event in result["items"][:15]:
+              print("FILM_CANDIDATE", event["date"], event["name"], "publishable=", event["publishable"])
+          print("FILM_CANDIDATE_COUNT", len(result["items"]))
+          PY
       - name: Python syntax check
         run: python3 -m compileall -q scripts tests
