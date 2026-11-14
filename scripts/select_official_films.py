@@ -82,8 +82,9 @@ def evaluate(item, reports, manual, today):
     if not isinstance(basis, list) or not basis or any(x not in ALLOWED_BASIS for x in basis):
         reasons.append("重要度の公式根拠が許可された形式で記録されていない")
     evidence_url = importance.get("evidence_url")
-    if not isinstance(evidence_url, str) or urlsplit(evidence_url).scheme != "https":
-        reasons.append("重要度根拠の公式URLがない")
+    if (not isinstance(evidence_url, str) or urlsplit(evidence_url).scheme != "https"
+            or evidence_url != page):
+        reasons.append("重要度根拠が候補と同じ公式公開予定ページで確認できない")
     if not source_is_fresh(importance.get("evidence_checked_on"), today):
         reasons.append("重要度根拠の確認日が古い、未来日、または不明")
     review_status = importance.get("review_status")
