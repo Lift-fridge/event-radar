@@ -35,7 +35,7 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Commit changed metadata
         run: |
-          git add data/discovery.json data/review_queue.json data/official_schedule.json data/official_discovery.json data/official_film_discovery.json
+          git add data/discovery.json data/review_queue.json data/official_schedule.json data/official_discovery.json data/official_film_discovery.json data/official_film_selection.json data/official_film_editorial_evidence.json
           if ! git diff --cached --quiet; then
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update EVENT RADAR news leads"
             git push
