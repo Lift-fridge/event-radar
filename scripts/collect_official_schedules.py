@@ -3,7 +3,6 @@
 
 import datetime as dt
 import hashlib
-import html
 import json
 import re
 import urllib.request
@@ -16,7 +15,7 @@ OUTPUT = ROOT / "data" / "official_discovery.json"
 MANUAL_SOURCE = ROOT / "data" / "official_schedule.json"
 JST = dt.timezone(dt.timedelta(hours=9))
 UA = "EventRadar-OfficialSchedule/0.1 (metadata only)"
-ASTRONOMY_EVENT = re.compile(r"流星群|月食|日食|彗星|火星が地球に最接近|惑星.*接近|オーロラ")
+ASTRONOMY_EVENT = re.compile(r"流星群|月食|日食|彗星|火星が地球に最接近|惑星.*接近|オーロラ|留|最大離角|合")
 DATE_TOKEN = re.compile(r"(?:(\d{4})/)?(\d{1,2})/(\d{1,2})")
 DAY_TOKEN = re.compile(r"(\d{1,2})日")
 CANCELLED = re.compile(r"中止|延期")
@@ -138,32 +137,48 @@ def naoj_events(document, url, year, month):
             continue
         start, end = parse_naoj_date(row[0]["text"], year, month)
         detail = row[1]["text"]
-        if not start or not ASTRONOMY_EVENT.search(detail):
+        if not start:
             continue
-        name = re.sub(r"^\d{1,2}時頃、?\s*", "", detail).split("（", 1)[0].strip()
-        time_match = re.search(r"\d{1,2}時頃", detail)
-        events.append({
-            "id": make_id("naoj", name, start.isoformat(), url),
-            "name": name or detail,
-            "category": "天文・自然",
-            "date": start.isoformat(),
-            "end": end.isoformat(),
-            "time": time_match.group(0) if time_match else None,
-            "place": "東京の星空（国立天文台公式ページ）",
-            "access": detail,
-            "official_url": url,
-            "source_type": "国立天文台ほしぞら情報",
-            "source_checked_on": None,
-            "status": "要確認",
-            "publishable": False,
-            "verification": {
-                "status": "unverified",
-                "observation_condition_in_japan": None,
-                "cancellation_status": "not_applicable",
-            },
-            "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。",
-        })
+        for phenomenon in re.split(r"\s*/\s*", detail):
+            if not ASTRONOMY_EVENT.search(phenomenon):
+                continue
+            name = re.sub(r"^\d{1,2}時頃、?\s*", "", phenomenon).split("（", 1)[0].strip()
+            time_match = re.search(r"\d{1,2}時頃", phenomenon)
+            events.append({
+                "id": make_id("naoj", name, start.isoformat(), url),
+                "name": name or phenomenon,
+                "category": "天文・自然",
+                "date": start.isoformat(),
+                "end": end.isoformat(),
+                "time": time_match.group(0) if time_match else None,
+                "place": "東京の星空（国立天文台公式ページ）",
+                "access": detail,
+                "official_url": url,
+                "source_type": "国立天文台ほしぞら情報",
+                "source_checked_on": None,
+                "status": "要確認",
+                "publishable": False,
+                "verification": {
+                    "status": "unverified",
+                    "observation_condition_in_japan": None,
+                    "cancellation_status": "not_applicable",
+                },
+                "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。",
+            })
     return events
+
+
+def parse_source(document, source, url, year, month=None):
+    parser = TableParser()
+    parser.feed(document)
+    if source == "JFA":
+        events = jfa_events(document, url, year)
+    else:
+        events = naoj_events(document, url, year, month)
+    if not parser.rows:
+        return events, {"status": "parse_error", "extracted_count": 0,
+                        "error_type": "UnexpectedStructure"}
+    return events, {"status": "ok" if events else "empty", "extracted_count": len(events)}
 
 
 def month_targets(today):
@@ -200,7 +215,7 @@ def collect(today=None, fetcher=None, manual=None):
     today = today or dt.datetime.now(JST).date()
     fetcher = fetcher or fetch_html
     manual = manual or {}
-    events, errors, sources_ok = [], [], 0
+    events, errors, reports, sources_ok = [], [], [], 0
     urls = [("JFA", f"https://www.jfa.jp/samuraiblue/schedule_result/{year}.html", year) for year in (today.year, today.year + 1)]
     urls += [("NAOJ", f"https://www.nao.ac.jp/astro/sky/{year}/{month:02d}.html", year, month) for year, month in month_targets(today)]
     for source in urls:
@@ -208,11 +223,15 @@ def collect(today=None, fetcher=None, manual=None):
         try:
             document = fetcher(url)
             sources_ok += 1
-            if name == "JFA":
-                events.extend(jfa_events(document, url, source[2]))
-            else:
-                events.extend(naoj_events(document, url, source[2], source[3]))
+            parsed, report = parse_source(document, name, url, source[2], source[3] if len(source) > 3 else None)
+            report.update({"source": name, "url": url})
+            reports.append(report)
+            if report["status"] == "parse_error":
+                errors.append({"source": name, "url": url, "error_type": report["error_type"]})
+            events.extend(parsed)
         except Exception as exc:
+            reports.append({"source": name, "url": url, "status": "fetch_error",
+                            "extracted_count": 0, "error_type": type(exc).__name__})
             errors.append({"source": name, "url": url, "error_type": type(exc).__name__})
     known = manual_keys(manual)
     manual_events = manual.get("events", [])
@@ -232,6 +251,8 @@ def collect(today=None, fetcher=None, manual=None):
         "source_count": len(urls),
         "successful_sources": sources_ok,
         "source_errors": errors,
+        "source_reports": reports,
+        "has_parse_errors": any(report["status"] == "parse_error" for report in reports),
         "items": deduped,
     }
 
@@ -250,6 +271,17 @@ def main():
     payload = collect(manual=manual)
     if payload["successful_sources"] == 0:
         raise SystemExit("All official sources failed; previous data preserved.")
+    if payload["has_parse_errors"] and OUTPUT.exists():
+        previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
+        failed_sources = {report["source"] for report in payload["source_reports"]
+                          if report["status"] == "parse_error"}
+        preserved = [item for item in previous.get("items", [])
+                     if item.get("source_type") in {"JFA公式試合日程" if s == "JFA"
+                                                     else "国立天文台ほしぞら情報"
+                                                     for s in failed_sources}]
+        payload["items"] = preserved + [item for item in payload["items"]
+                                         if item not in preserved]
+        payload["message"] += " 解析失敗した情報源の既存データは保持しています。"
     temp = OUTPUT.with_suffix(".json.tmp")
     temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(OUTPUT)
