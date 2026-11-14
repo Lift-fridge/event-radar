@@ -27,6 +27,8 @@ jobs:
         run: python3 scripts/collect_official_schedules.py
       - name: Collect official Japanese theatrical release candidates
         run: python3 scripts/collect_official_films.py
+      - name: Build conservative film selection audit
+        run: python3 scripts/select_official_films.py
       - name: Build official schedule pilot
         run: python3 scripts/build_official_schedule.py
       - name: Test verification rules
