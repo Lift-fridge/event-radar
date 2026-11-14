@@ -33,6 +33,7 @@ class OfficialDiscoveryTests(unittest.TestCase):
         self.assertFalse(events[0]["publishable"])
         self.assertIsNone(events[0]["verification"]["broadcast_or_streaming_in_japan"])
         self.assertEqual(events[0]["official_url"], "https://jfa.example/match")
+        self.assertEqual(events[0]["source_page_url"], "https://jfa.example/2026.html")
 
     def test_naoj_extracts_observation_candidate_only(self):
         events = naoj_events(NAOJ_HTML, "https://nao.example/2026/12.html", 2026, 12)
@@ -60,7 +61,7 @@ class OfficialDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "official_discovery.json"
             output.write_text(json.dumps({"items": [{
-                "source_type": "JFA公式試合日程", "official_url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html",
+                "source_type": "JFA公式試合日程", "official_url": "https://www.jfa.jp/match/old", "source_page_url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html",
                 "name": "既存予定", "date": "2026-11-10", "end": "2026-11-10"
             }]}), encoding="utf-8")
             with patch.object(collector, "OUTPUT", output), patch.object(collector, "MANUAL_SOURCE", Path(directory) / "missing.json"), \
@@ -77,16 +78,18 @@ class OfficialDiscoveryTests(unittest.TestCase):
             "source_reports": [{"url": failed_url, "status": "parse_error"}],
         }
         previous = {"items": [
-            {"name": "復元対象", "date": "2026-12-20", "end": "2026-12-20", "official_url": failed_url},
-            {"name": "別URL", "date": "2026-12-21", "end": "2026-12-21", "official_url": other_url},
-            {"name": "過去予定", "date": "2026-11-01", "end": "2026-11-01", "official_url": failed_url},
-            {"name": "手動予定", "date": "2026-12-20", "end": "2026-12-20", "official_url": failed_url},
+            {"name": "復元対象", "date": "2026-12-20", "end": "2026-12-20", "official_url": "https://jfa.example/match/1", "source_page_url": failed_url, "publishable": False},
+            {"name": "別URL", "date": "2026-12-21", "end": "2026-12-21", "official_url": "https://jfa.example/match/2", "source_page_url": other_url},
+            {"name": "過去予定", "date": "2026-11-01", "end": "2026-11-01", "official_url": "https://jfa.example/match/3", "source_page_url": failed_url},
+            {"name": "手動予定", "date": "2026-12-20", "end": "2026-12-20", "official_url": "https://jfa.example/match/4", "source_page_url": failed_url},
         ]}
         restored = collector.restore_failed_source_items(
             payload, previous, dt.date(2026, 12, 1),
             {"events": [{"name": "手動予定", "date": "2026-12-20"}]},
         )
         self.assertEqual([item["name"] for item in restored["items"]], ["復元対象"])
+        self.assertEqual(restored["items"][0]["official_url"], "https://jfa.example/match/1")
+        self.assertFalse(restored["items"][0]["publishable"])
 
     def test_table_without_date_structure_is_parse_error(self):
         payload = collect(dt.date(2026, 12, 1), fetcher=lambda url: (
