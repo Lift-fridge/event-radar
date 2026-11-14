@@ -3,6 +3,7 @@
 import datetime as dt
 import json
 import re
+from copy import deepcopy
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -105,7 +106,7 @@ def select(discovery, schedule, today=None, evidence=None):
     generated_at = discovery.get("generated_at")
     selected = []
     for raw in discovery.get("items", []):
-        item = dict(raw)
+        item = deepcopy(raw)
         key = (normalize_title(item.get("name")), item.get("date"))
         if key in evidence_by_key:
             item.setdefault("verification", {})["editorial_importance"] = evidence_by_key[key]
