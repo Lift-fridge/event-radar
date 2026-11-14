@@ -61,7 +61,7 @@ def approved_meteor_events(discovery: dict, today: dt.date, existing: list[dict]
             "end": event["end"],
             "time": "極大日（見頃の時間帯は公式情報を参照）",
             "place": "日本の夜空（観測条件は場所や天候によって異なります）",
-            "access": "肉眼で観測できる場合があります。見頃・月明かり・天気は公式情報を確認してください",
+            "access": "肉眼で観測できる場合があります。見頃・月明かり・天候は公式情報を確認してください",
             "why": "流星群の極大日を事前に知り、観察する機会を逃さないため。",
             "trivia": "極大日時と日本で見やすい時間帯は一致しないことがあります。",
             "url": source,
