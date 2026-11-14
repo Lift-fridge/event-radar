@@ -60,13 +60,39 @@ class OfficialDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "official_discovery.json"
             output.write_text(json.dumps({"items": [{
-                "source_type": "JFA公式試合日程", "name": "既存予定", "date": "2026-12-10"
+                "source_type": "JFA公式試合日程", "official_url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html",
+                "name": "既存予定", "date": "2026-11-10", "end": "2026-11-10"
             }]}), encoding="utf-8")
             with patch.object(collector, "OUTPUT", output), patch.object(collector, "MANUAL_SOURCE", Path(directory) / "missing.json"), \
                     patch.object(collector, "fetch_html", return_value="<html>changed</html>"):
                 collector.main()
             saved = json.loads(output.read_text(encoding="utf-8"))
-            self.assertEqual(saved["items"][0]["name"], "既存予定")
+            self.assertFalse(any(item["name"] == "既存予定" for item in saved["items"]))
+
+    def test_failed_url_restoration_is_scoped_and_filtered(self):
+        failed_url = "https://jfa.example/2026.html"
+        other_url = "https://jfa.example/2027.html"
+        payload = {
+            "items": [],
+            "source_reports": [{"url": failed_url, "status": "parse_error"}],
+        }
+        previous = {"items": [
+            {"name": "復元対象", "date": "2026-12-20", "end": "2026-12-20", "official_url": failed_url},
+            {"name": "別URL", "date": "2026-12-21", "end": "2026-12-21", "official_url": other_url},
+            {"name": "過去予定", "date": "2026-11-01", "end": "2026-11-01", "official_url": failed_url},
+            {"name": "手動予定", "date": "2026-12-20", "end": "2026-12-20", "official_url": failed_url},
+        ]}
+        restored = collector.restore_failed_source_items(
+            payload, previous, dt.date(2026, 12, 1),
+            {"events": [{"name": "手動予定", "date": "2026-12-20"}]},
+        )
+        self.assertEqual([item["name"] for item in restored["items"]], ["復元対象"])
+
+    def test_table_without_date_structure_is_parse_error(self):
+        payload = collect(dt.date(2026, 12, 1), fetcher=lambda url: (
+            "<table><tr><th>開催日</th><th>内容</th></tr><tr><td>未定</td><td>内容</td></tr></table>"
+        ))
+        self.assertTrue(all(report["status"] == "parse_error" for report in payload["source_reports"]))
 
     def test_duplicate_manual_event_is_removed(self):
         def fetch(url):
