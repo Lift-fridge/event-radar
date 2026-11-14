@@ -10,16 +10,16 @@ TODAY = dt.date(2026, 11, 14)
 TOHO_URL = SOURCES[0][1]
 WARNER_URL = SOURCES[1][1]
 TOHO = """
-<html><section><h3>VIVANT</h3><p>2026年12月4日（金）公開</p>
-<h3>映画「SUKIYAKI 上を向いて歩こう」</h3><p>2026年12月25日（金）公開</p>
-<h3>公開中作品</h3><p>公開中</p>
-<h3>公開日調整中</h3><p>公開日調整中</p></section></html>
+<html><section><a href="/movie/1">VIVANT 2026年12月4日（金）公開</a>
+<a href="/movie/2">映画「SUKIYAKI 上を向いて歩こう」 2026年12月25日（金）公開</a>
+<a href="/movie/3">公開中作品 公開中</a>
+<a href="/movie/4">公開日調整中 公開日調整中</a></section></html>
 """
 WARNER = """
 <html><h2>劇場公開作品</h2>
-<li>2026年11月27日（金）公開映画『プラクティカル・マジック／魔女たちの秘密』近日公開</li>
-<li>2026年12月18日（金）公開映画『デューン 砂の惑星 PART3』近日公開</li>
-<li>映画『リメイン』近日公開</li>
+<a href="/movie/a">2026年11月27日（金）公開映画『プラクティカル・マジック／魔女たちの秘密』近日公開</a>
+<a href="/movie/b">2026年12月18日（金）公開映画『デューン 砂の惑星 PART3』近日公開</a>
+<a href="/movie/c">映画『リメイン』近日公開</a>
 <p>2026年12月25日 ブルーレイ発売『別タイトル』</p></html>
 """
 
@@ -40,7 +40,7 @@ class OfficialFilmsTests(unittest.TestCase):
         self.assertTrue(all(m["publishable"] is False for m in movies))
 
     def test_historical_and_undated_movies_not_added(self):
-        movies, _ = parse_toho("<h3>古い映画</h3><p>2025年1月1日（水）公開</p>", TOHO_URL)
+        movies, _ = parse_toho("<a href=\"/movie/old\">古い映画 2025年1月1日（水）公開</a>", TOHO_URL)
         self.assertEqual(filter_events(movies, TODAY, {}), [])
 
     def test_duplicate_existing_manually_verified_film(self):
@@ -71,13 +71,13 @@ class OfficialFilmsTests(unittest.TestCase):
 
     def test_release_page_with_no_film_dates_is_empty(self):
         data = collect(TODAY, fetcher=lambda u:
-            "<h3>近日公開の作品</h3><p>公開日未定</p>" if "toho" in u
-            else "<h2>近日公開</h2><p>映画『作品』近日公開</p>")
+            "<a href=\"/movie/undated\">近日公開の作品 公開日未定</a>" if "toho" in u
+            else "<a href=\"/movie/undated\">映画『作品』近日公開</a>")
         self.assertEqual([r["status"] for r in data["source_reports"]],
                          ["empty", "empty"])
 
     def test_at_most_90_days_and_no_outdated_screenings(self):
-        html = "<h3>作品A</h3><p>2027年4月1日（木）公開</p>"
+        html = "<a href=\"/movie/a\">作品A 2027年4月1日（木）公開</a>"
         movies, _ = parse_toho(html, TOHO_URL)
         self.assertEqual(filter_events(movies, TODAY, {}), [])
 
