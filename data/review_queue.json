@@ -1,21 +1,105 @@
 {
-  "generated_at": "2026-11-14T06:20:51+00:00",
+  "generated_at": "2026-11-14T11:58:54+00:00",
   "data_kind": "manual_verification_queue",
   "policy": "現地参加は東京・神奈川・千葉・埼玉。全国・海外は日本で視聴可能な場合のみ。花火・地域祭りの網羅は別アプリで扱う。",
   "warning": "地名は見出し上のヒントにすぎません。公式情報の確認なしに掲載しません。",
   "items": [
     {
-      "id": "7786f977acf0792207f9",
-      "title": "劇団☆新感線『髑髏城の七人 LAST STAND』が開幕　早乙女太一、塩野瑛久、藤岡真威人、早乙女友貴、柚香光ら揃い意気込み",
+      "id": "1ded6610aced7c0d49ee",
+      "title": "水槽、5thコンセプトアルバム『凍傷回路』発売&収録楽曲「オフライン・プラネット」先行配信決定",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350378",
-      "article_published_at": "2026-11-14T06:00:00+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350385",
+      "article_published_at": "2026-11-14T11:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "98c57f00de7c0108",
+      "event_group_key": "ecb16f79c731b6a1",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350378"
+        "https://spice.eplus.jp/articles/350385"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "4a531a57ed8845609637",
+      "title": "結婚＆第1子出産の小嶋陽菜　開催中のイベント訪問S「産後のスタイルの良さに圧巻」などの声(スポニチアネックス)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/09482723ba2389c34b3d1fdc2d1c6efb2b5a5dd8?source=rss",
+      "article_published_at": "2026-11-14T11:55:45+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "28c15882eeaea7b4",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/09482723ba2389c34b3d1fdc2d1c6efb2b5a5dd8?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "1ea21a61a8ecbad6036a",
+      "title": "【高校サッカー三重決勝】三重が四日市中央工に0―2から大逆転勝ち！途中出場のFW山本倫也が後半38分に勝ち越し弾「勝つ自信はあった」(中日スポーツ)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/f628431007a9d8b28ca526d7d57b6ee12f676157?source=rss",
+      "article_published_at": "2026-11-14T11:55:53+00:00",
+      "candidate_status": "推薦候補",
+      "candidate_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "5b5ffaac2e2e92a2",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/f628431007a9d8b28ca526d7d57b6ee12f676157?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -131,17 +215,17 @@
       "publishable": false
     },
     {
-      "id": "964ad2a5557baf407a96",
-      "title": "ウエンツ瑛士×ウド鈴木×山田和樹でオペラの魅力を　『第69回NHKニューイヤーオペラコンサート2027』放送",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350379",
-      "article_published_at": "2026-11-14T05:56:11+00:00",
+      "id": "e73baef95d12a57ea92c",
+      "title": "平野レミ、NHKの料理番組で苦情殺到の過去「それがとってもおいしいの」　生放送でNGワードも(ENCOUNT)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/798db0797a2f390f5986584af278aa3b72165544?source=rss",
+      "article_published_at": "2026-11-14T11:52:28+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "c3b610444275998d",
+      "event_group_key": "6ec676d0684e5241",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350379"
+        "https://news.yahoo.co.jp/articles/798db0797a2f390f5986584af278aa3b72165544?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -173,59 +257,17 @@
       "publishable": false
     },
     {
-      "id": "40acc5fe280f3d4d7241",
-      "title": "SixTONESが2度目の大賞「anan AWARD 2026」開催 KEY TO LIT・高石あかりら豪華集結【受賞一覧】(モデルプレス)",
-      "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/b9be8bf37592ccbe226b97fda8a28684f010e9ae?source=rss",
-      "article_published_at": "2026-11-14T06:12:07+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "efd8ecbb0a38bade",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/b9be8bf37592ccbe226b97fda8a28684f010e9ae?source=rss"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "34680ff1bcfd2d0c7c32",
-      "title": "【愛知1年生大会】東邦がタイブレーク制し、中京大中京が快勝で準決勝へ【26年秋高校野球】(高校野球ドットコム)",
+      "id": "ce38da030af16e468ea1",
+      "title": "【日本代表】「中野就斗のアシストが完璧すぎる」唯一の国内組が躍動　中村敬斗の２点目お膳立て(日刊スポーツ)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/4ec2b0035aedb219e0750b0a46f19467c3f7fb76?source=rss",
-      "article_published_at": "2026-11-14T06:18:29+00:00",
-      "candidate_status": "推薦候補",
-      "candidate_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "article_url": "https://news.yahoo.co.jp/articles/c7fb322070d8efe6168c2fe8ae1cf5cbca20f872?source=rss",
+      "article_published_at": "2026-11-14T11:52:41+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "b63d693720b92bcf",
+      "event_group_key": "db04abd5fcaafc15",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/4ec2b0035aedb219e0750b0a46f19467c3f7fb76?source=rss"
+        "https://news.yahoo.co.jp/articles/c7fb322070d8efe6168c2fe8ae1cf5cbca20f872?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -299,21 +341,21 @@
       "publishable": false
     },
     {
-      "id": "8d77d496077afdbc94d8",
-      "title": "「他人」8都市ツアーが長野で開幕　内藤裕敬「紅葉の喝采の下、うれしいスタートが切れた」(ステージナタリー)",
+      "id": "235b331afd42a5dc4e27",
+      "title": "魔法少女随一の“問題作”がテレビに帰ってくる！アニメ『魔法少女にあこがれて』第2期は27年放送決定　主役声優「さらに成長(？)していきます」(オタク総研)",
       "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/800b19f55f8aee022801fd4967124a0059b7f2fc?source=rss",
-      "article_published_at": "2026-11-14T06:04:10+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/f938eb1d693e6b17a0aa420430629f7426a7ed0b?source=rss",
+      "article_published_at": "2026-11-14T11:44:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "af55f390173d41ca",
+      "event_group_key": "1e741fec556ee7fa",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/800b19f55f8aee022801fd4967124a0059b7f2fc?source=rss"
+        "https://news.yahoo.co.jp/articles/f938eb1d693e6b17a0aa420430629f7426a7ed0b?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -341,17 +383,17 @@
       "publishable": false
     },
     {
-      "id": "a686dbabe5ce637b566b",
-      "title": "鳴門に夏のリベンジ!昨年国立開幕経験したメンバーが複数残る徳島市立が5大会連続の全国へ:徳島(ゲキサカ)",
+      "id": "60418278b434f72931c0",
+      "title": "SNSで大炎上…出場ゼロの148億円男が「心から謝罪」　批判殺到で球団も声明「非難する」(Full-Count)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/fda96147d1db0dbcf4d38da9f4eaa01d3d24029e?source=rss",
-      "article_published_at": "2026-11-14T06:17:02+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/0ebf14d99210c30ae52f03d8d062326eec4ea794?source=rss",
+      "article_published_at": "2026-11-14T11:50:18+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "c831e5fd7fb7b9d8",
+      "event_group_key": "caf86287eb94269a",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/fda96147d1db0dbcf4d38da9f4eaa01d3d24029e?source=rss"
+        "https://news.yahoo.co.jp/articles/0ebf14d99210c30ae52f03d8d062326eec4ea794?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -425,17 +467,17 @@
       "publishable": false
     },
     {
-      "id": "61fc5df77aeaedeeced7",
-      "title": "大阪・十三の現役老舗キャバレー グランドサロン十三で『新春DANCEHALL』開催、neco眠る、Summer Eye Sound Syndicate、NONCHELEEEら出演",
+      "id": "6c054bcc411f141a5849",
+      "title": "岸谷五朗と寺脇康文による演劇ユニット「地球ゴージャス」　上川隆也主演で3年ぶりに新作公演を上演",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350361",
-      "article_published_at": "2026-11-14T02:00:00+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350364",
+      "article_published_at": "2026-11-14T08:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "4d1d78ec754afdd2",
+      "event_group_key": "c32fdada31882a06",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350361"
+        "https://spice.eplus.jp/articles/350364"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -467,17 +509,17 @@
       "publishable": false
     },
     {
-      "id": "b5e92a15df04e54e1a9d",
-      "title": "カワノヨウタと崎山蒼志が再タッグ、様相の新作公演「ぼくら透明な海苔みたいに」(ステージナタリー)",
+      "id": "65e6d42fc8d6cb5ccf51",
+      "title": "【イベントレポート】「リゼロ」10周年イベントに小林裕介らキャスト集結　高橋李依のサプライズライブも(コミックナタリー)",
       "source": "Yahoo!エンタメ",
-      "article_url": "https://news.yahoo.co.jp/articles/9825cae361bae62889f2aa70a73c87c60650b77e?source=rss",
-      "article_published_at": "2026-11-14T06:00:14+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/008489137a34b022bca18a47249602c97e98d202?source=rss",
+      "article_published_at": "2026-11-14T11:43:10+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "a51771ae730927cd",
+      "event_group_key": "468f927ba38d3dec",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/9825cae361bae62889f2aa70a73c87c60650b77e?source=rss"
+        "https://news.yahoo.co.jp/articles/008489137a34b022bca18a47249602c97e98d202?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -509,21 +551,21 @@
       "publishable": false
     },
     {
-      "id": "62a55fd1efebb1c5144f",
-      "title": "サッカー日本代表　森保監督ラストスパート　因縁の“王国”ブラジル相手にW杯のリベンジなるか(テレビ朝日系（ANN）)",
+      "id": "af5ddef52b53647e554b",
+      "title": "南野拓実が復活　ブラジル戦に途中出場で1年ぶりの国際Aマッチ出場　場内大歓声(スポニチアネックス)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/8ebb860b88db75c0299780a1d7a5a43ea9854525?source=rss",
-      "article_published_at": "2026-11-14T06:15:33+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "article_url": "https://news.yahoo.co.jp/articles/98e6fecd5374625e19af2e7add99f29a096fd4aa?source=rss",
+      "article_published_at": "2026-11-14T11:49:08+00:00",
+      "candidate_status": "推薦候補",
+      "candidate_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "9b782b12221e1d70",
+      "event_group_key": "e636de1aa8a5a7e9",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/8ebb860b88db75c0299780a1d7a5a43ea9854525?source=rss"
+        "https://news.yahoo.co.jp/articles/98e6fecd5374625e19af2e7add99f29a096fd4aa?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
+      "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -593,21 +635,63 @@
       "publishable": false
     },
     {
-      "id": "9499348d2e5ff5e1b909",
-      "title": "中村橋之助・福之助・歌之助の三兄弟に加え、成駒屋一門の弟子たちも集合　『神谷町小歌舞伎』一日限りのプレミアムイベントが開催",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350370",
-      "article_published_at": "2026-11-14T02:00:00+00:00",
+      "id": "b6e99fa6d8227572258c",
+      "title": "天童よしみ、紅白出場決定を報告「嬉しいです　まだまだ頑張ります」岩崎宏美も祝福(日刊スポーツ)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/5fe753e5d26ecaabe9e9008f22b3aa0b0a703707?source=rss",
+      "article_published_at": "2026-11-14T11:30:17+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "7c63f5bda1c9d838",
+      "event_group_key": "946b688efe15edc8",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350370"
+        "https://news.yahoo.co.jp/articles/5fe753e5d26ecaabe9e9008f22b3aa0b0a703707?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "94bde4848f9c91602d11",
+      "title": "【バレー】V四日市が無傷の開幕5連勝。千葉ドットが3勝目　SVG男子(バレーボールマガジン)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/ba14a64d5117cf7f350b59c86cb76e71c210e022?source=rss",
+      "article_published_at": "2026-11-14T11:47:52+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "137e959d760f962e",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/ba14a64d5117cf7f350b59c86cb76e71c210e022?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "関東現地候補",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -677,17 +761,101 @@
       "publishable": false
     },
     {
-      "id": "c7c3ceb5e307515039ac",
-      "title": "【山梨1年生大会】青洲が山梨学院を破って優勝！【26年秋高校野球】(高校野球ドットコム)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/070249c78a88e9c01bc45121f1d5b3aaf22f7dd8?source=rss",
-      "article_published_at": "2026-11-14T06:13:04+00:00",
+      "id": "7786f977acf0792207f9",
+      "title": "劇団☆新感線『髑髏城の七人 LAST STAND』が開幕　早乙女太一、塩野瑛久、藤岡真威人、早乙女友貴、柚香光ら揃い意気込み",
+      "source": "SPICE",
+      "article_url": "https://spice.eplus.jp/articles/350378",
+      "article_published_at": "2026-11-14T06:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "2459ee4ec3827225",
+      "event_group_key": "98c57f00de7c0108",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/070249c78a88e9c01bc45121f1d5b3aaf22f7dd8?source=rss"
+        "https://spice.eplus.jp/articles/350378"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "24d1f10fdcaad416cac6",
+      "title": "雪国が初のホール単独公演「冬眠」開催(音楽ナタリー)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/f25a559c910d5e7e5a46144405ab605b4c691028?source=rss",
+      "article_published_at": "2026-11-14T11:30:11+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "adf26ba29ab2ebd5",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/f25a559c910d5e7e5a46144405ab605b4c691028?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "6998c743519c8fbbea15",
+      "title": "【バドミントン】志田千陽／平本梨々菜が決勝進出！　「2ゲーム目は落ち着いてできた。反省点があったかもしれないけど、全体的にいいゲームができた」（志田）＜熊本マスターズ2026／選手コメント＞(バド×スピ！／バドミントン・マガジン)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/2b94197e79a0f422f7ece18c7ca283fc87b4211d?source=rss",
+      "article_published_at": "2026-11-14T11:37:24+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "4e0a8ccbb4f6d964",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/2b94197e79a0f422f7ece18c7ca283fc87b4211d?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -761,17 +929,59 @@
       "publishable": false
     },
     {
-      "id": "1869077e406194f77756",
-      "title": "世界のトップライダー97名が境町に集結！11/27開幕『IBARAKI SAKAI Urban Sports Fes. 2026』BMXパーク出場選手決定",
+      "id": "964ad2a5557baf407a96",
+      "title": "ウエンツ瑛士×ウド鈴木×山田和樹でオペラの魅力を　『第69回NHKニューイヤーオペラコンサート2027』放送",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350288",
-      "article_published_at": "2026-11-13T14:08:15+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350379",
+      "article_published_at": "2026-11-14T05:56:11+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "fe6d0369340860d3",
+      "event_group_key": "c3b610444275998d",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350288"
+        "https://spice.eplus.jp/articles/350379"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "7c16e1931b6de7c89865",
+      "title": "きゅるりんってしてみてが来年メジャーデビュー、6周年記念ライブと全国13公演ツアー開催も発表(Bezzy)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/56075d2c362c87f3afe8ed674ccc6cd3a11fd739?source=rss",
+      "article_published_at": "2026-11-14T11:11:15+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "知名度が高いアーティスト。公演の特別性と関東開催を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "187e66b1d5e564bc",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/56075d2c362c87f3afe8ed674ccc6cd3a11fd739?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -803,17 +1013,17 @@
       "publishable": false
     },
     {
-      "id": "c8baaa958be80b6de28a",
-      "title": "ブラジル代表、最新の高額年俸ランキング3位。移籍で10億円アップ！ W杯では日本代表を地獄送り(フットボールチャンネル)",
+      "id": "91cffda5f1ab37bb6cda",
+      "title": "【日本代表】久保建英、先制弾直後にシャツのメッセージ　手術受けた同僚バレネチェアへ(日刊スポーツ)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/ec2e2ff370aaeb000a81841ad17de6ecedaa9f16?source=rss",
-      "article_published_at": "2026-11-14T06:10:23+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/1998b964676f6a2ad3a8f6d1b116ede65127e26d?source=rss",
+      "article_published_at": "2026-11-14T11:34:58+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "9a2cfc3e506c466c",
+      "event_group_key": "a7cfa89e1c37c6ca",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/ec2e2ff370aaeb000a81841ad17de6ecedaa9f16?source=rss"
+        "https://news.yahoo.co.jp/articles/1998b964676f6a2ad3a8f6d1b116ede65127e26d?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -887,17 +1097,59 @@
       "publishable": false
     },
     {
-      "id": "ce536a9b7c79f147006f",
-      "title": "関大がマッチレース制し大会新で2連覇 2位は関学大、3位は京産大 オープン参加の青学大は終盤先頭に食らいつく／丹後大学駅伝(月刊陸上競技)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/dc41f54f514cfa11c23e264d5f908af5d77fb4ce?source=rss",
-      "article_published_at": "2026-11-14T06:09:07+00:00",
+      "id": "1a49a7db16845d9c3829",
+      "title": "『情熱大陸』プロゴルファー・石川遼特集 来年1月3日放送　9か月密着で現在地と素顔に迫る(TV LIFE web)",
+      "source": "Yahoo!エンタメ",
+      "article_url": "https://news.yahoo.co.jp/articles/ce96a44bc9a750d9a2873dc72ff92edf4addd394?source=rss",
+      "article_published_at": "2026-11-14T11:02:24+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "956eee4f8712b59d",
+      "event_group_key": "f9dc09d44093a44c",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/dc41f54f514cfa11c23e264d5f908af5d77fb4ce?source=rss"
+        "https://news.yahoo.co.jp/articles/ce96a44bc9a750d9a2873dc72ff92edf4addd394?source=rss"
+      ],
+      "article_count": 1,
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "event_date": null,
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "official_source_url": null,
+      "availability_in_japan": null,
+      "verification_status": "未検証",
+      "checks": [
+        "公式情報で開催日（記事公開日とは別）を確認",
+        "開始・終了時刻、開催地・会場を確認",
+        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
+        "地上波・配信の有無、BS限定でないことを確認",
+        "チケット・応募期限・定員を確認",
+        "主要イベントか意外な発見か、掲載理由を確認"
+      ],
+      "publishable": false
+    },
+    {
+      "id": "516ac95172947588e2a9",
+      "title": "【バドミントン】山口茜が決勝進出！　「自分のミスを減らしつつ、スピードを上げながらプレーできた」＜熊本マスターズ2026／選手コメント＞(バド×スピ！／バドミントン・マガジン)",
+      "source": "Yahoo!スポーツ",
+      "article_url": "https://news.yahoo.co.jp/articles/408621c76c5169f611bf8826163b90b621a10013?source=rss",
+      "article_published_at": "2026-11-14T11:32:42+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "area_hint": "開催地不明・要確認",
+      "event_group_key": "3189a55351d08789",
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/408621c76c5169f611bf8826163b90b621a10013?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -971,59 +1223,17 @@
       "publishable": false
     },
     {
-      "id": "45dc5b5994259e78a223",
-      "title": "EMNW、新曲「MASS MASS」11月27日に配信リリース",
+      "id": "9499348d2e5ff5e1b909",
+      "title": "中村橋之助・福之助・歌之助の三兄弟に加え、成駒屋一門の弟子たちも集合　『神谷町小歌舞伎』一日限りのプレミアムイベントが開催",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350349",
-      "article_published_at": "2026-11-13T12:00:00+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350370",
+      "article_published_at": "2026-11-14T02:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "2a6a56581a1f9c04",
+      "event_group_key": "7c63f5bda1c9d838",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350349"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "3e397de341763d227d86",
-      "title": "【鹿児島1年生大会】神村学園が鹿児島実に逆転勝ち！2年ぶり9回目の優勝【26年秋高校野球】(高校野球ドットコム)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/dfc530a270fbb939e9a0c38bbed23ca8a89b06b1?source=rss",
-      "article_published_at": "2026-11-14T06:07:22+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "cc079e2a5f838455",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/dfc530a270fbb939e9a0c38bbed23ca8a89b06b1?source=rss"
+        "https://spice.eplus.jp/articles/350370"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -1055,101 +1265,17 @@
       "publishable": false
     },
     {
-      "id": "3d963e07d16e20f6919d",
-      "title": "熊本城南地区大会は宇土が秀岳館を破って優勝【26年秋高校野球】(高校野球ドットコム)",
+      "id": "0c0a715f8b8a9fb007a7",
+      "title": "日本代表がブラジル相手に2点先行も…世界的スターの衝撃弾に解説陣も「それはちょっと無理だ」「すげぇな」(スポーティングニュース日本版)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/b6d0f4ebaf3ab3002e697dfcf66be59601f0fb5e?source=rss",
-      "article_published_at": "2026-11-14T06:01:57+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "00d14302a0000849",
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/b6d0f4ebaf3ab3002e697dfcf66be59601f0fb5e?source=rss"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "6ba1088d952c5e36708f",
-      "title": "Broken my toybox、新曲「花言葉」を配信リリース ジャケット写真も公開",
-      "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350347",
-      "article_published_at": "2026-11-13T11:00:00+00:00",
-      "candidate_status": "要確認",
-      "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "area_hint": "開催地不明・要確認",
-      "event_group_key": "de59ce42a926aa49",
-      "related_article_urls": [
-        "https://spice.eplus.jp/articles/350347"
-      ],
-      "article_count": 1,
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "event_date": null,
-      "start_time": null,
-      "end_time": null,
-      "venue": null,
-      "official_source_url": null,
-      "availability_in_japan": null,
-      "verification_status": "未検証",
-      "checks": [
-        "公式情報で開催日（記事公開日とは別）を確認",
-        "開始・終了時刻、開催地・会場を確認",
-        "東京・神奈川・千葉・埼玉で参加可能か、または日本から視聴できるか確認",
-        "地上波・配信の有無、BS限定でないことを確認",
-        "チケット・応募期限・定員を確認",
-        "主要イベントか意外な発見か、掲載理由を確認"
-      ],
-      "publishable": false
-    },
-    {
-      "id": "5feda74217f8ba85cc41",
-      "title": "ブラジル代表、アンチェロッティ監督の戦績は？ 敗れたのは日本代表含め4ヵ国(フットボールチャンネル)",
-      "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/741de5167551ba9fb0b0bca42f5e7483e05c8cc2?source=rss",
-      "article_published_at": "2026-11-14T06:01:22+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/1193ec78059424cf7bef986d4c90f854edc56cec?source=rss",
+      "article_published_at": "2026-11-14T11:27:50+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "50587a519ffb514d",
+      "event_group_key": "1a9f5ec0caf332a9",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/741de5167551ba9fb0b0bca42f5e7483e05c8cc2?source=rss"
+        "https://news.yahoo.co.jp/articles/1193ec78059424cf7bef986d4c90f854edc56cec?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -1181,17 +1307,17 @@
       "publishable": false
     },
     {
-      "id": "fef44239f5d61d06c524",
-      "title": "杉山愛監督ラスト采配！ 『ビリー･ジーン･キング･カップ by Gainbridge 2026』プレーオフ・アルゼンチン戦は11/21～22開催",
+      "id": "61fc5df77aeaedeeced7",
+      "title": "大阪・十三の現役老舗キャバレー グランドサロン十三で『新春DANCEHALL』開催、neco眠る、Summer Eye Sound Syndicate、NONCHELEEEら出演",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350353",
-      "article_published_at": "2026-11-13T10:53:26+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350361",
+      "article_published_at": "2026-11-14T02:00:00+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "b0e6f318497193d1",
+      "event_group_key": "4d1d78ec754afdd2",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350353"
+        "https://spice.eplus.jp/articles/350361"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -1223,21 +1349,21 @@
       "publishable": false
     },
     {
-      "id": "207aff18d397483a8896",
-      "title": "【K-1】バンタム級王者・上遠野寧吾とマハムード・サッタリが12・29横浜BUNTAI大会に出場決定(ゴング格闘技)",
+      "id": "f795be3fd945e3615411",
+      "title": "【まるがめボート・G1】15日開幕、初日ドリーム戦は峰竜太が中心　前検一番時計は濱野谷憲吾と毒島誠(中日スポーツ)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/cb75c641005ed71bf12ff44687314a83bb4ea608?source=rss",
-      "article_published_at": "2026-11-14T05:59:35+00:00",
+      "article_url": "https://news.yahoo.co.jp/articles/9293716bf1faa6bd629e6dd1883c32e34d83b0f1?source=rss",
+      "article_published_at": "2026-11-14T11:24:20+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "eaa9e6d82a4fb702",
+      "event_group_key": "942f7141b396194a",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/cb75c641005ed71bf12ff44687314a83bb4ea608?source=rss"
+        "https://news.yahoo.co.jp/articles/9293716bf1faa6bd629e6dd1883c32e34d83b0f1?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",
-      "participation_scope": "関東現地候補",
+      "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -1265,17 +1391,17 @@
       "publishable": false
     },
     {
-      "id": "1fe56d70d850c9f2544c",
-      "title": "さまざまなルーツをもった出演者が集結　即興舞台イベント『私、こんな役、演じてみたいんですけど。』の開催が決定",
+      "id": "1869077e406194f77756",
+      "title": "世界のトップライダー97名が境町に集結！11/27開幕『IBARAKI SAKAI Urban Sports Fes. 2026』BMXパーク出場選手決定",
       "source": "SPICE",
-      "article_url": "https://spice.eplus.jp/articles/350360",
-      "article_published_at": "2026-11-13T10:35:25+00:00",
+      "article_url": "https://spice.eplus.jp/articles/350288",
+      "article_published_at": "2026-11-13T14:08:15+00:00",
       "candidate_status": "要確認",
       "candidate_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "3972be9a4e782851",
+      "event_group_key": "fe6d0369340860d3",
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350360"
+        "https://spice.eplus.jp/articles/350288"
       ],
       "article_count": 1,
       "priority": "一般",
@@ -1307,17 +1433,17 @@
       "publishable": false
     },
     {
-      "id": "946d2e17f5722db26a64",
-      "title": "【侍ジャパン】16点大勝で決勝進出　大会3連覇へ井口監督「1、2番で8本ですから。相手は脅威」(スポニチアネックス)",
+      "id": "07aa3c5430c34e873f65",
+      "title": "【バドミントン】中西貴映／岩永鈴が決勝進出！　「自分たちのいいプレーをすること、2人で戦うことを大事に一本一本やっていきたい」（中西）＜熊本マスターズ2026／選手コメント＞(バド×スピ！／バドミントン・マガジン)",
       "source": "Yahoo!スポーツ",
-      "article_url": "https://news.yahoo.co.jp/articles/8462e61e5d56667af385439f13a3b72a6fb39a66?source=rss",
-      "article_published_at": "2026-11-14T05:58:11+00:00",
-      "candidate_status": "推薦候補",
-      "candidate_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "article_url": "https://news.yahoo.co.jp/articles/b3aa9df9557b2f1a4d488109c57e8824e255ea2e?source=rss",
+      "article_published_at": "2026-11-14T11:20:37+00:00",
+      "candidate_status": "要確認",
+      "candidate_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
       "area_hint": "開催地不明・要確認",
-      "event_group_key": "01015f67cc228dfc",
+      "event_group_key": "c6b6651ea429f82d",
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/8462e61e5d56667af385439f13a3b72a6fb39a66?source=rss"
+        "https://news.yahoo.co.jp/articles/b3aa9df9557b2f1a4d488109c57e8824e255ea2e?source=rss"
       ],
       "article_count": 1,
       "priority": "一般",

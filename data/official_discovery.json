@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-11-14T00:00:00+09:00",
+  "data_kind": "official_unverified_schedule_leads",
+  "message": "公式ページから取得した予定候補ですが、検証完了まで確定イベント一覧には掲載しません。",
+  "source_count": 4,
+  "successful_sources": 4,
+  "source_errors": [],
+  "source_reports": [
+    {
+      "status": "ok",
+      "extracted_count": 2,
+      "source": "JFA",
+      "url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html"
+    },
+    {
+      "status": "ok",
+      "extracted_count": 3,
+      "source": "JFA",
+      "url": "https://www.jfa.jp/samuraiblue/schedule_result/2027.html"
+    },
+    {
+      "status": "ok",
+      "extracted_count": 7,
+      "source": "NAOJ",
+      "url": "https://www.nao.ac.jp/astro/sky/2026/11.html"
+    },
+    {
+      "status": "ok",
+      "extracted_count": 4,
+      "source": "NAOJ",
+      "url": "https://www.nao.ac.jp/astro/sky/2026/12.html"
+    }
+  ],
+  "has_parse_errors": false,
+  "items": [
+    {
+      "id": "jfa-dd9c1964abfae7c0",
+      "name": "キリンチャレンジカップ2027",
+      "category": "スポーツ",
+      "date": "2027-03-25",
+      "end": "2027-03-25",
+      "time": null,
+      "place": "広島／エディオンピースウイング広島",
+      "access": null,
+      "official_url": "https://www.jfa.jp/samuraiblue/20270325/",
+      "source_page_url": "https://www.jfa.jp/samuraiblue/schedule_result/2027.html",
+      "source_type": "JFA公式試合日程",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "broadcast_or_streaming_in_japan": null,
+        "cancellation_status": "pending"
+      },
+      "reason": "JFA公式予定。試合日程・開催場所は取得済みだが、日本での放送・配信と中止・延期状況を確認するまで掲載しない。"
+    },
+    {
+      "id": "jfa-f5c96b263efefa28",
+      "name": "キリンチャレンジカップ2027",
+      "category": "スポーツ",
+      "date": "2027-03-30",
+      "end": "2027-03-30",
+      "time": null,
+      "place": "東京／国立競技場",
+      "access": null,
+      "official_url": "https://www.jfa.jp/samuraiblue/20270330/",
+      "source_page_url": "https://www.jfa.jp/samuraiblue/schedule_result/2027.html",
+      "source_type": "JFA公式試合日程",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "broadcast_or_streaming_in_japan": null,
+        "cancellation_status": "pending"
+      },
+      "reason": "JFA公式予定。試合日程・開催場所は取得済みだが、日本での放送・配信と中止・延期状況を確認するまで掲載しない。"
+    },
+    {
+      "id": "jfa-5e378cbb93c76065",
+      "name": "AFC アジアカップ サウジアラビア 2027 vs インドネシア、 タイ、 カタール",
+      "category": "スポーツ",
+      "date": "2027-12-23",
+      "end": "2028-01-21",
+      "time": null,
+      "place": "サウジアラビア",
+      "access": null,
+      "official_url": "https://www.jfa.jp/samuraiblue/schedule_result/2027.html",
+      "source_page_url": "https://www.jfa.jp/samuraiblue/schedule_result/2027.html",
+      "source_type": "JFA公式試合日程",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "broadcast_or_streaming_in_japan": null,
+        "cancellation_status": "pending"
+      },
+      "reason": "JFA公式予定。試合日程・開催場所は取得済みだが、日本での放送・配信と中止・延期状況を確認するまで掲載しない。"
+    },
+    {
+      "id": "naoj-04fdc84f911039ae",
+      "name": "水星が西方最大離角",
+      "category": "天文・自然",
+      "date": "2026-11-21",
+      "end": "2026-11-21",
+      "time": null,
+      "place": "東京の星空（国立天文台公式ページ）",
+      "access": "水星が西方最大離角",
+      "official_url": "https://www.nao.ac.jp/astro/sky/2026/11.html",
+      "source_page_url": "https://www.nao.ac.jp/astro/sky/2026/11.html",
+      "source_type": "国立天文台ほしぞら情報",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "observation_condition_in_japan": null,
+        "cancellation_status": "not_applicable"
+      },
+      "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。"
+    },
+    {
+      "id": "naoj-5ae3b920d734ce38",
+      "name": "土星が留",
+      "category": "天文・自然",
+      "date": "2026-12-12",
+      "end": "2026-12-12",
+      "time": null,
+      "place": "東京の星空（国立天文台公式ページ）",
+      "access": "土星が留",
+      "official_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_page_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_type": "国立天文台ほしぞら情報",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "observation_condition_in_japan": null,
+        "cancellation_status": "not_applicable"
+      },
+      "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。"
+    },
+    {
+      "id": "naoj-922e5d8e3c332e35",
+      "name": "海王星が留",
+      "category": "天文・自然",
+      "date": "2026-12-13",
+      "end": "2026-12-13",
+      "time": null,
+      "place": "東京の星空（国立天文台公式ページ）",
+      "access": "海王星が留 / 木星が留",
+      "official_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_page_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_type": "国立天文台ほしぞら情報",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "observation_condition_in_japan": null,
+        "cancellation_status": "not_applicable"
+      },
+      "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。"
+    },
+    {
+      "id": "naoj-546ba5d138803051",
+      "name": "木星が留",
+      "category": "天文・自然",
+      "date": "2026-12-13",
+      "end": "2026-12-13",
+      "time": null,
+      "place": "東京の星空（国立天文台公式ページ）",
+      "access": "海王星が留 / 木星が留",
+      "official_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_page_url": "https://www.nao.ac.jp/astro/sky/2026/12.html",
+      "source_type": "国立天文台ほしぞら情報",
+      "source_checked_on": null,
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "observation_condition_in_japan": null,
+        "cancellation_status": "not_applicable"
+      },
+      "reason": "国立天文台の月間カレンダーにある天文現象。日本での観測条件・見頃を確認するまで掲載しない。"
+    }
+  ]
+}
