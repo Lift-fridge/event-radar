@@ -59,3 +59,12 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - The prebuilt `data/official_schedule.json` is updated alongside `data/official_schedule_sources.json` so the separate official calendar tab can display these dates after the PR is merged. The existing GitHub Actions daily schedule builder will continue to regenerate this feed and remove past release dates.
 - **Not automated yet:** distributor lineup parsing, quality/major-title editorial selection, or date change detection. The next source-specific collector should generate unverified film candidates, with approval only after the date and Japan release are independently confirmed.
 - TV special schedules remain a future task; the NHK program guide API requires access credentials and may not offer a month-ahead horizon.
+
+## Official Japanese film-release daily discovery (proposed)
+
+- New `scripts/collect_official_films.py` scans two Japanese distributors' public official schedules daily: [Toho](https://www.toho.co.jp/movie/lineup/) and [Warner Bros Japan](https://www.warnerbros.co.jp/movie/).
+- Creates `data/official_film_discovery.json` as a **separate unverified candidate list**, with per-source `ok` / `empty` / `parse_error` / `fetch_error` reports.
+- Only explicitly dated upcoming domestic theatrical releases within the next 90 JST calendar days are accepted as candidates. Past releases, undated announcements, home-video releases and manually approved duplicate film dates are omitted. Failed sources can retain prior nonexpired candidates by original source URL.
+- **Does not auto-publish** candidate films or auto-judge their importance: distributor schedules include niche titles, franchises and re-releases. Date changes, screenings and editorial importance need verification before inclusion.
+- No external dependencies; GitHub Actions triggers film metadata discovery along with the existing daily news/sports/astronomy pipeline. Existing film cards, favorites and UI are unchanged.
+- HTML parsing was verified on GitHub Actions against the live Japanese Toho and Warner Bros pages on 2026-11-14 JST. Before 90-day and existing-approved-event filtering, 14 Toho and 5 Warner records were extracted. After filtering, 11 unverified future film candidates remained. Existing display entries were not modified. Parsing may need maintenance if distributor layouts change; review per-source reports after the first post-merge refresh.
