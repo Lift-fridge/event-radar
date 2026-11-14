@@ -1,8 +1,8 @@
 {
-  "data_kind": "manually_verified_official_calendar_pilot",
+  "data_kind": "official_calendar_curated_and_autoverified_dates",
   "as_of_jst": "2026-11-14",
   "horizon_days": 60,
-  "note": "手動確認済みの公式予定（スポーツ・天文・映画）に加え、国立天文台の極大日を機械確認した流星群を表示。公式サイトで最新の上映館・放送・観測条件を確認してください。",
+  "note": "手動確認済み予定に加え、国立天文台から極大日だけを機械確認した流星群を表示。観測の見頃・天候は未確認で、公式情報の再確認が必要です。日本での視聴が未確認のスポーツは非掲載。",
   "events": [
     {
       "id": "jfa-brazil-20261114",

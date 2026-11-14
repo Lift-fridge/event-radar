@@ -1,0 +1,252 @@
+{
+  "data_kind": "unverified_official_japanese_film_release_candidates",
+  "generated_at": "2026-11-14T21:50:53+09:00",
+  "source_reports": [
+    {
+      "source": "東宝",
+      "url": "https://www.toho.co.jp/movie/lineup/",
+      "status": "ok",
+      "extracted_count": 14
+    },
+    {
+      "source": "ワーナー・ブラザース",
+      "url": "https://www.warnerbros.co.jp/movie/",
+      "status": "ok",
+      "extracted_count": 5
+    }
+  ],
+  "items": [
+    {
+      "id": "film-64487b81ff5b3f7f86",
+      "name": "魔法使いの夜",
+      "category": "映画",
+      "date": "2026-11-20",
+      "end": "2026-11-20",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-73bf050edac79d1547",
+      "name": "君の話",
+      "category": "映画",
+      "date": "2026-11-27",
+      "end": "2026-11-27",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.warnerbros.co.jp/movie/",
+      "source_page_url": "https://www.warnerbros.co.jp/movie/",
+      "source_type": "ワーナー・ブラザース公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-34788de88071d97bbb",
+      "name": "VIVANT",
+      "category": "映画",
+      "date": "2026-12-04",
+      "end": "2026-12-04",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-28b844ccaad8f27edf",
+      "name": "劇場版 薬屋のひとりごと 亡妃の秘宝",
+      "category": "映画",
+      "date": "2026-12-11",
+      "end": "2026-12-11",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-1f0c5ae3b2c90314af",
+      "name": "キャット・イン・ザ・ハット",
+      "category": "映画",
+      "date": "2026-12-25",
+      "end": "2026-12-25",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.warnerbros.co.jp/movie/",
+      "source_page_url": "https://www.warnerbros.co.jp/movie/",
+      "source_type": "ワーナー・ブラザース公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-e0b5dc9e1e0450d19e",
+      "name": "映画 九条の大罪",
+      "category": "映画",
+      "date": "2027-01-08",
+      "end": "2027-01-08",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-82361907704013a6cd",
+      "name": "劇場版「虎に翼」",
+      "category": "映画",
+      "date": "2027-01-15",
+      "end": "2027-01-15",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-498222b1ade6aa20fd",
+      "name": "劇場版 40までにしたい10のこと",
+      "category": "映画",
+      "date": "2027-01-22",
+      "end": "2027-01-22",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-43d4a3fd895e150980",
+      "name": "カイジ 人生リベンジゲーム",
+      "category": "映画",
+      "date": "2027-01-29",
+      "end": "2027-01-29",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-29ad86bd0f99199707",
+      "name": "フラガール 4K",
+      "category": "映画",
+      "date": "2027-02-05",
+      "end": "2027-02-05",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-792d106afadb98c74a",
+      "name": "リバイアサン",
+      "category": "映画",
+      "date": "2027-02-11",
+      "end": "2027-02-11",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    }
+  ],
+  "message": "日本の配給会社による公開予定の候補。公開日変更・作品の注目度・上映館は未確認。自動掲載しません。"
+}
