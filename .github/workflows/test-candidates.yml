@@ -24,7 +24,15 @@ jobs:
           import sys
           sys.path.insert(0, "scripts")
           from collect_official_films import collect
-          result = collect()
+          from collect_official_films import fetch_html, SOURCES
+          page = fetch_html(SOURCES[0][1])
+          for term in ("SUKIYAKI", "2026年12月25日", "2026年12月11日"):
+              i = page.find(term)
+              print("TOHO_HTML_DIAGNOSTIC", term, "index", i, "context", repr(page[max(0,i-130):i+170] if i>=0 else "NOT FOUND"))
+          import json
+          from pathlib import Path
+          manual = json.loads(Path("data/official_schedule_sources.json").read_text())
+          result = collect(manual=manual)
           for source in result["source_reports"]:
               print("FILM_SOURCE", source)
           for event in result["items"][:15]:
