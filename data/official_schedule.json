@@ -2,7 +2,7 @@
   "data_kind": "manually_verified_official_calendar_pilot",
   "as_of_jst": "2026-11-14",
   "horizon_days": 60,
-  "note": "記事公開日ではなく公式予定日。出典確認済みの手動シード。テレビ一般番組は検証できるまで未掲載。掲載前に最新の公式情報を再確認してください。",
+  "note": "手動確認済みの公式予定（スポーツ・天文・映画）に加え、国立天文台の極大日を機械確認した流星群を表示。公式サイトで最新の上映館・放送・観測条件を確認してください。",
   "events": [
     {
       "id": "jfa-brazil-20261114",
@@ -56,6 +56,23 @@
       "editorial_status": "manual_official_checked"
     },
     {
+      "id": "film-practicalmagic2-20261127",
+      "name": "『プラクティカル・マジック／魔女たちの秘密』公開",
+      "category": "映画",
+      "date": "2026-11-27",
+      "end": "2026-11-27",
+      "time": "上映時刻は劇場ごとに異なります",
+      "place": "日本国内の上映館（劇場は公式情報で確認）",
+      "access": "国内劇場公開予定。上映館・上映時刻・チケットは公式サイトで確認してください",
+      "why": "サンドラ・ブロックとニコール・キッドマンが出演する、魔女の姉妹を描く映画の新作。",
+      "trivia": "姉妹の絆を軸にしたファンタジー作品です。",
+      "url": "https://practicalmagic2-movie.jp/news/",
+      "source_type": "ワーナー・ブラザース配給作品公式情報",
+      "access_scope": "国内映画公開予定",
+      "source_checked_on": "2026-11-14",
+      "editorial_status": "manual_official_checked"
+    },
+    {
       "id": "naoj-geminids-20261214",
       "name": "ふたご座流星群が極大",
       "category": "天文・自然",
@@ -70,6 +87,40 @@
       "source_type": "国立天文台公式月間カレンダー",
       "access_scope": "日本で観測可能",
       "source_checked_on": "2026-11-11",
+      "editorial_status": "manual_official_checked"
+    },
+    {
+      "id": "film-dune3-20261218",
+      "name": "『デューン 砂の惑星 PART3』公開",
+      "category": "映画",
+      "date": "2026-12-18",
+      "end": "2026-12-18",
+      "time": "上映時刻は劇場ごとに異なります",
+      "place": "日本国内の上映館（劇場は公式情報で確認）",
+      "access": "国内劇場公開予定。上映館・上映時刻・チケットは公式サイトで確認してください",
+      "why": "大作SF映画『デューン 砂の惑星』シリーズの新作公開。",
+      "trivia": "日本の配給会社公式ラインナップに2026年12月18日公開予定と記載されています。",
+      "url": "https://www.warnerbros.co.jp/movie/",
+      "source_type": "ワーナー・ブラザース公式映画公開予定",
+      "access_scope": "国内映画公開予定",
+      "source_checked_on": "2026-11-14",
+      "editorial_status": "manual_official_checked"
+    },
+    {
+      "id": "film-sukiyaki-20261225",
+      "name": "『SUKIYAKI 上を向いて歩こう』公開",
+      "category": "映画",
+      "date": "2026-12-25",
+      "end": "2026-12-25",
+      "time": "上映時刻は劇場ごとに異なります",
+      "place": "日本国内の上映館（劇場は公式情報で確認）",
+      "access": "国内劇場公開予定。上映館・上映時刻・チケットは公式サイトで確認してください",
+      "why": "坂本九、永六輔、中村八大が生んだ世界的ヒット曲の誕生秘話を映画化。",
+      "trivia": "岡田准一が中村八大、松坂桃李が永六輔、仲野太賀が坂本九を演じます。",
+      "url": "https://sukiyaki.toho-movie.jp/",
+      "source_type": "東宝配給映画公式サイト",
+      "access_scope": "国内映画公開予定",
+      "source_checked_on": "2026-11-14",
       "editorial_status": "manual_official_checked"
     }
   ]

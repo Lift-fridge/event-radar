@@ -41,6 +41,19 @@ class OfficialCalendarTests(unittest.TestCase):
         self.assertFalse(build_schedule({"events": [sample(category="ゲーム")]}, TODAY)["events"])
         self.assertFalse(build_schedule({"events": [sample(access_scope="BS限定")]}, TODAY)["events"])
 
+    def test_verified_film_release_in_japan_is_included(self):
+        film = sample(category="映画", access_scope="国内映画公開予定",
+                      name="公式配給会社公開予定の映画", date="2026-12-25",
+                      end="2026-12-25", url="https://sukiyaki.toho-movie.jp/")
+        events = build_schedule({"events": [film]}, TODAY)["events"]
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["category"], "映画")
+
+    def test_film_without_confirmed_japan_release_is_not_included(self):
+        film = sample(category="映画", access_scope="国外限定",
+                      date="2026-12-25", end="2026-12-25")
+        self.assertEqual(build_schedule({"events": [film]}, TODAY)["events"], [])
+
     def test_duplicate_event_id_fails(self):
         with self.assertRaises(ValueError):
             build_schedule({"events": [sample(), sample()]}, TODAY)

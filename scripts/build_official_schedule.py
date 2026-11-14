@@ -16,8 +16,8 @@ DISCOVERY = ROOT / "data" / "official_discovery.json"
 REQUIRED = ("id", "name", "category", "date", "end", "time", "place",
             "access", "why", "trivia", "url", "source_type", "access_scope",
             "source_checked_on", "editorial_status")
-ALLOWED = {"スポーツ", "天文・自然", "テレビ"}
-ALLOWED_SCOPE = {"国内視聴可", "日本で観測可能", "関東現地参加"}
+ALLOWED = {"スポーツ", "天文・自然", "テレビ", "映画"}
+ALLOWED_SCOPE = {"国内視聴可", "日本で観測可能", "関東現地参加", "国内映画公開予定"}
 MAX_HORIZON = 60
 
 
