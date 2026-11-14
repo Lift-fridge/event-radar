@@ -27,13 +27,15 @@ jobs:
         run: python3 scripts/collect_official_schedules.py
       - name: Collect official Japanese theatrical release candidates
         run: python3 scripts/collect_official_films.py
+      - name: Build conservative film selection audit
+        run: python3 scripts/select_official_films.py
       - name: Build official schedule pilot
         run: python3 scripts/build_official_schedule.py
       - name: Test verification rules
         run: python3 -m unittest discover -s tests -v
       - name: Commit changed metadata
         run: |
-          git add data/discovery.json data/review_queue.json data/official_schedule.json data/official_discovery.json data/official_film_discovery.json
+          git add data/discovery.json data/review_queue.json data/official_schedule.json data/official_discovery.json data/official_film_discovery.json data/official_film_selection.json data/official_film_editorial_evidence.json
           if ! git diff --cached --quiet; then
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update EVENT RADAR news leads"
             git push
