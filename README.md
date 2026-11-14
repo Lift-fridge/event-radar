@@ -59,3 +59,12 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - The prebuilt `data/official_schedule.json` is updated alongside `data/official_schedule_sources.json` so the separate official calendar tab can display these dates after the PR is merged. The existing GitHub Actions daily schedule builder will continue to regenerate this feed and remove past release dates.
 - **Not automated yet:** distributor lineup parsing, quality/major-title editorial selection, or date change detection. The next source-specific collector should generate unverified film candidates, with approval only after the date and Japan release are independently confirmed.
 - TV special schedules remain a future task; the NHK program guide API requires access credentials and may not offer a month-ahead horizon.
+
+## Official Japanese film-release daily discovery (proposed)
+
+- New `scripts/collect_official_films.py` scans two Japanese distributors' public official schedules daily: [Toho](https://www.toho.co.jp/movie/lineup/) and [Warner Bros Japan](https://www.warnerbros.co.jp/movie/).
+- Creates `data/official_film_discovery.json` as a **separate unverified candidate list**, with per-source `ok` / `empty` / `parse_error` / `fetch_error` reports.
+- Only explicitly dated upcoming domestic theatrical releases within the next 90 JST calendar days are accepted as candidates. Past releases, undated announcements, home-video releases and manually approved duplicate film dates are omitted. Failed sources can retain prior nonexpired candidates by original source URL.
+- **Does not auto-publish** candidate films or auto-judge their importance: distributor schedules include niche titles, franchises and re-releases. Date changes, screenings and editorial importance need verification before inclusion.
+- No external dependencies; GitHub Actions triggers film metadata discovery along with the existing daily news/sports/astronomy pipeline. Existing film cards, favorites and UI are unchanged.
+- The HTML structural tests use representative markup, not a guaranteed verbatim snapshot of the live sites. On the first post-merge run, inspect source reports and titles for accuracy. Do not assume a successful HTTP fetch means successful extraction.
