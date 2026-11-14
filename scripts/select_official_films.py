@@ -23,7 +23,7 @@ ALLOWED_BASIS = {
 
 
 def normalize_title(value):
-    return re.sub(r"[\\s　『』「」【】()（）・:：]|^(?:映画|劇場版)", "", value or "").lower().replace("公開", "")
+    return re.sub(r"[\s　『』「」【】()（）・:：]|^(?:映画|劇場版)", "", value or "").lower().replace("公開", "")
 
 
 def parse_day(value):
