@@ -57,6 +57,43 @@ class AnchorParser(HTMLParser):
             self.ignore -= 1
 
 
+
+class TohoCardParser(HTMLParser):
+    """Pair official Toho film-card title and its adjacent release subtext."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.titles = 0
+        self.pairs = []
+        self.current_title = None
+        self.collecting = None
+        self.text = []
+
+    def handle_starttag(self, tag, attrs):
+        cls = dict(attrs).get("class", "").split()
+        if tag == "h3" and "works-link-001__title" in cls:
+            self.titles += 1
+            self.current_title = None
+            self.collecting = "title"
+            self.text = []
+        elif tag == "p" and "works-link-001__subtext" in cls:
+            self.collecting = "date"
+            self.text = []
+
+    def handle_data(self, data):
+        if self.collecting:
+            self.text.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "h3" and self.collecting == "title":
+            self.current_title = " ".join(" ".join(self.text).split())
+            self.collecting = None
+        elif tag == "p" and self.collecting == "date":
+            details = " ".join(" ".join(self.text).split())
+            if self.current_title:
+                self.pairs.append((self.current_title, details))
+            self.current_title = None
+            self.collecting = None
+
 def release_day(text):
     match = DATE.search(text)
     if not match:
@@ -96,23 +133,17 @@ def make_record(source, page, title, date):
 
 
 def parse_toho(raw, url):
-    html = AnchorParser()
-    html.feed(raw)
+    parser = TohoCardParser()
+    parser.feed(raw)
     found = []
-    for link in html.links:
-        value = link["text"]
-        match = DATE.search(value)
-        if not match or "ブルーレイ" in value or "DVD" in value:
+    for title, details in parser.pairs:
+        if not title or len(title) > 110 or "ブルーレイ" in details or "DVD" in details:
             continue
-        title = value[:match.start()].strip(" 　-｜|")
-        day = release_day(value)
-        if not title or len(title) > 110 or day is None:
-            continue
-        found.append(make_record("東宝", url, title, day.isoformat()))
+        day = release_day(details)
+        if day:
+            found.append(make_record("東宝", url, title, day.isoformat()))
     unique = {(r["name"], r["date"]): r for r in found}
-    # No dated entries is legitimate when the official lineup announces
-    # releases only by season, but a total absence of links is suspicious.
-    return list(unique.values()), bool(html.links)
+    return list(unique.values()), parser.titles > 0
 
 
 def parse_warner(raw, url):
