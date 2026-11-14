@@ -51,3 +51,11 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 - Planetary station (留), elongation, generic science news, unknown sources, football matches with unverified broadcasts, parse errors, stale discovery and past dates stay **off** the public schedule.
 - Automatic verification establishes **the calendar date only**. It does *not* establish a precise Japanese observing peak hour, visibility, weather, or exact best viewing window. The app labels auto-checked dates distinctly and sends users to the official monthly calendar for observing guidance.
 - The previously manually verified entries, favorites and news metadata remain intact. Review source terms before any redistribution or production monetization. If source check fails the app will show no newly auto-approved date rather than guess.
+
+## Verified domestic film-release expansion
+
+- First additional official-date examples are **three manually selected domestic theatrical releases**: Practical Magic 2 (Warner Bros, 2026-11-27), Dune Part Three (Warner Bros, 2026-12-18), and SUKIYAKI 上を向いて歩こう (Toho, 2026-12-25). All are linked to the Japanese distributor/film official pages.
+- `映画` plus `国内映画公開予定` is now an allowed *verified* schedule category/scope. This is a release **date**, not an invented fixed start time or a guaranteed screening in any particular cinema. Cinema lists/tickets can change and users should consult the official source.
+- The prebuilt `data/official_schedule.json` is updated alongside `data/official_schedule_sources.json` so the separate official calendar tab can display these dates after the PR is merged. The existing GitHub Actions daily schedule builder will continue to regenerate this feed and remove past release dates.
+- **Not automated yet:** distributor lineup parsing, quality/major-title editorial selection, or date change detection. The next source-specific collector should generate unverified film candidates, with approval only after the date and Japan release are independently confirmed.
+- TV special schedules remain a future task; the NHK program guide API requires access credentials and may not offer a month-ahead horizon.
