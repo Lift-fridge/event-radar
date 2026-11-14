@@ -51,6 +51,9 @@ def evaluate(item, reports, manual, today):
     date = parse_day(item.get("date"))
     page = item.get("source_page_url") or item.get("official_url")
     report = next((x for x in reports if x.get("url") == page), None)
+    if item.get("source_page_url") and item.get("official_url") \
+            and item["source_page_url"] != item["official_url"]:
+        reasons.append("公式URLと取得元ページURLが一致しない")
     if date is None:
         reasons.append("公式公開日がISO日付として確認できない")
     elif not today <= date <= today + dt.timedelta(days=HORIZON):
