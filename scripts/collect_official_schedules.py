@@ -9,6 +9,7 @@ import re
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urljoin
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "data" / "official_discovery.json"
@@ -103,7 +104,7 @@ def jfa_events(document, url, year):
         opponent = row[3]["text"]
         place = row[4]["text"] if len(row) > 4 else None
         display_name = f"{name} vs {opponent}" if opponent and opponent != "未定" else name
-        event_url = row[1]["url"] or url
+        event_url = urljoin(url, row[1]["url"]) if row[1]["url"] else url
         events.append({
             "id": make_id("jfa", display_name, start.isoformat(), event_url),
             "name": display_name,
@@ -174,6 +175,27 @@ def manual_keys(manual):
     return {(event.get("name"), event.get("date")) for event in manual.get("events", [])}
 
 
+def normalized_name(value):
+    return re.sub(r"[\s　]|日本代表|サッカー|代表", "", value or "").lower()
+
+
+def is_manual_duplicate(event, manual_events):
+    for known in manual_events:
+        if known.get("date") != event.get("date"):
+            continue
+        if known.get("official_url") and known.get("official_url") == event.get("official_url"):
+            return True
+        current = normalized_name(event.get("name"))
+        previous = normalized_name(known.get("name"))
+        if current and previous and (current == previous or current in previous or previous in current):
+            return True
+        current_opponent = current.split("vs")[-1]
+        previous_opponent = previous.split("vs")[-1]
+        if current_opponent and current_opponent == previous_opponent and current_opponent != current:
+            return True
+    return False
+
+
 def collect(today=None, fetcher=None, manual=None):
     today = today or dt.datetime.now(JST).date()
     fetcher = fetcher or fetch_html
@@ -193,11 +215,13 @@ def collect(today=None, fetcher=None, manual=None):
         except Exception as exc:
             errors.append({"source": name, "url": url, "error_type": type(exc).__name__})
     known = manual_keys(manual)
+    manual_events = manual.get("events", [])
     deduped = []
     seen = set()
     for event in events:
         identity = (event["name"], event["date"])
-        if identity in known or identity in seen or dt.date.fromisoformat(event["end"]) < today:
+        if (identity in known or is_manual_duplicate(event, manual_events)
+                or identity in seen or dt.date.fromisoformat(event["end"]) < today):
             continue
         seen.add(identity)
         deduped.append(event)
@@ -234,3 +258,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
