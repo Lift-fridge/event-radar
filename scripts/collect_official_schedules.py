@@ -175,7 +175,12 @@ def parse_source(document, source, url, year, month=None):
         events = jfa_events(document, url, year)
     else:
         events = naoj_events(document, url, year, month)
-    if not parser.rows:
+    data_rows = [row for row in parser.rows if any(cell["text"] for cell in row)]
+    date_rows = [row for row in data_rows if row and (
+        parse_jfa_date(row[0]["text"], year)[0] if source == "JFA"
+        else parse_naoj_date(row[0]["text"], year, month)[0]
+    )]
+    if not parser.rows or (data_rows and not date_rows):
         return events, {"status": "parse_error", "extracted_count": 0,
                         "error_type": "UnexpectedStructure"}
     return events, {"status": "ok" if events else "empty", "extracted_count": len(events)}
@@ -211,6 +216,21 @@ def is_manual_duplicate(event, manual_events):
     return False
 
 
+def dedupe_events(events, today, manual):
+    known = manual_keys(manual)
+    manual_events = manual.get("events", [])
+    deduped = []
+    seen = set()
+    for event in events:
+        identity = (event["name"], event["date"])
+        if (identity in known or is_manual_duplicate(event, manual_events)
+                or identity in seen or dt.date.fromisoformat(event["end"]) < today):
+            continue
+        seen.add(identity)
+        deduped.append(event)
+    return deduped
+
+
 def collect(today=None, fetcher=None, manual=None):
     today = today or dt.datetime.now(JST).date()
     fetcher = fetcher or fetch_html
@@ -233,17 +253,6 @@ def collect(today=None, fetcher=None, manual=None):
             reports.append({"source": name, "url": url, "status": "fetch_error",
                             "extracted_count": 0, "error_type": type(exc).__name__})
             errors.append({"source": name, "url": url, "error_type": type(exc).__name__})
-    known = manual_keys(manual)
-    manual_events = manual.get("events", [])
-    deduped = []
-    seen = set()
-    for event in events:
-        identity = (event["name"], event["date"])
-        if (identity in known or is_manual_duplicate(event, manual_events)
-                or identity in seen or dt.date.fromisoformat(event["end"]) < today):
-            continue
-        seen.add(identity)
-        deduped.append(event)
     return {
         "generated_at": dt.datetime.combine(today, dt.time(), JST).isoformat(timespec="seconds"),
         "data_kind": "official_unverified_schedule_leads",
@@ -253,7 +262,7 @@ def collect(today=None, fetcher=None, manual=None):
         "source_errors": errors,
         "source_reports": reports,
         "has_parse_errors": any(report["status"] == "parse_error" for report in reports),
-        "items": deduped,
+        "items": dedupe_events(events, today, manual),
     }
 
 
@@ -266,6 +275,15 @@ def fetch_html(url):
     return body.decode("utf-8", errors="strict")
 
 
+def restore_failed_source_items(payload, previous, today, manual):
+    failed_urls = {report["url"] for report in payload["source_reports"]
+                   if report["status"] == "parse_error"}
+    preserved = [item for item in previous.get("items", [])
+                 if item.get("official_url") in failed_urls]
+    payload["items"] = dedupe_events(payload["items"] + preserved, today, manual)
+    return payload
+
+
 def main():
     manual = json.loads(MANUAL_SOURCE.read_text(encoding="utf-8")) if MANUAL_SOURCE.exists() else {}
     payload = collect(manual=manual)
@@ -273,14 +291,7 @@ def main():
         raise SystemExit("All official sources failed; previous data preserved.")
     if payload["has_parse_errors"] and OUTPUT.exists():
         previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
-        failed_sources = {report["source"] for report in payload["source_reports"]
-                          if report["status"] == "parse_error"}
-        preserved = [item for item in previous.get("items", [])
-                     if item.get("source_type") in {"JFA公式試合日程" if s == "JFA"
-                                                     else "国立天文台ほしぞら情報"
-                                                     for s in failed_sources}]
-        payload["items"] = preserved + [item for item in payload["items"]
-                                         if item not in preserved]
+        payload = restore_failed_source_items(payload, previous, dt.datetime.now(JST).date(), manual)
         payload["message"] += " 解析失敗した情報源の既存データは保持しています。"
     temp = OUTPUT.with_suffix(".json.tmp")
     temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
