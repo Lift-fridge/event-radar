@@ -114,6 +114,7 @@ def jfa_events(document, url, year):
             "place": place or None,
             "access": None,
             "official_url": event_url,
+            "source_page_url": url,
             "source_type": "JFA公式試合日程",
             "source_checked_on": None,
             "status": "要確認",
@@ -154,6 +155,7 @@ def naoj_events(document, url, year, month):
                 "place": "東京の星空（国立天文台公式ページ）",
                 "access": detail,
                 "official_url": url,
+                "source_page_url": url,
                 "source_type": "国立天文台ほしぞら情報",
                 "source_checked_on": None,
                 "status": "要確認",
@@ -279,7 +281,7 @@ def restore_failed_source_items(payload, previous, today, manual):
     failed_urls = {report["url"] for report in payload["source_reports"]
                    if report["status"] == "parse_error"}
     preserved = [item for item in previous.get("items", [])
-                 if item.get("official_url") in failed_urls]
+                 if item.get("source_page_url") in failed_urls]
     payload["items"] = dedupe_events(payload["items"] + preserved, today, manual)
     return payload
 
