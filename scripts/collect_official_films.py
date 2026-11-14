@@ -25,38 +25,36 @@ UA = "EventRadar-FilmDates/0.1 (official title/date metadata only)"
 HORIZON = 90
 
 
-class FilmHTML(HTMLParser):
-    """Keep headings and nearby text, without parsing scripts or style."""
+class AnchorParser(HTMLParser):
+    """Extract linked film listing card text rather than assuming movie headings."""
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.tokens = []
-        self.headings = []
-        self.heading = None
-        self.ignored = 0
+        self.links = []
+        self.active = None
+        self.ignore = 0
 
     def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
         if tag in ("script", "style", "noscript"):
-            self.ignored += 1
-        if tag in ("h2", "h3", "h4") and not self.ignored:
-            self.heading = [tag, len(self.tokens), []]
+            self.ignore += 1
+        if tag == "a" and self.active is None and not self.ignore:
+            self.active = {"href": attrs.get("href"), "text": [], "image_alt": []}
+        if tag == "img" and self.active is not None and attrs.get("alt"):
+            self.active["image_alt"].append(attrs["alt"])
 
     def handle_data(self, data):
-        if self.ignored:
-            return
-        value = " ".join(data.split())
-        if value:
-            self.tokens.append(value)
-            if self.heading is not None:
-                self.heading[2].append(value)
+        if self.active is not None and not self.ignore:
+            self.active["text"].append(" ".join(data.split()))
 
     def handle_endtag(self, tag):
-        if tag in ("script", "style", "noscript") and self.ignored:
-            self.ignored -= 1
-        if self.heading is not None and tag == self.heading[0]:
-            title = " ".join(self.heading[2]).strip()
-            if title:
-                self.headings.append((self.heading[1], len(self.tokens), title))
-            self.heading = None
+        if tag == "a" and self.active is not None:
+            text = " ".join(x for x in self.active["text"] if x).strip()
+            if not text:
+                text = " ".join(self.active["image_alt"]).strip()
+            self.links.append({"text": text, "href": self.active["href"]})
+            self.active = None
+        if tag in ("script", "style", "noscript") and self.ignore:
+            self.ignore -= 1
 
 
 def release_day(text):
@@ -70,7 +68,7 @@ def release_day(text):
 
 
 def normalized_title(title):
-    return re.sub(r"[\s　『』「」【】()（）・:：]|^(?:映画|劇場版)", "", title).lower().replace("公開", "")
+    return re.sub(r"[\\s　『』「」【】()（）・:：]|^(?:映画|劇場版)", "", title).lower().replace("公開", "")
 
 
 def make_record(source, page, title, date):
@@ -98,43 +96,40 @@ def make_record(source, page, title, date):
 
 
 def parse_toho(raw, url):
-    html = FilmHTML()
+    html = AnchorParser()
     html.feed(raw)
     found = []
-    for _, end, title in html.headings:
-        if len(title) > 110 or not title:
+    for link in html.links:
+        value = link["text"]
+        match = DATE.search(value)
+        if not match or "ブルーレイ" in value or "DVD" in value:
             continue
-        # The publication date must follow the movie heading before another heading.
-        next_start = min((start for start, _, _ in html.headings if start >= end), default=len(html.tokens))
-        nearby = " ".join(html.tokens[end:min(next_start, end + 9)])
-        day = release_day(nearby)
-        if day:
-            found.append(make_record("東宝", url, title, day.isoformat()))
-    # A page without movie headings is treated as a changed structure.
-    return found, bool(html.headings)
+        title = value[:match.start()].strip(" 　-｜|")
+        day = release_day(value)
+        if not title or len(title) > 110 or day is None:
+            continue
+        found.append(make_record("東宝", url, title, day.isoformat()))
+    unique = {(r["name"], r["date"]): r for r in found}
+    # No dated entries is legitimate when the official lineup announces
+    # releases only by season, but a total absence of links is suspicious.
+    return list(unique.values()), bool(html.links)
 
 
 def parse_warner(raw, url):
-    html = FilmHTML()
+    html = AnchorParser()
     html.feed(raw)
-    # Limit the match to individual short neighboring text segments: never
-    # pair a release date from one film with the title of another film.
     found = []
-    for i in range(len(html.tokens)):
-        for size in range(1, 6):
-            segment = " ".join(html.tokens[i:i + size])
-            if len(segment) > 180:
-                break
-            m = WARNER.search(segment)
-            if not m:
-                continue
-            day = release_day(m.group(1))
-            if day:
-                found.append(make_record("ワーナー・ブラザース", url, m.group(2), day.isoformat()))
-            break
+    for link in html.links:
+        value = link["text"]
+        match = WARNER.search(value)
+        if not match or "ブルーレイ" in value or "DVD" in value:
+            continue
+        day = release_day(match.group(1))
+        if day:
+            found.append(make_record("ワーナー・ブラザース", url, match.group(2), day.isoformat()))
     unique = {(r["name"], r["date"]): r for r in found}
-    return list(unique.values()), bool(html.tokens) and ("近日公開" in " ".join(html.tokens))
-
+    return list(unique.values()), bool(html.links) and any(
+        "近日公開" in x["text"] for x in html.links)
 
 def fetch_html(url):
     request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
