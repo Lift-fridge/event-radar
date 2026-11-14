@@ -33,9 +33,10 @@ On each RSS refresh, `scripts/build_review_queue.py` writes `data/review_queue.j
 
 ## Official-calendar pilot (PR #5)
 
-**Purpose:** separate future official *event schedules* from broad RSS news headlines. This is intentionally a small, manually checked proof of concept and **not yet an automated official-site scraper**.
+**Purpose:** separate future official *event schedules* from broad RSS news headlines. The manually checked feed remains separate from a daily, unverified discovery feed.
 
 - Curated official seed: `data/official_schedule_sources.json` (two Japan football national-team fixtures with JFA broadcast page; two meteor showers with NAOJ monthly sky calendars).
+- Daily collector: `scripts/collect_official_schedules.py` fetches the JFA schedule pages for the current and next year, and the NAOJ monthly pages for the current and next month. It writes `data/official_discovery.json` with per-source errors; every item remains `publishable: false` until reviewed.
 - Builder: `scripts/build_official_schedule.py`. Strict date format, full metadata, approved state, Japan viewing/observing scope, unique IDs and HTTPS official URL are required. A record is shown only if its end date is today or later, its start date is within 60 days, and the last official check is no more than 90 days old. Date is interpreted in Japan local calendar days. The workflow refreshes `data/official_schedule.json` daily; it does *not* re-validate dates against sites automatically.
 - New **公式予定（試作）** tab reads the confirmed-feed JSON without changing the older demo `見つける` cards, RSS `新着候補`, or existing favorites storage.
 - TV category is supported in the schema, but **no standalone TV show is included until a concrete official date/time and terrestrial or eligible stream can be verified**. A football game carried on TV is still categorized as sports.
