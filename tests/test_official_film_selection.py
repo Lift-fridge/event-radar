@@ -80,6 +80,13 @@ class OfficialFilmSelectionTests(unittest.TestCase):
             {"events": []}, TODAY)
         self.assertIn("古い", " ".join(result["items"][0]["selection"]["reasons"]))
 
+    def test_mismatched_official_url_is_held(self):
+        data = discovery([item()])
+        data["items"][0]["official_url"] = "https://www.warnerbros.co.jp/movie/"
+        result = select(data, {"events": []}, TODAY)
+        self.assertFalse(result["items"][0]["selection"]["publishable"])
+        self.assertIn("一致しない", " ".join(result["items"][0]["selection"]["reasons"]))
+
     def test_wrong_source_status_is_held(self):
         data = discovery([item()])
         data["source_reports"][0]["status"] = "fetch_error"
