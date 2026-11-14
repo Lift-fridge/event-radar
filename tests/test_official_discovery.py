@@ -1,9 +1,13 @@
 import datetime as dt
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
+import collect_official_schedules as collector
 from collect_official_schedules import collect, jfa_events, naoj_events
 
 
@@ -16,6 +20,7 @@ JFA_HTML = """
 NAOJ_HTML = """
 <table><tr><th>日</th><th>現象</th></tr>
 <tr><td>31日</td><td>22時頃、ふたご座流星群が極大（見頃は未明）</td></tr>
+<tr><td>31日</td><td>月食が見られる（日本で観測可能）</td></tr>
 <tr><td>5日</td><td>天文ニュースの紹介記事</td></tr></table>
 """
 
@@ -31,9 +36,37 @@ class OfficialDiscoveryTests(unittest.TestCase):
 
     def test_naoj_extracts_observation_candidate_only(self):
         events = naoj_events(NAOJ_HTML, "https://nao.example/2026/12.html", 2026, 12)
-        self.assertEqual(len(events), 1)
+        self.assertEqual(len(events), 2)
         self.assertEqual(events[0]["date"], "2026-12-31")
+        self.assertEqual(events[1]["date"], "2026-12-31")
         self.assertFalse(events[0]["publishable"])
+
+    def test_naoj_splits_multiple_phenomena_on_one_day(self):
+        document = "<table><tr><td>13日</td><td>水星が留 / おうし座北流星群が極大</td></tr></table>"
+        events = naoj_events(document, "https://nao.example/2026/11.html", 2026, 11)
+        self.assertEqual([event["name"] for event in events], ["水星が留", "おうし座北流星群が極大"])
+        self.assertEqual({event["date"] for event in events}, {"2026-11-13"})
+
+    def test_successful_source_with_no_candidates_is_recorded_as_empty(self):
+        payload = collect(dt.date(2026, 12, 1), fetcher=lambda url: (
+            JFA_HTML if "jfa" in url else "<table><tr><th>日</th><th>現象</th></tr><tr><td>1日</td><td>満月</td></tr></table>"
+        ))
+        naoj = [report for report in payload["source_reports"] if report["source"] == "NAOJ"]
+        self.assertTrue(naoj)
+        self.assertTrue(all(report["status"] == "empty" for report in naoj))
+        self.assertEqual(payload["source_errors"], [])
+
+    def test_parse_error_preserves_previous_source_items(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "official_discovery.json"
+            output.write_text(json.dumps({"items": [{
+                "source_type": "JFA公式試合日程", "name": "既存予定", "date": "2026-12-10"
+            }]}), encoding="utf-8")
+            with patch.object(collector, "OUTPUT", output), patch.object(collector, "MANUAL_SOURCE", Path(directory) / "missing.json"), \
+                    patch.object(collector, "fetch_html", return_value="<html>changed</html>"):
+                collector.main()
+            saved = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(saved["items"][0]["name"], "既存予定")
 
     def test_duplicate_manual_event_is_removed(self):
         def fetch(url):
