@@ -1,26 +1,9 @@
 {
   "data_kind": "official_calendar_curated_and_autoverified_dates",
-  "as_of_jst": "2026-11-14",
+  "as_of_jst": "2026-11-15",
   "horizon_days": 60,
   "note": "手動確認済み予定に加え、国立天文台から極大日だけを機械確認した流星群を表示。観測の見頃・天候は未確認で、公式情報の再確認が必要です。日本での視聴が未確認のスポーツは非掲載。",
   "events": [
-    {
-      "id": "jfa-brazil-20261114",
-      "name": "サッカー日本代表 vs ブラジル代表",
-      "category": "スポーツ",
-      "date": "2026-11-14",
-      "end": "2026-11-14",
-      "time": "19:15キックオフ（日本時間）",
-      "place": "シンガポールナショナルスタジアム（シンガポール）",
-      "access": "テレビ朝日系列で全国生中継、U-NEXTで無料ライブ配信",
-      "why": "日本代表がブラジルと対戦。日本で生中継を見られる注目の代表戦。",
-      "trivia": "海外開催でも日本時間と視聴手段が公式に確認できるため掲載候補になります。",
-      "url": "https://jfa.jp/samuraiblue/20261117/tv.html",
-      "source_type": "JFA公式試合・放送予定",
-      "access_scope": "国内視聴可",
-      "source_checked_on": "2026-11-11",
-      "editorial_status": "manual_official_checked"
-    },
     {
       "id": "jfa-paraguay-20261117",
       "name": "サッカー日本代表 vs パラグアイ代表",
