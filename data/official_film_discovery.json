@@ -1,12 +1,12 @@
 {
   "data_kind": "unverified_official_japanese_film_release_candidates",
-  "generated_at": "2026-11-16T15:27:30+09:00",
+  "generated_at": "2026-11-17T16:54:17+09:00",
   "source_reports": [
     {
       "source": "東宝",
       "url": "https://www.toho.co.jp/movie/lineup/",
       "status": "ok",
-      "extracted_count": 14
+      "extracted_count": 15
     },
     {
       "source": "ワーナー・ブラザース",
@@ -85,6 +85,27 @@
       "category": "映画",
       "date": "2026-12-11",
       "end": "2026-12-11",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-de965a34fbc840f06e",
+      "name": "阪神タイガース THE OFFICIAL MOVIE 2026 ―熱覇の記憶―",
+      "category": "映画",
+      "date": "2026-12-18",
+      "end": "2026-12-18",
       "time": null,
       "place": "日本国内の劇場（上映館未確認）",
       "access": "上映館・時刻・チケットは未確認",
