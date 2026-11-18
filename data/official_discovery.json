@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:00:00+09:00",
+  "generated_at": "2026-11-18T00:00:00+09:00",
   "data_kind": "official_unverified_schedule_leads",
   "message": "公式ページから取得した予定候補ですが、検証完了まで確定イベント一覧には掲載しません。",
   "source_count": 4,
@@ -7,8 +7,8 @@
   "source_errors": [],
   "source_reports": [
     {
-      "status": "ok",
-      "extracted_count": 1,
+      "status": "empty",
+      "extracted_count": 0,
       "source": "JFA",
       "url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html"
     },

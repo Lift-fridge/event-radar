@@ -1,26 +1,9 @@
 {
   "data_kind": "official_calendar_curated_and_autoverified_dates",
-  "as_of_jst": "2026-11-17",
+  "as_of_jst": "2026-11-18",
   "horizon_days": 60,
   "note": "手動確認済み予定に加え、国立天文台から極大日だけを機械確認した流星群を表示。観測の見頃・天候は未確認で、公式情報の再確認が必要です。日本での視聴が未確認のスポーツは非掲載。",
   "events": [
-    {
-      "id": "jfa-paraguay-20261117",
-      "name": "サッカー日本代表 vs パラグアイ代表",
-      "category": "スポーツ",
-      "date": "2026-11-17",
-      "end": "2026-11-17",
-      "time": "22:10キックオフ（日本時間）",
-      "place": "シンガポールナショナルスタジアム（シンガポール）",
-      "access": "日本テレビ系で全国生中継、TVerでライブ配信。U-NEXTは有料配信",
-      "why": "代表戦を夜に地上波・TVerで楽しめる機会。",
-      "trivia": "海外開催のキックオフ時刻を日本時間に換算したJFA公式表記を使用しています。",
-      "url": "https://jfa.jp/samuraiblue/20261117/tv.html",
-      "source_type": "JFA公式試合・放送予定",
-      "access_scope": "国内視聴可",
-      "source_checked_on": "2026-11-11",
-      "editorial_status": "manual_official_checked"
-    },
     {
       "id": "naoj-leonids-20261118",
       "name": "しし座流星群が極大",
