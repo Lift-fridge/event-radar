@@ -1,26 +1,9 @@
 {
   "data_kind": "official_calendar_curated_and_autoverified_dates",
-  "as_of_jst": "2026-11-18",
+  "as_of_jst": "2026-11-19",
   "horizon_days": 60,
   "note": "手動確認済み予定に加え、国立天文台から極大日だけを機械確認した流星群を表示。観測の見頃・天候は未確認で、公式情報の再確認が必要です。日本での視聴が未確認のスポーツは非掲載。",
   "events": [
-    {
-      "id": "naoj-leonids-20261118",
-      "name": "しし座流星群が極大",
-      "category": "天文・自然",
-      "date": "2026-11-18",
-      "end": "2026-11-18",
-      "time": "見頃：11月18日未明／極大：同日9時頃（日本時間）",
-      "place": "日本の夜空（街明かりの少ない場所がおすすめ）",
-      "access": "肉眼で観察可能。見頃は未明で、極大時刻の9時頃は昼間です",
-      "why": "事前に見頃を知っておくことで観測のチャンスが生まれます。",
-      "trivia": "国立天文台によると、暗い空では1時間に5個程度が目安です。",
-      "url": "https://www.nao.ac.jp/astro/sky/2026/11.html",
-      "source_type": "国立天文台公式月間カレンダー",
-      "access_scope": "日本で観測可能",
-      "source_checked_on": "2026-11-11",
-      "editorial_status": "manual_official_checked"
-    },
     {
       "id": "film-practicalmagic2-20261127",
       "name": "『プラクティカル・マジック／魔女たちの秘密』公開",

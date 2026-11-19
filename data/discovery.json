@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-18T07:27:07+00:00",
+  "updated_at": "2026-11-19T07:24:18+00:00",
   "data_kind": "classified_unverified_news_leads",
   "message": "記事の公開日はイベント開催日ではありません。開催日時と日本での視聴・参加方法を公式情報で確認するまで、確定イベント一覧には掲載しません。",
-  "successful_sources": 6,
+  "successful_sources": 7,
   "source_count": 9,
   "errors": [
     {
@@ -12,29 +12,25 @@
     {
       "source": "映画ナタリー",
       "error_type": "HTTPError"
-    },
-    {
-      "source": "NHK科学・文化",
-      "error_type": "HTTPError"
     }
   ],
   "classification_counts": {
-    "推薦候補": 0,
-    "要確認": 33,
+    "推薦候補": 1,
+    "要確認": 35,
     "対象外": 6
   },
   "items": [
     {
-      "id": "de677174089fafff8917",
+      "id": "5ebb43c8dccd395cd863",
       "source": "SPICE",
-      "title": "原宿に“デザフェス”の熱気が再び！『デザインフェスタmini3』開催！",
-      "url": "https://spice.eplus.jp/articles/350479",
-      "article_published_at": "2026-11-18T06:00:00+00:00",
+      "title": "巨人マスコット・ヴィーナスからのファン感謝『VENUS PRIDE 2026 final～Welcome to HOTEL VENUS～』は12/23開催～新メンバーも発表",
+      "url": "https://spice.eplus.jp/articles/350477",
+      "article_published_at": "2026-11-19T04:15:15+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "9adfb212e9f1588f",
+      "event_group_key": "54cab4949573528a",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -47,23 +43,23 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350479"
+        "https://spice.eplus.jp/articles/350477"
       ],
       "article_count": 1
     },
     {
-      "id": "f1044ec8ca57990d726f",
+      "id": "1cd47a120aa6c2f9c8aa",
       "source": "Yahoo!エンタメ",
-      "title": "【大阪】『エヴァンゲリオン』前田真宏氏が描いた巨大壁面画、ひらパーで初公開へ　「30周年記念展」追加情報(オリコン)",
-      "url": "https://news.yahoo.co.jp/articles/3dbd55f0e9318f15dfcccac96c75b9b6163a3936?source=rss",
-      "article_published_at": "2026-11-18T07:26:20+00:00",
+      "title": "埼玉県狭山市で開催NHK「The Covers」フェスSPゲストにSIONが決定　ハンバート ハンバート、ふぉ～ゆ～、ワンエンTETTA＆EIKUら出演(音楽ナタリー)",
+      "url": "https://news.yahoo.co.jp/articles/91d6152aecf2c0185d55c8b8da62fe103dfd8f7e?source=rss",
+      "article_published_at": "2026-11-19T07:21:10+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "5b5daad2215eaeb8",
+      "event_group_key": "b1d24873d6141278",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "関東現地候補",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -74,21 +70,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/3dbd55f0e9318f15dfcccac96c75b9b6163a3936?source=rss"
+        "https://news.yahoo.co.jp/articles/91d6152aecf2c0185d55c8b8da62fe103dfd8f7e?source=rss"
       ],
       "article_count": 1
     },
     {
-      "id": "2a876f2d734e1a4a2eda",
+      "id": "3c418e80237cd5a4642b",
       "source": "Yahoo!スポーツ",
-      "title": "【楽天】甲子園３度出場の技巧派左腕と育成契約合意　今季は1軍登板なし(日刊スポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/1e46a8566d5de88a76c544cd14f7eae9e5233617?source=rss",
-      "article_published_at": "2026-11-18T07:24:53+00:00",
+      "title": "育成入団から2か月で開幕1軍…！中日の“異色ルーキー左腕”が契約更改　オイシックス出身の27歳(ベースボールチャンネル)",
+      "url": "https://news.yahoo.co.jp/articles/64606ba32aefcf425fe68b96053702a616c318c1?source=rss",
+      "article_published_at": "2026-11-19T07:20:02+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "6d799505fb1a609e",
+      "event_group_key": "ecda5552d3333f86",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -101,48 +97,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/1e46a8566d5de88a76c544cd14f7eae9e5233617?source=rss"
+        "https://news.yahoo.co.jp/articles/64606ba32aefcf425fe68b96053702a616c318c1?source=rss"
       ],
       "article_count": 1
     },
     {
-      "id": "61b56fa950cc1054b283",
+      "id": "044aacaa6c222a6a04d9",
       "source": "AstroArts",
-      "title": "2026年11月18日 しし座流星群が極大",
-      "url": "https://www.astroarts.co.jp/article/hl/a/14745_ph261118",
-      "article_published_at": "2026-11-17T19:26:17+00:00",
+      "title": "2026年11月27日ごろ 火星とレグルスが大接近",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14272_ph261127",
+      "article_published_at": "2026-11-19T09:15:07+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
       "confirmed": false,
-      "event_group_key": "544702a21b6df2ca",
-      "priority": "天文現象",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://www.astroarts.co.jp/article/hl/a/14745_ph261118"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "671e40439525d6de98c4",
-      "source": "SPICE",
-      "title": "緒方恵美の歌唱＆高田雅史の劇伴でおくる、『ダンガンライブ2026 -希望のタカダと絶望のオガタ-』が開催　内田彩もゲスト出演",
-      "url": "https://spice.eplus.jp/articles/350474",
-      "article_published_at": "2026-11-18T04:06:28+00:00",
-      "event_date": null,
-      "status": "対象外",
-      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
-      "confirmed": false,
-      "event_group_key": "914eb9e207ffc3d0",
+      "event_group_key": "ee141c8747c38e7d",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -155,21 +124,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350474"
+        "https://www.astroarts.co.jp/article/hl/a/14272_ph261127"
       ],
       "article_count": 1
     },
     {
-      "id": "1ae51cc89568f0c10f66",
-      "source": "Yahoo!エンタメ",
-      "title": "ジェジュン＆ジュンス、大阪公演が大盛況で終了！観客との積極的なコミュニケーションに熱い反響(Kstyle)",
-      "url": "https://news.yahoo.co.jp/articles/78a49bff8f0b7397b05d35c695d825e76f15897f?source=rss",
-      "article_published_at": "2026-11-18T07:24:18+00:00",
+      "id": "955c5a705cb5a8c2991e",
+      "source": "NHK科学・文化",
+      "title": "香港のディズニーで不正アクセス 電子チケット盗み取られたか",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261116de76430",
+      "article_published_at": "2026-11-16T05:54:07+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "ea16c7b4145121e5",
+      "event_group_key": "c357d0178e4a5d42",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -182,21 +151,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/78a49bff8f0b7397b05d35c695d825e76f15897f?source=rss"
+        "https://news.web.nhk/newsweb/na/nd-20261116de76430"
       ],
       "article_count": 1
     },
     {
-      "id": "f8313e34928676e90bbf",
-      "source": "Yahoo!スポーツ",
-      "title": "２８年ロサンゼルス五輪期間中にプロ野球シーズン中断へ　期間は３週間程度　１２球団オーナー会議で承認(スポーツ報知)",
-      "url": "https://news.yahoo.co.jp/articles/adeb65c8a65a20073b95e8a78dcd7af1294ee933?source=rss",
-      "article_published_at": "2026-11-18T07:21:15+00:00",
+      "id": "f390945e7dba577ac917",
+      "source": "SPICE",
+      "title": "『ゴルフ日本シリーズJTカップ』12/3開幕！今季を締めくくるメジャー大会を制するのは？",
+      "url": "https://spice.eplus.jp/articles/350443",
+      "article_published_at": "2026-11-19T04:11:59+00:00",
       "event_date": null,
       "status": "要確認",
-      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "8c06747af7b9df1c",
+      "event_group_key": "077613aad302f8c0",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -209,7 +178,304 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/adeb65c8a65a20073b95e8a78dcd7af1294ee933?source=rss"
+        "https://spice.eplus.jp/articles/350443"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "5c310abb3b5bd078538b",
+      "source": "Yahoo!エンタメ",
+      "title": "佐久間宣行氏　鑑賞した舞台を絶賛「今年ベストかな」「無理してチケット取ってきて良かった」(スポニチアネックス)",
+      "url": "https://news.yahoo.co.jp/articles/e039d0088da716920895bf9e2d7c082f2a8554f4?source=rss",
+      "article_published_at": "2026-11-19T07:20:03+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "c7c2d28e52abed96",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/e039d0088da716920895bf9e2d7c082f2a8554f4?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "f4c95fb7cd366babf073",
+      "source": "Yahoo!スポーツ",
+      "title": "北海の最速155キロ右腕の森健成、打球直撃のアクシデント乗り越え完投　「（痛みを）我慢しながら…」／明治神宮大会(サンケイスポーツ)",
+      "url": "https://news.yahoo.co.jp/articles/2ab7171fbbd8d1d639e7afde438bf12daafa0726?source=rss",
+      "article_published_at": "2026-11-19T07:17:55+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "2769e4fc75aa5aa8",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/2ab7171fbbd8d1d639e7afde438bf12daafa0726?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "2019dff332c4508af59f",
+      "source": "AstroArts",
+      "title": "惑星探査機「ボイジャー1号」、地球から「1光日」の距離に到達",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14777_voyager1",
+      "article_published_at": "2026-11-18T10:16:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false,
+      "event_group_key": "992b2a145556c6da",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14777_voyager1"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "85c47a7ec5c8257c35af",
+      "source": "NHK科学・文化",
+      "title": "「高専ロボコン」全国大会“雑巾投げ”でロボット技術など競う",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76267",
+      "article_published_at": "2026-11-15T12:23:00+00:00",
+      "event_date": null,
+      "status": "推薦候補",
+      "classification_reason": "主要イベントまたは幅広い関心が見込める題材を含むため",
+      "confirmed": false,
+      "event_group_key": "cfc8760aaaf0d503",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.web.nhk/newsweb/na/nd-20261115de76267"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "9e9be21a52e4d879e3e5",
+      "source": "SPICE",
+      "title": "Rammstein、メキシコ公演のアンコール『再炎上上映』決定、口笛・声出し・シンガロング・行進も大歓迎、一夜限りの「ラム学園」も開校",
+      "url": "https://spice.eplus.jp/articles/350476",
+      "article_published_at": "2026-11-19T03:30:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "0ad015bba5c3a877",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350476"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "c6add8914ad58d108b8e",
+      "source": "Yahoo!エンタメ",
+      "title": "【あす】パク・ボゴム＆キム・ユジョンらがスペシャルな旅行　『雲を描いた月明り』放送10周年記念番組、日本初放送(オリコン)",
+      "url": "https://news.yahoo.co.jp/articles/d5c60b223796c8a25ffc1577af0f546c5f72ecbb?source=rss",
+      "article_published_at": "2026-11-19T07:20:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "d6c6d8f613eaf0aa",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/d5c60b223796c8a25ffc1577af0f546c5f72ecbb?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "0ab393ca5046ada6690f",
+      "source": "Yahoo!スポーツ",
+      "title": "DeNA、diana初のファンミーティング開催を発表！ 2日連続で特別イベント…限定パフォーマンスも披露(ベースボールチャンネル)",
+      "url": "https://news.yahoo.co.jp/articles/e98550851955fa0d411e0da7485f753bdfde3e14?source=rss",
+      "article_published_at": "2026-11-19T07:13:11+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "コアなファン向けのイベント告知のため",
+      "confirmed": false,
+      "event_group_key": "f371daa0a46bc1f3",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/e98550851955fa0d411e0da7485f753bdfde3e14?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "43319ba26dd52de74f89",
+      "source": "AstroArts",
+      "title": "星空のもとで癒しのひと時　20日に「熟睡プラ寝たリウム」YouTube生配信",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14779_goodsleep",
+      "article_published_at": "2026-11-18T09:45:09+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false,
+      "event_group_key": "28cd86cbccd962c1",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14779_goodsleep"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "7c1e33fa0dcb265689db",
+      "source": "NHK科学・文化",
+      "title": "紅白歌合戦ことしの出場歌手発表 初出場は7組【出場歌手一覧】",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261113de75147",
+      "article_published_at": "2026-11-13T10:47:00+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "9a3cd7e4af41ce0d",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.web.nhk/newsweb/na/nd-20261113de75147"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "9812d879280c12e22a78",
+      "source": "SPICE",
+      "title": "ヒトリエ、a flood of circle、東名阪3都市を巡るスプリットツアーの開催が決定",
+      "url": "https://spice.eplus.jp/articles/350499",
+      "article_published_at": "2026-11-19T02:30:00+00:00",
+      "event_date": null,
+      "status": "対象外",
+      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
+      "confirmed": false,
+      "event_group_key": "cc1b040696443e0d",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350499"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "941bb42a22841858ea5d",
+      "source": "Yahoo!エンタメ",
+      "title": "ソウルの最旬カルチャーを五感で体感！「OMOKADO SEOUL MARKET」11月21日より開催(Kstyle)",
+      "url": "https://news.yahoo.co.jp/articles/3d2cbfb4dc76daf1240d4f68023b8725b77823ae?source=rss",
+      "article_published_at": "2026-11-19T07:18:18+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "7eaece617369d95f",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/3d2cbfb4dc76daf1240d4f68023b8725b77823ae?source=rss"
       ],
       "article_count": 1
     },
@@ -241,70 +507,16 @@
       "article_count": 1
     },
     {
-      "id": "316d5993b74e496eeff4",
+      "id": "74c34648292dc6b665fb",
       "source": "SPICE",
-      "title": "のん（語り部）、CHEMISTRY、金子扶生らが迫真のステージ　原摩利彦が音楽監督を務めた一夜限りの夢幻の舞台『OTOBUTAI 2026 泉涌寺』特別番組が放送",
-      "url": "https://spice.eplus.jp/articles/350466",
-      "article_published_at": "2026-11-18T03:31:55+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "番組・配信の注目候補。初回日時と日本での視聴方法を確認するため",
-      "confirmed": false,
-      "event_group_key": "ad813672eace8ac8",
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://spice.eplus.jp/articles/350466"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "66f0991bfb42f06ec030",
-      "source": "Yahoo!エンタメ",
-      "title": "【あすから】イ・ジュノ、死刑囚となった父の無実を証明するため戦う　韓国ドラマ『自白』放送スタート＜キャスト・あらすじ＞(オリコン)",
-      "url": "https://news.yahoo.co.jp/articles/01b33e79c77b8bf525c2ff7ac947a8ed0248bac0?source=rss",
-      "article_published_at": "2026-11-18T07:20:00+00:00",
+      "title": "飯田洋輔、初の単独フルオーケストラコンサートを収録した初のライブアルバム『MAESTOSO』を発売",
+      "url": "https://spice.eplus.jp/articles/350501",
+      "article_published_at": "2026-11-19T02:28:50+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "3b6be6dfa5746c01",
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/01b33e79c77b8bf525c2ff7ac947a8ed0248bac0?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "524524d4e6f81223ae1c",
-      "source": "Yahoo!スポーツ",
-      "title": "神谷そら、櫻井心那、阿部未悠が米女子ツアー最終予選会に出場　「来季出場権」は何位まで？(ゴルフのニュース)",
-      "url": "https://news.yahoo.co.jp/articles/f05867f525812f8b7ec41847b9c7d23b83358439?source=rss",
-      "article_published_at": "2026-11-18T07:20:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "382a874f1f5dcdc8",
+      "event_group_key": "5783c756de5f5a5f",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -317,7 +529,34 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/f05867f525812f8b7ec41847b9c7d23b83358439?source=rss"
+        "https://spice.eplus.jp/articles/350501"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "8f1406d62fc28203d312",
+      "source": "Yahoo!エンタメ",
+      "title": "ヒカキン、驚異の「登録者数2000万人」突破へ　滞在先のマイアミから緊急生放送配信実施(スポニチアネックス)",
+      "url": "https://news.yahoo.co.jp/articles/b45dd1d6130cd011752ba9545f5750d9d36651fb?source=rss",
+      "article_published_at": "2026-11-19T07:09:29+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "3de5b7d86f6b3a23",
+      "priority": "一般",
+      "participation_scope": "日本からの視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/b45dd1d6130cd011752ba9545f5750d9d36651fb?source=rss"
       ],
       "article_count": 1
     },
@@ -349,16 +588,16 @@
       "article_count": 1
     },
     {
-      "id": "6f260f1d1c72d39ed603",
+      "id": "bc312069a936419fce09",
       "source": "SPICE",
-      "title": "ルイス・コール、総勢76名による空前絶後のフルオーケストラ公演が遂に日本初開催決定",
-      "url": "https://spice.eplus.jp/articles/350464",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "岡山・能楽堂ホールで、NAOTO×石成正人×松本圭司『Sugar & Spice Special Live』開催",
+      "url": "https://spice.eplus.jp/articles/350458",
+      "article_published_at": "2026-11-18T13:00:00+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "abade7338c49fe04",
+      "event_group_key": "0662857d1ef681bd",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -371,23 +610,23 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350464"
+        "https://spice.eplus.jp/articles/350458"
       ],
       "article_count": 1
     },
     {
-      "id": "70c6c55a59d5d26bd80d",
+      "id": "a9e11b2b3f00a27f36ce",
       "source": "Yahoo!エンタメ",
-      "title": "シンママ小倉優子　3男児と暮らす“高層”自宅を初公開　勉強机の位置は…自立促すアイテムも紹介(スポニチアネックス)",
-      "url": "https://news.yahoo.co.jp/articles/b306547ae5e2382b5d622001407162ce05048f81?source=rss",
-      "article_published_at": "2026-11-18T07:17:56+00:00",
+      "title": "Netflix『セリング・サンセット』シーズン10が12月4日配信決定！クリスティーン復帰＆新キャスト全貌が明らかに(The Hollywood Reporter Japan)",
+      "url": "https://news.yahoo.co.jp/articles/e5699c5da98f060a76169528a7e77b27bde767e4?source=rss",
+      "article_published_at": "2026-11-19T07:06:57+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "c0634bc50c22826a",
+      "event_group_key": "61d5dd18d22ab14d",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -398,34 +637,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/b306547ae5e2382b5d622001407162ce05048f81?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "47b550f3f1c227550cc8",
-      "source": "Yahoo!スポーツ",
-      "title": "佐々木朗希（25）誕生日は「家でひたすらパワプロをやっていた」「ちょっとオンライン対戦も」主催の野球大会についても語った《独占インタビュー》(文春オンライン)",
-      "url": "https://news.yahoo.co.jp/articles/865e8e999b9152eb4d7d9b25c6cfb1f0a6ec7a50?source=rss",
-      "article_published_at": "2026-11-18T07:12:16+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "b60e15d3e035d416",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/865e8e999b9152eb4d7d9b25c6cfb1f0a6ec7a50?source=rss"
+        "https://news.yahoo.co.jp/articles/e5699c5da98f060a76169528a7e77b27bde767e4?source=rss"
       ],
       "article_count": 1
     },
@@ -457,16 +669,16 @@
       "article_count": 1
     },
     {
-      "id": "80ee2cdcc7c01ee4fbad",
+      "id": "f3c7f4e145e10e45ef30",
       "source": "SPICE",
-      "title": "jizue、結成20周年を祝うインストバンドによるフェス『ones』開催ーー約2年ぶりにピアノで片木も登場、祝祭のステージをプレイバック",
-      "url": "https://spice.eplus.jp/articles/349435",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "DRUM TAOの人間力が弾ける新作舞台『THE HUMAN』全国ツアーが開幕　最新オフィシャルレポートが到着",
+      "url": "https://spice.eplus.jp/articles/350492",
+      "article_published_at": "2026-11-18T11:01:04+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "5f29a3458979f8a9",
+      "event_group_key": "9d241a0dbf9593c5",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -479,23 +691,23 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/349435"
+        "https://spice.eplus.jp/articles/350492"
       ],
       "article_count": 1
     },
     {
-      "id": "741037608d7e755801bf",
+      "id": "e488737b003df5dbee44",
       "source": "Yahoo!エンタメ",
-      "title": "少女時代テヨン、4月に日本公演を開催　ひさしぶりに会える(音楽ナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/d3c725259b09ef22426852876dc75a17bb086b55?source=rss",
-      "article_published_at": "2026-11-18T07:13:10+00:00",
+      "title": "峯岸みなみの新居は「大豪邸」 生放送でイジられる…「手入れ大変でしょう？」(オリコン)",
+      "url": "https://news.yahoo.co.jp/articles/d509a879b072e4e521a71cc0e4651907bc5761bf?source=rss",
+      "article_published_at": "2026-11-19T07:02:25+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "fe9bb2ebf1e16006",
+      "event_group_key": "e7dbe8906c351829",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -506,34 +718,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/d3c725259b09ef22426852876dc75a17bb086b55?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "5baadbcacf41dc481554",
-      "source": "Yahoo!スポーツ",
-      "title": "【日本代表】パラグアイ戦先発組　低調で浮き彫りになる〝格差問題〟「主力と差がありまくり」の声(東スポWEB)",
-      "url": "https://news.yahoo.co.jp/articles/9a6c9bacef63d17a294a0b9e6bc80bc4d59f73c2?source=rss",
-      "article_published_at": "2026-11-18T07:10:24+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "confirmed": false,
-      "event_group_key": "2c53d16a04e7a2a0",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/9a6c9bacef63d17a294a0b9e6bc80bc4d59f73c2?source=rss"
+        "https://news.yahoo.co.jp/articles/d509a879b072e4e521a71cc0e4651907bc5761bf?source=rss"
       ],
       "article_count": 1
     },
@@ -565,16 +750,16 @@
       "article_count": 1
     },
     {
-      "id": "0bb53cf22e7967216d75",
+      "id": "03a2e5a85b70b16d76fa",
       "source": "SPICE",
-      "title": "ヒグチアイ、初の弾き語りアルバム『備忘録』配信開始、2027年1月より全国弾き語りツアー開催発表",
-      "url": "https://spice.eplus.jp/articles/350467",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "DUSTCELL、開催直前の初アリーナ公演タイトルを冠した新曲「道」配信開始、ミュージックビデオも公開【監督コメントあり】",
+      "url": "https://spice.eplus.jp/articles/350470",
+      "article_published_at": "2026-11-18T11:00:00+00:00",
       "event_date": null,
-      "status": "対象外",
-      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "bb0e2f302d963e1a",
+      "event_group_key": "2fa4fdd31f4290f1",
       "priority": "一般",
       "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
@@ -587,23 +772,23 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350467"
+        "https://spice.eplus.jp/articles/350470"
       ],
       "article_count": 1
     },
     {
-      "id": "d6805a57b1b5dba0c15d",
+      "id": "8d71b0d4e586c7efeff4",
       "source": "Yahoo!エンタメ",
-      "title": "NCT チソン、鍛え上げられた筋肉に釘付け！ドラマ「クラッシュ2」ビハインドカットが話題(Kstyle)",
-      "url": "https://news.yahoo.co.jp/articles/045e17b73ca0a8a37fe27d819889555ca5f26eab?source=rss",
-      "article_published_at": "2026-11-18T07:06:18+00:00",
+      "title": "「ホロライブ」の公式情報番組、第2回が11月20日配信決定！ 新作麻雀ゲーム『ホロじゃん』や「EXPO 2027＆8th fes.」続報が発表へ(インサイド)",
+      "url": "https://news.yahoo.co.jp/articles/696b531080f84285135b1b68f43af0face26a2e1?source=rss",
+      "article_published_at": "2026-11-19T07:00:03+00:00",
       "event_date": null,
       "status": "対象外",
-      "classification_reason": "イベント開催を示す情報が不足しているため",
+      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
       "confirmed": false,
-      "event_group_key": "1fded1bea89881c1",
+      "event_group_key": "83ffcf79faadc5ba",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -614,34 +799,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/045e17b73ca0a8a37fe27d819889555ca5f26eab?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "4253927748aeb82e65aa",
-      "source": "Yahoo!スポーツ",
-      "title": "J1名門の新助っ人が「そんなのできたん？」　トップ出場なしも…驚愕プレーに「能力が尖りすぎ」(FOOTBALL ZONE)",
-      "url": "https://news.yahoo.co.jp/articles/3f1a2c9e31af8fd9b1dadc908b7445aa29ebeeb3?source=rss",
-      "article_published_at": "2026-11-18T07:10:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "dd330837a6931a6c",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/3f1a2c9e31af8fd9b1dadc908b7445aa29ebeeb3?source=rss"
+        "https://news.yahoo.co.jp/articles/696b531080f84285135b1b68f43af0face26a2e1?source=rss"
       ],
       "article_count": 1
     },
@@ -673,18 +831,18 @@
       "article_count": 1
     },
     {
-      "id": "279ca75201eab19a1da3",
+      "id": "711d342f3de8458d9c5f",
       "source": "SPICE",
-      "title": "amazarashi、新曲「悲しみさえ大人びて」CD発売、2025年全国ツアー東京公演ライブ映像を日本・台湾・香港・韓国・タイの映画館で特別上映決定",
-      "url": "https://spice.eplus.jp/articles/350469",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "TVアニメ『99回断罪されたループ令嬢ですが今世は「超絶愛されモード」ですって!?』2027年放送開始決定！アルフィーナ役・長谷川育美、ライオネット役・浦 和希！ティザービジュアル公開",
+      "url": "https://spice.eplus.jp/articles/350482",
+      "article_published_at": "2026-11-18T11:00:00+00:00",
       "event_date": null,
       "status": "対象外",
-      "classification_reason": "通常のライブ・ツアー告知で、推薦基準の主要イベントに該当しないため",
+      "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
       "confirmed": false,
-      "event_group_key": "e8688d043d8ffaea",
-      "priority": "一般",
-      "participation_scope": "関東現地候補",
+      "event_group_key": "89698f8a1630c955",
+      "priority": "テレビ番組初回放送",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -695,48 +853,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350469"
+        "https://spice.eplus.jp/articles/350482"
       ],
       "article_count": 1
     },
     {
-      "id": "f26182eda5040350e054",
+      "id": "c0584c4d1001f59a4199",
       "source": "Yahoo!エンタメ",
-      "title": "主演はM!LKの人気メンバー…？ 2027年1月スタートの新ドラマ、謎の予告編が公開。主演俳優をめぐりネットで考察合戦が加熱(映画チャンネル)",
-      "url": "https://news.yahoo.co.jp/articles/9eeef10f64ffa45fa6a831451c57e82b94369998?source=rss",
-      "article_published_at": "2026-11-18T07:05:55+00:00",
-      "event_date": null,
-      "status": "対象外",
-      "classification_reason": "イベント開催を示す情報が不足しているため",
-      "confirmed": false,
-      "event_group_key": "9bd52e5fda26c335",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/9eeef10f64ffa45fa6a831451c57e82b94369998?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "58a8309c784fd6c31511",
-      "source": "Yahoo!スポーツ",
-      "title": "キャリア14年目で自己最速…クレイ・トンプソンが開幕から13試合で3ポイント成功50本超え(バスケットボールキング)",
-      "url": "https://news.yahoo.co.jp/articles/a53211cd9e43713bd4ed9c1b1a52ff2b72fba712?source=rss",
-      "article_published_at": "2026-11-18T07:07:36+00:00",
+      "title": "高田みづえ、42年ぶり紅白出場　おかみさん卒業で漏らしていた「寂しい」日々　夫・若嶋津さんの四十九日後に舞い込んだ音楽番組出演依頼に「一歩踏み出してみたい」(女性セブンプラス)",
+      "url": "https://news.yahoo.co.jp/articles/d617a6f9da662424f0c912dc45bd6555abc4330f?source=rss",
+      "article_published_at": "2026-11-19T07:00:00+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "98eb426ecd28f9fd",
+      "event_group_key": "e26c240c3ae5cdb7",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -749,7 +880,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/a53211cd9e43713bd4ed9c1b1a52ff2b72fba712?source=rss"
+        "https://news.yahoo.co.jp/articles/d617a6f9da662424f0c912dc45bd6555abc4330f?source=rss"
       ],
       "article_count": 1
     },
@@ -781,16 +912,16 @@
       "article_count": 1
     },
     {
-      "id": "e15c214676cc9c37d19e",
+      "id": "81ea819c26767c3be084",
       "source": "SPICE",
-      "title": "愛知・名古屋東急ホテルに世界各国のワインが集結　名古屋最大級のワイン試飲会『2027 リカマンワインフェスタ in NAGOYA』が開催",
-      "url": "https://spice.eplus.jp/articles/350339",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "HoneyWorksサウンドプロデュース・高嶺のなでしこ、ニューアルバム『A World in Our Colors』発売、ららぽーと立川立飛でリリースイベント開催",
+      "url": "https://spice.eplus.jp/articles/350493",
+      "article_published_at": "2026-11-18T11:00:00+00:00",
       "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "status": "対象外",
+      "classification_reason": "コアなファン向けのイベント告知のため",
       "confirmed": false,
-      "event_group_key": "49c68217ac029f4d",
+      "event_group_key": "a4cd0ab666848653",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -803,48 +934,21 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350339"
+        "https://spice.eplus.jp/articles/350493"
       ],
       "article_count": 1
     },
     {
-      "id": "99a46c780bd3368aca39",
+      "id": "30adb8709ad956235df5",
       "source": "Yahoo!エンタメ",
-      "title": "【ビルボード】Ayumu Imazu「結び」ストリーミング・ソング首位返り咲き　上位層が『紅白』出場トピックで順位を入れ替える(Billboard JAPAN)",
-      "url": "https://news.yahoo.co.jp/articles/39119d1fc3431cac2fbfffe535bd2a0654c33354?source=rss",
-      "article_published_at": "2026-11-18T07:05:04+00:00",
+      "title": "アニメをつくり続けて45年――片渕須直監督の特集上映が開催決定　「この世界の片隅に」や最新作パイロットフィルムなど上映(映画.com)",
+      "url": "https://news.yahoo.co.jp/articles/e4f3a048b46fab72108b07749653236aaa81e783?source=rss",
+      "article_published_at": "2026-11-19T07:00:00+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "58b42899198c7865",
-      "priority": "一般",
-      "participation_scope": "日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/39119d1fc3431cac2fbfffe535bd2a0654c33354?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "d6a1cf945fcbdbb7ec64",
-      "source": "Yahoo!スポーツ",
-      "title": "プロ野球、ロス五輪期間中は中断(共同通信)",
-      "url": "https://news.yahoo.co.jp/articles/e3a2c6b4ae968e8929b2e975c7e95af75a652e8d?source=rss",
-      "article_published_at": "2026-11-18T07:07:04+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "スポーツの注目候補。試合日程と国内の視聴方法を確認するため",
-      "confirmed": false,
-      "event_group_key": "3b58782d4c16da69",
+      "event_group_key": "a4ddf9931524dd40",
       "priority": "一般",
       "participation_scope": "開催地・視聴方法を要確認",
       "verification": {
@@ -857,7 +961,88 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/e3a2c6b4ae968e8929b2e975c7e95af75a652e8d?source=rss"
+        "https://news.yahoo.co.jp/articles/e4f3a048b46fab72108b07749653236aaa81e783?source=rss"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "61b56fa950cc1054b283",
+      "source": "AstroArts",
+      "title": "2026年11月18日 しし座流星群が極大",
+      "url": "https://www.astroarts.co.jp/article/hl/a/14745_ph261118",
+      "article_published_at": "2026-11-11T09:10:35+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "天文・科学の注目候補。日本での観測条件と日時を確認するため",
+      "confirmed": false,
+      "event_group_key": "544702a21b6df2ca",
+      "priority": "天文現象",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://www.astroarts.co.jp/article/hl/a/14745_ph261118"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "0cdb25f65eee394094c4",
+      "source": "SPICE",
+      "title": "羽生結弦製作総指揮・出演の『Yuzuru Hanyu “REALIVE” an ICE STORY project』11/28・29に佐賀公演開催",
+      "url": "https://spice.eplus.jp/articles/350270",
+      "article_published_at": "2026-11-18T10:55:21+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "c540c0fe5d1f3edc",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://spice.eplus.jp/articles/350270"
+      ],
+      "article_count": 1
+    },
+    {
+      "id": "d9110236d7d7a4f2a1ad",
+      "source": "Yahoo!エンタメ",
+      "title": "ＯＳＫ日本歌劇団・桐生麻耶「自然体な仕草や動きを心がける」　主演舞台「ＤＡＮＤＹ」開幕…入団３０年目　(スポーツ報知)",
+      "url": "https://news.yahoo.co.jp/articles/2b24dab477423c8d1ae89fefad37f7353ff091ed?source=rss",
+      "article_published_at": "2026-11-19T06:59:55+00:00",
+      "event_date": null,
+      "status": "要確認",
+      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
+      "confirmed": false,
+      "event_group_key": "8a31d4a7761aa2cf",
+      "priority": "一般",
+      "participation_scope": "開催地・視聴方法を要確認",
+      "verification": {
+        "status": "unverified",
+        "official_url": null,
+        "event_date": null,
+        "start_time": null,
+        "end_time": null,
+        "location": null,
+        "viewing_method": null
+      },
+      "related_article_urls": [
+        "https://news.yahoo.co.jp/articles/2b24dab477423c8d1ae89fefad37f7353ff091ed?source=rss"
       ],
       "article_count": 1
     },
@@ -889,18 +1074,18 @@
       "article_count": 1
     },
     {
-      "id": "94fd5d6e65dc9708b918",
+      "id": "25d6c5143da47ae194c1",
       "source": "SPICE",
-      "title": "First Love is Never Returnedが語る、札幌のライブハウスシーンからメジャーデビューまでーー初のフルアルバム『W.O.R.K.S.』にたどり着くまでの軌跡",
-      "url": "https://spice.eplus.jp/articles/349959",
-      "article_published_at": "2026-11-18T03:00:00+00:00",
+      "title": "TVアニメ『妖狐×僕SS』15周年を記念ビジュアル解禁！2027年1月よりTOKYO MXほかにて再放送決定",
+      "url": "https://spice.eplus.jp/articles/350489",
+      "article_published_at": "2026-11-18T10:00:00+00:00",
       "event_date": null,
       "status": "対象外",
-      "classification_reason": "対象地域外の開催を示唆し、関東開催・全国視聴の手がかりがないため",
+      "classification_reason": "アニメの通常の新作・放送告知で、イベント情報としての独自性が低いため",
       "confirmed": false,
-      "event_group_key": "bae34f6453d2c73b",
+      "event_group_key": "77a8d890377ecfc8",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -911,61 +1096,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/349959"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "303fe0f780eeca8400e2",
-      "source": "Yahoo!エンタメ",
-      "title": "韓国映像資料院がセレクトしたアニメーション5作、国立映画アーカイブで上映(映画ナタリー)",
-      "url": "https://news.yahoo.co.jp/articles/4ed3dd13591ab560c0cbf5baaa9664018e58b1bf?source=rss",
-      "article_published_at": "2026-11-18T07:00:16+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "d6966957b6308a9f",
-      "priority": "一般",
-      "participation_scope": "海外開催・日本からの視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/4ed3dd13591ab560c0cbf5baaa9664018e58b1bf?source=rss"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "bb85b5f485f2c2224b85",
-      "source": "Yahoo!スポーツ",
-      "title": "【広島】堂林翔太が1000万円減で更改、15年ぶり１軍出場なしに「戦力になれなかった」(日刊スポーツ)",
-      "url": "https://news.yahoo.co.jp/articles/fba60d051f633a340c2823b232f3b2029a974164?source=rss",
-      "article_published_at": "2026-11-18T07:02:57+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "7ee5c1a3917c2bd2",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://news.yahoo.co.jp/articles/fba60d051f633a340c2823b232f3b2029a974164?source=rss"
+        "https://spice.eplus.jp/articles/350489"
       ],
       "article_count": 1
     },
@@ -997,18 +1128,18 @@
       "article_count": 1
     },
     {
-      "id": "a51a7e36637123a3d8ee",
+      "id": "bc1d4b8c9b73788c1529",
       "source": "SPICE",
-      "title": "横尾忠則や宇野亞喜良らによる傑作ポスターを展示　『劇場のグラフィズム― 日本傑作ポスター半世紀』の開催が決定",
-      "url": "https://spice.eplus.jp/articles/350468",
-      "article_published_at": "2026-11-18T02:25:13+00:00",
+      "title": "YOGEE NEW WAVES、約5年ぶりの5thアルバム『HALLELUJAH』から先行配信シングル「Night Picnic」解禁",
+      "url": "https://spice.eplus.jp/articles/350486",
+      "article_published_at": "2026-11-18T09:00:00+00:00",
       "event_date": null,
       "status": "要確認",
       "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
       "confirmed": false,
-      "event_group_key": "c02e4a50ab88c05e",
+      "event_group_key": "1b5ed925e16e2613",
       "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
+      "participation_scope": "日本からの視聴方法を要確認",
       "verification": {
         "status": "unverified",
         "official_url": null,
@@ -1019,61 +1150,7 @@
         "viewing_method": null
       },
       "related_article_urls": [
-        "https://spice.eplus.jp/articles/350468"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "7dfb26df26dd771c196d",
-      "source": "SPICE",
-      "title": "新原泰佑・UTAがW主演、和希そら、田畑智子らも出演　『Les Justes～正義の人々～』のキャスト＆公演詳細が発表",
-      "url": "https://spice.eplus.jp/articles/350456",
-      "article_published_at": "2026-11-17T19:00:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "9ea04d71ed7410cc",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://spice.eplus.jp/articles/350456"
-      ],
-      "article_count": 1
-    },
-    {
-      "id": "732437c3571fd97f515a",
-      "source": "SPICE",
-      "title": "水平線、最新EPの深化版「希望の匂い（Reprise）」リリース、京都・磔磔でのライブ音源を追加収録",
-      "url": "https://spice.eplus.jp/articles/350461",
-      "article_published_at": "2026-11-17T11:00:00+00:00",
-      "event_date": null,
-      "status": "要確認",
-      "classification_reason": "イベントの可能性はあるが、知名度・開催条件の追加確認が必要なため",
-      "confirmed": false,
-      "event_group_key": "f74b5a3b4bdfc556",
-      "priority": "一般",
-      "participation_scope": "開催地・視聴方法を要確認",
-      "verification": {
-        "status": "unverified",
-        "official_url": null,
-        "event_date": null,
-        "start_time": null,
-        "end_time": null,
-        "location": null,
-        "viewing_method": null
-      },
-      "related_article_urls": [
-        "https://spice.eplus.jp/articles/350461"
+        "https://spice.eplus.jp/articles/350486"
       ],
       "article_count": 1
     }
