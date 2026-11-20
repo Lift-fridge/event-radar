@@ -1,12 +1,12 @@
 {
   "data_kind": "unverified_official_japanese_film_release_candidates",
-  "generated_at": "2026-11-19T16:24:24+09:00",
+  "generated_at": "2026-11-20T16:14:18+09:00",
   "source_reports": [
     {
       "source": "東宝",
       "url": "https://www.toho.co.jp/movie/lineup/",
       "status": "ok",
-      "extracted_count": 15
+      "extracted_count": 14
     },
     {
       "source": "ワーナー・ブラザース",
@@ -16,27 +16,6 @@
     }
   ],
   "items": [
-    {
-      "id": "film-64487b81ff5b3f7f86",
-      "name": "魔法使いの夜",
-      "category": "映画",
-      "date": "2026-11-20",
-      "end": "2026-11-20",
-      "time": null,
-      "place": "日本国内の劇場（上映館未確認）",
-      "access": "上映館・時刻・チケットは未確認",
-      "official_url": "https://www.toho.co.jp/movie/lineup/",
-      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
-      "source_type": "東宝公式映画公開予定",
-      "status": "要確認",
-      "publishable": false,
-      "verification": {
-        "status": "unverified",
-        "japan_theatrical_release_date": "official_lineup_candidate",
-        "showtimes": null,
-        "editorial_importance": null
-      }
-    },
     {
       "id": "film-73bf050edac79d1547",
       "name": "君の話",
