@@ -1,6 +1,6 @@
 {
   "data_kind": "unverified_official_japanese_film_release_candidates",
-  "generated_at": "2026-11-20T16:14:18+09:00",
+  "generated_at": "2026-11-21T16:05:51+09:00",
   "source_reports": [
     {
       "source": "東宝",
@@ -232,6 +232,27 @@
       "category": "映画",
       "date": "2027-02-11",
       "end": "2027-02-11",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      }
+    },
+    {
+      "id": "film-5a208adcbbea720678",
+      "name": "殺人の門",
+      "category": "映画",
+      "date": "2027-02-19",
+      "end": "2027-02-19",
       "time": null,
       "place": "日本国内の劇場（上映館未確認）",
       "access": "上映館・時刻・チケットは未確認",

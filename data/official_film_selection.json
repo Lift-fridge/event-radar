@@ -1,6 +1,6 @@
 {
   "data_kind": "conservative_official_film_selection",
-  "generated_at": "2026-11-20T16:14:18+09:00",
+  "generated_at": "2026-11-21T16:05:51+09:00",
   "policy": "題名の知名度を推定せず、国内公式公開日・鮮度・重複・明示的な重要度根拠・編集承認が揃うまで掲載しない。",
   "items": [
     {
@@ -339,6 +339,39 @@
       "category": "映画",
       "date": "2027-02-11",
       "end": "2027-02-11",
+      "time": null,
+      "place": "日本国内の劇場（上映館未確認）",
+      "access": "上映館・時刻・チケットは未確認",
+      "official_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_page_url": "https://www.toho.co.jp/movie/lineup/",
+      "source_type": "東宝公式映画公開予定",
+      "status": "要確認",
+      "publishable": false,
+      "verification": {
+        "status": "unverified",
+        "japan_theatrical_release_date": "official_lineup_candidate",
+        "showtimes": null,
+        "editorial_importance": null
+      },
+      "selection": {
+        "status": "保留",
+        "publishable": false,
+        "reasons": [
+          "主要作品／意外な発見の判定が明示されていない",
+          "重要度の公式根拠が許可された形式で記録されていない",
+          "重要度根拠が候補と同じ公式公開予定ページで確認できない",
+          "重要度根拠の確認日が古い、未来日、または不明",
+          "編集上の承認がない"
+        ],
+        "basis": null
+      }
+    },
+    {
+      "id": "film-5a208adcbbea720678",
+      "name": "殺人の門",
+      "category": "映画",
+      "date": "2027-02-19",
+      "end": "2027-02-19",
       "time": null,
       "place": "日本国内の劇場（上映館未確認）",
       "access": "上映館・時刻・チケットは未確認",
